@@ -1,0 +1,63 @@
+{%- from "mongolia_compliance/templates/mongolia_forms/aa_macros.html" import styles, header, info, amount_summary, signatures, distinct with context -%}
+{#- АА-2 Бараа материалын зарлагын баримт / Зарлагын падаан (Delivery Note, Sales Invoice) -#}
+{%- set customer = get_party_details("Customer", doc.customer) -%}
+{%- set show_amounts = not doc.print_without_amount -%}
+{{ styles() }}
+<div class="aa-form">
+	{{ header(doc, "АА-2", _("Stock Issue Voucher")) }}
+	{{ info([
+		(_("Recipient"), doc.customer_name),
+		(_("Recipient Registration No"), doc.tax_id or customer.tax_id),
+		(_("Phone"), doc.contact_mobile or doc.shipping_contact_mobile or customer.mobile_no),
+		(_("Delivery Address"), (doc.shipping_address or doc.address_display or "") | replace("<br>", ", ") | striptags | trim(", ")),
+		(_("Issuing Warehouse"), doc.set_warehouse or distinct(doc.items, "warehouse")),
+		(_("Vehicle No"), doc.vehicle_no),
+		(_("Driver"), doc.driver_name),
+	]) }}
+	<table class="aa-items">
+		<thead>
+			<tr>
+				<th>&numero;</th>
+				<th>{{ _("Item Code") }}</th>
+				<th>{{ _("Item Name") }}</th>
+				<th>{{ _("Unit") }}</th>
+				<th>{{ _("Quantity") }}</th>
+				{%- if show_amounts %}
+				<th>{{ _("Unit Price") }}</th>
+				<th>{{ _("Total Amount") }}</th>
+				{%- endif %}
+			</tr>
+		</thead>
+		<tbody>
+			{%- for item in doc.items %}
+			<tr>
+				<td class="text-center">{{ loop.index }}</td>
+				<td>{{ item.item_code }}</td>
+				<td>{{ item.item_name }}</td>
+				<td class="text-center">{{ _(item.uom) }}</td>
+				<td class="text-right">{{ item.get_formatted("qty") }}</td>
+				{%- if show_amounts %}
+				<td class="text-right">{{ item.get_formatted("rate") }}</td>
+				<td class="text-right">{{ item.get_formatted("amount") }}</td>
+				{%- endif %}
+			</tr>
+			{%- endfor %}
+			<tr class="aa-total">
+				<td colspan="4" class="text-right">{{ _("Total") }}</td>
+				<td class="text-right">{{ doc.get_formatted("total_qty") }}</td>
+				{%- if show_amounts %}
+				<td></td>
+				<td class="text-right">{{ doc.get_formatted("total") }}</td>
+				{%- endif %}
+			</tr>
+		</tbody>
+	</table>
+	{%- if show_amounts %}
+	{{ amount_summary(doc) }}
+	{%- endif %}
+	{{ signatures([
+		(_("Handed over by (storekeeper)"), ""),
+		(_("Received by"), doc.contact_display),
+		(_("Checked by (accountant)"), ""),
+	]) }}
+</div>
