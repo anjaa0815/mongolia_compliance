@@ -8,10 +8,18 @@ from frappe.custom.doctype.custom_field.custom_field import create_custom_fields
 def after_install():
 	after_migrate()
 
+	from mongolia_compliance.mongolia_banking.setup import after_install as setup_banking
+
+	setup_banking()
+
 
 def after_migrate():
 	make_custom_fields()
 	sync_report_templates()
+
+	from mongolia_compliance.mongolia_banking.setup import create_records as setup_banking_records
+
+	setup_banking_records()
 
 	from mongolia_compliance.mongolia_accounting.setup import setup_tax_withholding_categories
 

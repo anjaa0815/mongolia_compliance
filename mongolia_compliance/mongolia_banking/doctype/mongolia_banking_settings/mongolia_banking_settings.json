@@ -1,0 +1,121 @@
+{
+ "actions": [],
+ "creation": "2026-10-07 14:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_currency",
+  "set_default_currency",
+  "symbol_on_right",
+  "whole_number_amounts",
+  "column_break_fmt",
+  "number_format",
+  "apply_date_format",
+  "section_matching",
+  "match_threshold",
+  "column_break_match",
+  "date_window_days"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_currency",
+   "fieldtype": "Section Break",
+   "label": "Төгрөг (MNT, ₮)"
+  },
+  {
+   "fieldname": "set_default_currency",
+   "fieldtype": "Check",
+   "label": "Үндсэн валютыг төгрөг болгох",
+   "default": "1"
+  },
+  {
+   "fieldname": "symbol_on_right",
+   "fieldtype": "Check",
+   "label": "₮ тэмдгийг дүнгийн ард харуулах (1,500,000 ₮)",
+   "default": "1"
+  },
+  {
+   "fieldname": "whole_number_amounts",
+   "fieldtype": "Check",
+   "label": "Төгрөгийн дүнг бүхэл тоогоор харуулах",
+   "description": "MNT-ийн формат #,### болж, бүх төгрөгийн дүн бүхэл төгрөгөөр тоймлогдоно. Бусад валют (USD, CNY...) 2 оронтой хэвээр үлдэнэ."
+  },
+  {
+   "fieldname": "column_break_fmt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "number_format",
+   "fieldtype": "Select",
+   "label": "Мянгатын тусгаарлагч",
+   "options": "#,###.##\n#.###,##",
+   "default": "#,###.##",
+   "description": "1,500,000.50 (Монголд түгээмэл) эсвэл 1.500.000,50"
+  },
+  {
+   "fieldname": "apply_date_format",
+   "fieldtype": "Check",
+   "label": "Огноог YYYY-MM-DD форматаар харуулах",
+   "default": "1"
+  },
+  {
+   "fieldname": "section_matching",
+   "fieldtype": "Section Break",
+   "label": "Хуулга тулгалт"
+  },
+  {
+   "fieldname": "match_threshold",
+   "fieldtype": "Int",
+   "label": "Автомат тулгах доод оноо",
+   "default": "70",
+   "description": "Дүн тэнцүү 50, утгад нэхэмжлэхийн дугаар 40, харьцсан данс 30, нэр 15, огноо 10"
+  },
+  {
+   "fieldname": "column_break_match",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date_window_days",
+   "fieldtype": "Int",
+   "label": "Огнооны зөрүү (хоног)",
+   "default": "5"
+  }
+ ],
+ "links": [],
+ "modified": "2026-10-07 14:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Mongolia Banking",
+ "name": "Mongolia Banking Settings",
+ "owner": "Administrator",
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "issingle": 1,
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 1
+  }
+ ]
+}

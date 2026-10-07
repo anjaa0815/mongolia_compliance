@@ -1,0 +1,221 @@
+{
+ "actions": [],
+ "creation": "2026-10-07 14:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "bank_account",
+  "company",
+  "statement_format",
+  "column_break_file",
+  "statement_file",
+  "auto_match",
+  "create_payment_entries",
+  "section_result",
+  "status",
+  "from_date",
+  "to_date",
+  "column_break_counts",
+  "total_lines",
+  "imported_count",
+  "duplicate_count",
+  "column_break_match",
+  "matched_count",
+  "created_payment_count",
+  "unmatched_count",
+  "section_log",
+  "import_log"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Цуврал",
+   "options": "MBS-.YYYY.-",
+   "default": "MBS-.YYYY.-",
+   "hidden": 1
+  },
+  {
+   "fieldname": "bank_account",
+   "fieldtype": "Link",
+   "label": "Байгууллагын банкны данс",
+   "options": "Bank Account",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Компани",
+   "options": "Company",
+   "fetch_from": "bank_account.company",
+   "read_only": 1
+  },
+  {
+   "fieldname": "statement_format",
+   "fieldtype": "Link",
+   "label": "Хуулгын загвар",
+   "options": "Mongolia Bank Statement Format",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_file",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "statement_file",
+   "fieldtype": "Attach",
+   "label": "Хуулгын файл (Excel/CSV)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "auto_match",
+   "fieldtype": "Check",
+   "label": "Төлбөрийн бичилттэй автоматаар тулгах",
+   "default": "1"
+  },
+  {
+   "fieldname": "create_payment_entries",
+   "fieldtype": "Check",
+   "label": "Нэхэмжлэхийн дугаар таарвал төлбөрийн бичилт үүсгэх",
+   "default": "1",
+   "depends_on": "auto_match",
+   "description": "Гүйлгээний утгад төлөгдөөгүй борлуулалт/худалдан авалтын нэхэмжлэхийн дугаар байвал Payment Entry үүсгээд тулгана"
+  },
+  {
+   "fieldname": "section_result",
+   "fieldtype": "Section Break",
+   "label": "Үр дүн"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Төлөв",
+   "options": "Draft\nQueued\nCompleted\nFailed",
+   "default": "Draft",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "Эхлэх огноо",
+   "read_only": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "Дуусах огноо",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_counts",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_lines",
+   "fieldtype": "Int",
+   "label": "Хуулгын мөр",
+   "read_only": 1
+  },
+  {
+   "fieldname": "imported_count",
+   "fieldtype": "Int",
+   "label": "Шинээр импортолсон",
+   "read_only": 1
+  },
+  {
+   "fieldname": "duplicate_count",
+   "fieldtype": "Int",
+   "label": "Давхардсан (алгассан)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_match",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "matched_count",
+   "fieldtype": "Int",
+   "label": "Тулгагдсан",
+   "read_only": 1
+  },
+  {
+   "fieldname": "created_payment_count",
+   "fieldtype": "Int",
+   "label": "Үүсгэсэн төлбөрийн бичилт",
+   "read_only": 1
+  },
+  {
+   "fieldname": "unmatched_count",
+   "fieldtype": "Int",
+   "label": "Тулгагдаагүй",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_log",
+   "fieldtype": "Section Break",
+   "label": "Тэмдэглэл",
+   "collapsible": 1
+  },
+  {
+   "fieldname": "import_log",
+   "fieldtype": "Code",
+   "label": "Лог",
+   "read_only": 1,
+   "options": "JSON"
+  }
+ ],
+ "links": [],
+ "modified": "2026-10-07 14:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Mongolia Banking",
+ "name": "Mongolia Bank Statement Upload",
+ "owner": "Administrator",
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "autoname": "naming_series:",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "track_changes": 1
+}
