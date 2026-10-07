@@ -7,7 +7,7 @@ app_description = (
 app_email = "anjaaariunjargal@gmail.com"
 app_license = "gpl-3.0"
 
-required_apps = ["erpnext"]
+required_apps = ["erpnext", "hrms"]
 
 after_install = "mongolia_compliance.install.after_install"
 after_migrate = "mongolia_compliance.install.after_migrate"
@@ -17,6 +17,10 @@ doctype_js = {
 	"Sales Invoice": "public/js/invoice.js",
 	"POS Invoice": "public/js/invoice.js",
 }
+
+# Mongolia Payroll: make the mn_* helpers callable from Salary Component formulas.
+before_request = ["mongolia_compliance.mongolia_payroll.formula.register"]
+before_job = ["mongolia_compliance.mongolia_payroll.formula.register"]
 
 doc_events = {
 	"Company": {
@@ -29,6 +33,12 @@ doc_events = {
 	"POS Invoice": {
 		"on_submit": "mongolia_compliance.e_barimt.ebarimt.on_submit",
 		"on_cancel": "mongolia_compliance.e_barimt.ebarimt.on_cancel",
+	},
+	"Salary Slip": {
+		"before_validate": "mongolia_compliance.mongolia_payroll.formula.register_on_doc",
+	},
+	"Salary Structure Assignment": {
+		"before_validate": "mongolia_compliance.mongolia_payroll.formula.register_on_doc",
 	},
 }
 

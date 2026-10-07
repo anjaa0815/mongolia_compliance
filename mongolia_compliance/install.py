@@ -18,6 +18,10 @@ def after_migrate():
 	for company in frappe.get_all("Company", filters={"country": "Mongolia"}, pluck="name"):
 		setup_tax_withholding_categories(company)
 
+	from mongolia_compliance.mongolia_payroll.install import setup as setup_payroll
+
+	setup_payroll()
+
 
 def sync_report_templates():
 	from erpnext.accounts.doctype.financial_report_template.financial_report_template import (
