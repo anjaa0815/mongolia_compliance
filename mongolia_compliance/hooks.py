@@ -16,6 +16,7 @@ doctype_js = {
 	"Customer": "public/js/customer.js",
 	"Sales Invoice": "public/js/invoice.js",
 	"POS Invoice": "public/js/invoice.js",
+	"Landed Cost Voucher": "public/js/landed_cost_voucher.js",
 }
 
 doc_events = {
@@ -28,6 +29,10 @@ doc_events = {
 	},
 	"Item": {
 		"validate": "mongolia_compliance.mongolia_accounting.stock.validate_item",
+	},
+	"Landed Cost Voucher": {
+		"before_validate": "mongolia_compliance.mongolia_accounting.landed_cost.before_validate",
+		"validate": "mongolia_compliance.mongolia_accounting.landed_cost.validate",
 	},
 	"Sales Invoice": {
 		"on_submit": "mongolia_compliance.e_barimt.ebarimt.on_submit",

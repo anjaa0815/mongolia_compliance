@@ -4085,3 +4085,33 @@ msgstr "Монголд бүртгэлтэй компани бараа матер
 
 msgid "LIFO valuation is not allowed under IAS 2. Use FIFO or Moving Average."
 msgstr "НББОУС 2-оор LIFO аргыг хэрэглэхийг хориглоно. FIFO эсвэл жигнэсэн дундаж өртгийн аргыг сонгоно уу."
+
+msgid "Import Charge"
+msgstr "Импортын зардал"
+
+msgid "Customs Duty"
+msgstr "Гаалийн албан татвар"
+
+msgid "Customs Fee"
+msgstr "Гаалийн хураамж"
+
+msgid "International Freight"
+msgstr "Олон улсын тээвэр"
+
+msgid "Local Freight"
+msgstr "Дотоод тээвэр"
+
+msgid "Insurance"
+msgstr "Даатгал"
+
+msgid "Handling"
+msgstr "Ачиж буулгах зардал"
+
+msgid "Sets the expense account from the Mongolian chart. VAT paid at customs is not an import charge."
+msgstr "Монгол дансны төлөвлөгөөнөөс зардлын дансыг сонгоно. Гаалид төлсөн НӨАТ импортын зардалд орохгүй."
+
+msgid "Customs VAT"
+msgstr "Гаалийн НӨАТ"
+
+msgid "Row {0}: VAT paid at customs is recoverable and cannot be added to item cost. Book it to the VAT receivable account {1} with a Purchase Invoice or Journal Entry instead."
+msgstr "Мөр {0}: Гаалид төлсөн НӨАТ буцаан тооцогддог тул барааны өртөгт шингээж болохгүй. Үүнийг Худалдан авалтын нэхэмжлэх эсвэл Журналын бичилтээр НӨАТ-ын авлагын {1} дансанд бүртгэнэ үү."

@@ -13,10 +13,13 @@ def after_migrate():
 	make_custom_fields()
 	sync_report_templates()
 
+	from mongolia_compliance.mongolia_accounting.landed_cost import create_import_charge_accounts
 	from mongolia_compliance.mongolia_accounting.setup import setup_tax_withholding_categories
 
 	for company in frappe.get_all("Company", filters={"country": "Mongolia"}, pluck="name"):
 		setup_tax_withholding_categories(company)
+		if frappe.get_cached_value("Company", company, "mn_chart_installed"):
+			create_import_charge_accounts(company)
 
 
 def sync_report_templates():
@@ -182,6 +185,18 @@ def make_custom_fields(update=True):
 				no_copy=1,
 				depends_on="eval:doc.country=='Mongolia'",
 				insert_after="mn_use_mongolian_chart",
+			),
+		],
+		"Landed Cost Taxes and Charges": [
+			dict(
+				fieldname="mn_import_charge",
+				label="Import Charge",
+				fieldtype="Select",
+				options="\nCustoms Duty\nCustoms Fee\nInternational Freight\nLocal Freight\nInsurance\nHandling",
+				description="Sets the expense account from the Mongolian chart. VAT paid at customs is not an import charge.",
+				insert_after="expense_account",
+				in_list_view=1,
+				columns=2,
 			),
 		],
 		"Customer": [
