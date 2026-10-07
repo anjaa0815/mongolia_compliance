@@ -4079,3 +4079,9 @@ msgstr "Компани гүйлгээгүй үед дээр сонгосон т�
 
 msgid "Mongolian Chart of Accounts Installed"
 msgstr "Монгол дансны төлөвлөгөө суусан"
+
+msgid "Perpetual inventory is required for companies in Mongolia."
+msgstr "Монголд бүртгэлтэй компани бараа материалыг тасралтгүй бүртгэлийн системээр хөтлөх ёстой."
+
+msgid "LIFO valuation is not allowed under IAS 2. Use FIFO or Moving Average."
+msgstr "НББОУС 2-оор LIFO аргыг хэрэглэхийг хориглоно. FIFO эсвэл жигнэсэн дундаж өртгийн аргыг сонгоно уу."

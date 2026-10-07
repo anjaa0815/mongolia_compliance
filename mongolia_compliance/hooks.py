@@ -20,7 +20,14 @@ doctype_js = {
 
 doc_events = {
 	"Company": {
+		"validate": "mongolia_compliance.mongolia_accounting.stock.validate_company",
 		"on_update": "mongolia_compliance.mongolia_accounting.setup.on_company_update",
+	},
+	"Stock Settings": {
+		"validate": "mongolia_compliance.mongolia_accounting.stock.validate_stock_settings",
+	},
+	"Item": {
+		"validate": "mongolia_compliance.mongolia_accounting.stock.validate_item",
 	},
 	"Sales Invoice": {
 		"on_submit": "mongolia_compliance.e_barimt.ebarimt.on_submit",

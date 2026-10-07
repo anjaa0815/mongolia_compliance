@@ -24,6 +24,12 @@ DEFAULT_ACCOUNTS_BY_NUMBER = {
 	"exchange_gain_loss_account": "8103",
 	"unrealized_exchange_gain_loss_account": "8103",
 	"default_income_account": "5101",
+	# perpetual inventory: Stock In Hand, COGS and the stock clearing accounts
+	"default_inventory_account": "1504",
+	"default_expense_account": "6101",
+	"stock_adjustment_account": "6104",
+	"stock_received_but_not_billed": "3102",
+	"stock_delivered_but_not_billed": "1506",
 }
 
 # Withholding taxes a Mongolian company deducts from payments to suppliers.
@@ -120,6 +126,8 @@ def install_mongolian_chart(company: str):
 	create_charts(company, custom_chart=load_chart(currency))
 
 	doc = frappe.get_doc("Company", company)
+	if not doc.enable_perpetual_inventory:
+		doc.db_set("enable_perpetual_inventory", 1)
 	doc.update_default_account = True
 	doc.set_default_accounts()
 	for fieldname, account_type in (
