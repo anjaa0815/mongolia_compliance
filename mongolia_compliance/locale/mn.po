@@ -4079,3 +4079,27 @@ msgstr "Компани гүйлгээгүй үед дээр сонгосон т�
 
 msgid "Mongolian Chart of Accounts Installed"
 msgstr "Монгол дансны төлөвлөгөө суусан"
+
+msgid "Mongolia Payroll"
+msgstr "Монгол цалин"
+
+msgid "Mongolia Payroll Settings"
+msgstr "Монгол цалингийн тохиргоо"
+
+msgid "Mongolia NDSH Risk Class"
+msgstr "НДШ-ийн эрсдэлийн зэрэг"
+
+msgid "Mongolia PIT Slab"
+msgstr "ХХОАТ-ын шатлал"
+
+msgid "Mongolia PIT Credit Slab"
+msgstr "ХХОАТ-ын хөнгөлөлтийн шатлал"
+
+msgid "Row {0}: upper amount must be greater than the lower amount"
+msgstr "Мөр {0}: дээд дүн доод дүнгээс их байх ёстой"
+
+msgid "Please select year and month"
+msgstr "Он, сарыг сонгоно уу"
+
+msgid "Unknown report {0}"
+msgstr "Тодорхойгүй тайлан {0}"

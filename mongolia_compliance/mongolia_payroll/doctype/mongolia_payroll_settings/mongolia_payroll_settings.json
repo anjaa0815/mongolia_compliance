@@ -1,0 +1,245 @@
+{
+ "actions": [],
+ "creation": "2026-10-07 12:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "ndsh_section",
+  "minimum_wage",
+  "ceiling_multiplier",
+  "ndsh_ceiling",
+  "default_risk_class",
+  "employee_column",
+  "employee_pension_rate",
+  "employee_benefit_rate",
+  "employee_unemployment_rate",
+  "employee_health_rate",
+  "employer_column",
+  "employer_pension_rate",
+  "employer_benefit_rate",
+  "employer_unemployment_rate",
+  "employer_health_rate",
+  "employer_accident_note",
+  "pit_section",
+  "pit_slabs",
+  "pit_column",
+  "pit_credit_slabs",
+  "labour_section",
+  "daily_hours",
+  "overtime_multiplier",
+  "holiday_multiplier",
+  "labour_column",
+  "vacation_months",
+  "components_section",
+  "ndsh_employee_abbr",
+  "ndsh_employer_abbr",
+  "pit_abbr"
+ ],
+ "fields": [
+  {
+   "fieldname": "ndsh_section",
+   "fieldtype": "Section Break",
+   "label": "Нийгмийн даатгалын шимтгэл (НДШ)"
+  },
+  {
+   "fieldname": "minimum_wage",
+   "fieldtype": "Currency",
+   "label": "Хөдөлмөрийн хөлсний доод хэмжээ (₮)",
+   "reqd": 1,
+   "default": "792000",
+   "description": "Үндэсний гурвалсан хорооны тогтоолоор жил бүр шинэчлэгдэнэ."
+  },
+  {
+   "fieldname": "ceiling_multiplier",
+   "fieldtype": "Float",
+   "label": "Дээд хязгаар (доод хэмжээг үржүүлэх тоо)",
+   "default": "10"
+  },
+  {
+   "fieldname": "ndsh_ceiling",
+   "fieldtype": "Currency",
+   "label": "Шимтгэл ногдуулах орлогын дээд хязгаар (₮)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "default_risk_class",
+   "fieldtype": "Link",
+   "label": "Үндсэн эрсдэлийн зэрэг",
+   "options": "Mongolia NDSH Risk Class",
+   "description": "Компани дээр эрсдэлийн зэрэг сонгоогүй үед хэрэглэнэ."
+  },
+  {
+   "fieldname": "employee_column",
+   "fieldtype": "Column Break",
+   "label": "Даатгуулагч (ажилтан)"
+  },
+  {
+   "fieldname": "employee_pension_rate",
+   "fieldtype": "Percent",
+   "label": "Тэтгэврийн даатгал",
+   "default": "8.5"
+  },
+  {
+   "fieldname": "employee_benefit_rate",
+   "fieldtype": "Percent",
+   "label": "Тэтгэмжийн даатгал",
+   "default": "0.8"
+  },
+  {
+   "fieldname": "employee_unemployment_rate",
+   "fieldtype": "Percent",
+   "label": "Ажилгүйдлийн даатгал",
+   "default": "0.2"
+  },
+  {
+   "fieldname": "employee_health_rate",
+   "fieldtype": "Percent",
+   "label": "Эрүүл мэндийн даатгал",
+   "default": "2"
+  },
+  {
+   "fieldname": "employer_column",
+   "fieldtype": "Column Break",
+   "label": "Ажил олгогч"
+  },
+  {
+   "fieldname": "employer_pension_rate",
+   "fieldtype": "Percent",
+   "label": "Тэтгэврийн даатгал",
+   "default": "8.5"
+  },
+  {
+   "fieldname": "employer_benefit_rate",
+   "fieldtype": "Percent",
+   "label": "Тэтгэмжийн даатгал",
+   "default": "1"
+  },
+  {
+   "fieldname": "employer_unemployment_rate",
+   "fieldtype": "Percent",
+   "label": "Ажилгүйдлийн даатгал",
+   "default": "0.5"
+  },
+  {
+   "fieldname": "employer_health_rate",
+   "fieldtype": "Percent",
+   "label": "Эрүүл мэндийн даатгал",
+   "default": "2"
+  },
+  {
+   "fieldname": "employer_accident_note",
+   "fieldtype": "HTML",
+   "options": "<p class='text-muted small'>ҮОМШӨ-ийн хувь компанийн эрсдэлийн зэргээс (Mongolia NDSH Risk Class) авна.</p>"
+  },
+  {
+   "fieldname": "pit_section",
+   "fieldtype": "Section Break",
+   "label": "Хувь хүний орлогын албан татвар (ХХОАТ)"
+  },
+  {
+   "fieldname": "pit_slabs",
+   "fieldtype": "Table",
+   "label": "Татварын шатлал (сарын татвар ногдох орлого)",
+   "options": "Mongolia PIT Slab"
+  },
+  {
+   "fieldname": "pit_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pit_credit_slabs",
+   "fieldtype": "Table",
+   "label": "Сар бүрийн татварын хөнгөлөлт",
+   "options": "Mongolia PIT Credit Slab"
+  },
+  {
+   "fieldname": "labour_section",
+   "fieldtype": "Section Break",
+   "label": "Хөдөлмөрийн хууль"
+  },
+  {
+   "fieldname": "daily_hours",
+   "fieldtype": "Float",
+   "label": "Өдрийн ажлын цаг",
+   "default": "8"
+  },
+  {
+   "fieldname": "overtime_multiplier",
+   "fieldtype": "Float",
+   "label": "Илүү цагийн итгэлцүүр",
+   "default": "1.5"
+  },
+  {
+   "fieldname": "holiday_multiplier",
+   "fieldtype": "Float",
+   "label": "Баярын өдрийн итгэлцүүр",
+   "default": "2"
+  },
+  {
+   "fieldname": "labour_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vacation_months",
+   "fieldtype": "Int",
+   "label": "Амралтын олговрын дундажийг тооцох сар",
+   "default": "12"
+  },
+  {
+   "fieldname": "components_section",
+   "fieldtype": "Section Break",
+   "label": "Цалингийн бүрэлдэхүүн (тайланд ашиглах товчлол)"
+  },
+  {
+   "fieldname": "ndsh_employee_abbr",
+   "fieldtype": "Data",
+   "label": "Ажилтны НДШ",
+   "default": "NDSH"
+  },
+  {
+   "fieldname": "ndsh_employer_abbr",
+   "fieldtype": "Data",
+   "label": "Ажил олгогчийн НДШ",
+   "default": "NDSH_ER"
+  },
+  {
+   "fieldname": "pit_abbr",
+   "fieldtype": "Data",
+   "label": "ХХОАТ",
+   "default": "PIT"
+  }
+ ],
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-10-07 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Mongolia Payroll",
+ "name": "Mongolia Payroll Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 0,
+   "print": 1,
+   "read": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 0,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
