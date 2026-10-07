@@ -1,0 +1,289 @@
+{
+ "tax_categories": [
+  {
+   "title": "Экспорт"
+  },
+  {
+   "title": "НӨАТ-аас чөлөөлөгдсөн"
+  }
+ ],
+ "chart_of_accounts": {
+  "Mongolia - Chart of Accounts with Account Numbers": {
+   "sales_tax_templates": [
+    {
+     "title": "НӨАТ 10%",
+     "is_default": 1,
+     "taxes": [
+      {
+       "account_head": {
+        "account_name": "НӨАТ-ын өглөг",
+        "account_number": "3301",
+        "root_type": "Liability",
+        "account_type": "Tax",
+        "tax_rate": 10.0
+       },
+       "description": "НӨАТ 10%",
+       "rate": 10
+      }
+     ]
+    },
+    {
+     "title": "НӨАТ 0% (экспорт)",
+     "tax_category": "Экспорт",
+     "taxes": [
+      {
+       "account_head": {
+        "account_name": "НӨАТ-ын өглөг",
+        "account_number": "3301",
+        "root_type": "Liability",
+        "account_type": "Tax",
+        "tax_rate": 10.0
+       },
+       "description": "НӨАТ 0%",
+       "rate": 0
+      }
+     ]
+    },
+    {
+     "title": "НӨАТ-аас чөлөөлөгдсөн",
+     "tax_category": "НӨАТ-аас чөлөөлөгдсөн",
+     "taxes": [
+      {
+       "account_head": {
+        "account_name": "НӨАТ-ын өглөг",
+        "account_number": "3301",
+        "root_type": "Liability",
+        "account_type": "Tax",
+        "tax_rate": 10.0
+       },
+       "description": "НӨАТ-аас чөлөөлөгдсөн",
+       "rate": 0
+      }
+     ]
+    }
+   ],
+   "purchase_tax_templates": [
+    {
+     "title": "НӨАТ 10% (худалдан авалт)",
+     "is_default": 1,
+     "taxes": [
+      {
+       "account_head": {
+        "account_name": "НӨАТ-ын авлага",
+        "account_number": "1211",
+        "root_type": "Asset",
+        "account_type": "Tax",
+        "tax_rate": 10.0
+       },
+       "description": "НӨАТ 10%",
+       "rate": 10
+      }
+     ]
+    },
+    {
+     "title": "НӨАТ 0% (импорт / чөлөөлөгдсөн)",
+     "tax_category": "НӨАТ-аас чөлөөлөгдсөн",
+     "taxes": [
+      {
+       "account_head": {
+        "account_name": "НӨАТ-ын авлага",
+        "account_number": "1211",
+        "root_type": "Asset",
+        "account_type": "Tax",
+        "tax_rate": 10.0
+       },
+       "description": "НӨАТ 0%",
+       "rate": 0
+      }
+     ]
+    }
+   ],
+   "item_tax_templates": [
+    {
+     "title": "НӨАТ 10%",
+     "taxes": [
+      {
+       "tax_type": {
+        "account_name": "НӨАТ-ын өглөг",
+        "account_number": "3301",
+        "root_type": "Liability",
+        "account_type": "Tax",
+        "tax_rate": 10.0
+       },
+       "tax_rate": 10
+      },
+      {
+       "tax_type": {
+        "account_name": "НӨАТ-ын авлага",
+        "account_number": "1211",
+        "root_type": "Asset",
+        "account_type": "Tax",
+        "tax_rate": 10.0
+       },
+       "tax_rate": 10
+      }
+     ]
+    },
+    {
+     "title": "НӨАТ 0%",
+     "taxes": [
+      {
+       "tax_type": {
+        "account_name": "НӨАТ-ын өглөг",
+        "account_number": "3301",
+        "root_type": "Liability",
+        "account_type": "Tax",
+        "tax_rate": 10.0
+       },
+       "tax_rate": 0
+      },
+      {
+       "tax_type": {
+        "account_name": "НӨАТ-ын авлага",
+        "account_number": "1211",
+        "root_type": "Asset",
+        "account_type": "Tax",
+        "tax_rate": 10.0
+       },
+       "tax_rate": 0
+      }
+     ]
+    }
+   ]
+  },
+  "*": {
+   "sales_tax_templates": [
+    {
+     "title": "НӨАТ 10%",
+     "is_default": 1,
+     "taxes": [
+      {
+       "account_head": {
+        "account_name": "НӨАТ-ын өглөг",
+        "root_type": "Liability",
+        "account_type": "Tax",
+        "tax_rate": 10.0
+       },
+       "description": "НӨАТ 10%",
+       "rate": 10
+      }
+     ]
+    },
+    {
+     "title": "НӨАТ 0% (экспорт)",
+     "tax_category": "Экспорт",
+     "taxes": [
+      {
+       "account_head": {
+        "account_name": "НӨАТ-ын өглөг",
+        "root_type": "Liability",
+        "account_type": "Tax",
+        "tax_rate": 10.0
+       },
+       "description": "НӨАТ 0%",
+       "rate": 0
+      }
+     ]
+    },
+    {
+     "title": "НӨАТ-аас чөлөөлөгдсөн",
+     "tax_category": "НӨАТ-аас чөлөөлөгдсөн",
+     "taxes": [
+      {
+       "account_head": {
+        "account_name": "НӨАТ-ын өглөг",
+        "root_type": "Liability",
+        "account_type": "Tax",
+        "tax_rate": 10.0
+       },
+       "description": "НӨАТ-аас чөлөөлөгдсөн",
+       "rate": 0
+      }
+     ]
+    }
+   ],
+   "purchase_tax_templates": [
+    {
+     "title": "НӨАТ 10% (худалдан авалт)",
+     "is_default": 1,
+     "taxes": [
+      {
+       "account_head": {
+        "account_name": "НӨАТ-ын авлага",
+        "root_type": "Asset",
+        "account_type": "Tax",
+        "tax_rate": 10.0
+       },
+       "description": "НӨАТ 10%",
+       "rate": 10
+      }
+     ]
+    },
+    {
+     "title": "НӨАТ 0% (импорт / чөлөөлөгдсөн)",
+     "tax_category": "НӨАТ-аас чөлөөлөгдсөн",
+     "taxes": [
+      {
+       "account_head": {
+        "account_name": "НӨАТ-ын авлага",
+        "root_type": "Asset",
+        "account_type": "Tax",
+        "tax_rate": 10.0
+       },
+       "description": "НӨАТ 0%",
+       "rate": 0
+      }
+     ]
+    }
+   ],
+   "item_tax_templates": [
+    {
+     "title": "НӨАТ 10%",
+     "taxes": [
+      {
+       "tax_type": {
+        "account_name": "НӨАТ-ын өглөг",
+        "root_type": "Liability",
+        "account_type": "Tax",
+        "tax_rate": 10.0
+       },
+       "tax_rate": 10
+      },
+      {
+       "tax_type": {
+        "account_name": "НӨАТ-ын авлага",
+        "root_type": "Asset",
+        "account_type": "Tax",
+        "tax_rate": 10.0
+       },
+       "tax_rate": 10
+      }
+     ]
+    },
+    {
+     "title": "НӨАТ 0%",
+     "taxes": [
+      {
+       "tax_type": {
+        "account_name": "НӨАТ-ын өглөг",
+        "root_type": "Liability",
+        "account_type": "Tax",
+        "tax_rate": 10.0
+       },
+       "tax_rate": 0
+      },
+      {
+       "tax_type": {
+        "account_name": "НӨАТ-ын авлага",
+        "root_type": "Asset",
+        "account_type": "Tax",
+        "tax_rate": 10.0
+       },
+       "tax_rate": 0
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

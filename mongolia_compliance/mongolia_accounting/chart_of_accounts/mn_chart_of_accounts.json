@@ -1,0 +1,643 @@
+{
+    "country_code": "mn",
+    "name": "Mongolia - Chart of Accounts with Account Numbers",
+    "tree": {
+        "Хөрөнгө": {
+            "root_type": "Asset",
+            "Эргэлтийн хөрөнгө": {
+                "account_number": "1",
+                "Мөнгө ба түүнтэй адилтгах хөрөнгө": {
+                    "account_number": "110",
+                    "Касс": {
+                        "account_number": "1101",
+                        "account_type": "Cash",
+                        "is_group": 1,
+                        "account_category": "Cash and Cash Equivalents",
+                        "Касс дахь мөнгө - төгрөг": {
+                            "account_number": "1101.01",
+                            "account_type": "Cash",
+                            "account_category": "Cash and Cash Equivalents"
+                        },
+                        "Касс дахь мөнгө - валют": {
+                            "account_number": "1101.02",
+                            "account_type": "Cash",
+                            "account_category": "Cash and Cash Equivalents"
+                        }
+                    },
+                    "Банкин дахь мөнгө": {
+                        "account_number": "1102",
+                        "account_type": "Bank",
+                        "is_group": 1,
+                        "account_category": "Cash and Cash Equivalents"
+                    },
+                    "Замд яваа мөнгөн хөрөнгө": {
+                        "account_number": "1103",
+                        "account_category": "Cash and Cash Equivalents"
+                    }
+                },
+                "Дансны авлага": {
+                    "account_number": "120",
+                    "Дансны авлага": {
+                        "account_number": "1201",
+                        "account_type": "Receivable",
+                        "account_category": "Trade Receivables"
+                    },
+                    "Найдваргүй авлагын хасагдуулга": {
+                        "account_number": "1202",
+                        "account_category": "Trade Receivables"
+                    }
+                },
+                "Татвар, НДШ-ийн авлага": {
+                    "account_number": "121",
+                    "account_type": "Tax",
+                    "is_group": 1,
+                    "account_category": "Other Current Assets",
+                    "НӨАТ-ын авлага": {
+                        "account_number": "1211",
+                        "account_type": "Tax",
+                        "account_category": "Other Current Assets"
+                    },
+                    "ААНОАТ-ын авлага": {
+                        "account_number": "1212",
+                        "account_type": "Tax",
+                        "account_category": "Other Current Assets"
+                    },
+                    "Бусад татварын авлага": {
+                        "account_number": "1213",
+                        "account_type": "Tax",
+                        "account_category": "Other Current Assets"
+                    },
+                    "НДШ-ийн авлага": {
+                        "account_number": "1214",
+                        "account_category": "Other Current Assets"
+                    }
+                },
+                "Бусад авлага": {
+                    "account_number": "130",
+                    "Холбоотой талаас авах авлага": {
+                        "account_number": "1301",
+                        "account_category": "Other Receivables"
+                    },
+                    "Ажилтнаас авах авлага": {
+                        "account_number": "1302",
+                        "account_type": "Payable",
+                        "account_category": "Other Receivables"
+                    },
+                    "Бусад авлага": {
+                        "account_number": "1309",
+                        "account_category": "Other Receivables"
+                    }
+                },
+                "Бусад санхүүгийн хөрөнгө": {
+                    "account_number": "140",
+                    "Богино хугацаат хөрөнгө оруулалт": {
+                        "account_number": "1401",
+                        "account_category": "Short-term Investments"
+                    },
+                    "Барьцаа, баталгааны мөнгө": {
+                        "account_number": "1402",
+                        "account_category": "Other Current Assets"
+                    }
+                },
+                "Бараа материал": {
+                    "account_number": "150",
+                    "account_type": "Stock",
+                    "account_category": "Stock Assets",
+                    "Түүхий эд, материал": {
+                        "account_number": "1501",
+                        "account_type": "Stock",
+                        "account_category": "Stock Assets"
+                    },
+                    "Дуусаагүй үйлдвэрлэл": {
+                        "account_number": "1502",
+                        "account_type": "Stock",
+                        "account_category": "Stock Assets"
+                    },
+                    "Бэлэн бүтээгдэхүүн": {
+                        "account_number": "1503",
+                        "account_type": "Stock",
+                        "account_category": "Stock Assets"
+                    },
+                    "Бараа": {
+                        "account_number": "1504",
+                        "account_type": "Stock",
+                        "account_category": "Stock Assets"
+                    },
+                    "Хангамжийн материал": {
+                        "account_number": "1505",
+                        "account_type": "Stock",
+                        "account_category": "Stock Assets"
+                    },
+                    "Хүргэгдсэн боловч нэхэмжлэгдээгүй бараа": {
+                        "account_number": "1506",
+                        "account_type": "Stock Delivered But Not Billed",
+                        "account_category": "Stock Assets"
+                    }
+                },
+                "Урьдчилж төлсөн зардал, тооцоо": {
+                    "account_number": "160",
+                    "Урьдчилж төлсөн зардал": {
+                        "account_number": "1601",
+                        "account_category": "Other Current Assets"
+                    },
+                    "Нийлүүлэгчид төлсөн урьдчилгаа": {
+                        "account_number": "1602",
+                        "account_category": "Other Current Assets"
+                    }
+                },
+                "Түр данс": {
+                    "account_number": "170",
+                    "Эхний үлдэгдлийн түр данс": {
+                        "account_number": "1701",
+                        "account_type": "Temporary",
+                        "account_category": "Other Non-current Assets"
+                    }
+                }
+            },
+            "Эргэлтийн бус хөрөнгө": {
+                "account_number": "2",
+                "Үндсэн хөрөнгө": {
+                    "account_number": "210",
+                    "Барилга, байгууламж": {
+                        "account_number": "2101",
+                        "account_type": "Fixed Asset",
+                        "account_category": "Tangible Assets"
+                    },
+                    "Машин, тоног төхөөрөмж": {
+                        "account_number": "2102",
+                        "account_type": "Fixed Asset",
+                        "account_category": "Tangible Assets"
+                    },
+                    "Тээврийн хэрэгсэл": {
+                        "account_number": "2103",
+                        "account_type": "Fixed Asset",
+                        "account_category": "Tangible Assets"
+                    },
+                    "Тавилга, эд хогшил": {
+                        "account_number": "2104",
+                        "account_type": "Fixed Asset",
+                        "account_category": "Tangible Assets"
+                    },
+                    "Компьютер, дагалдах хэрэгсэл": {
+                        "account_number": "2105",
+                        "account_type": "Fixed Asset",
+                        "account_category": "Tangible Assets"
+                    },
+                    "Бусад үндсэн хөрөнгө": {
+                        "account_number": "2106",
+                        "account_type": "Fixed Asset",
+                        "account_category": "Tangible Assets"
+                    },
+                    "Дуусаагүй барилга": {
+                        "account_number": "2109",
+                        "account_type": "Capital Work in Progress",
+                        "account_category": "Tangible Assets"
+                    }
+                },
+                "Үндсэн хөрөнгийн хуримтлагдсан элэгдэл": {
+                    "account_number": "211",
+                    "account_type": "Accumulated Depreciation",
+                    "account_category": "Tangible Assets",
+                    "Барилга, байгууламжийн хуримтлагдсан элэгдэл": {
+                        "account_number": "2111",
+                        "account_type": "Accumulated Depreciation",
+                        "account_category": "Tangible Assets"
+                    },
+                    "Машин, тоног төхөөрөмжийн хуримтлагдсан элэгдэл": {
+                        "account_number": "2112",
+                        "account_type": "Accumulated Depreciation",
+                        "account_category": "Tangible Assets"
+                    },
+                    "Тээврийн хэрэгслийн хуримтлагдсан элэгдэл": {
+                        "account_number": "2113",
+                        "account_type": "Accumulated Depreciation",
+                        "account_category": "Tangible Assets"
+                    },
+                    "Тавилга, эд хогшлын хуримтлагдсан элэгдэл": {
+                        "account_number": "2114",
+                        "account_type": "Accumulated Depreciation",
+                        "account_category": "Tangible Assets"
+                    },
+                    "Компьютер, дагалдах хэрэгслийн хуримтлагдсан элэгдэл": {
+                        "account_number": "2115",
+                        "account_type": "Accumulated Depreciation",
+                        "account_category": "Tangible Assets"
+                    },
+                    "Бусад үндсэн хөрөнгийн хуримтлагдсан элэгдэл": {
+                        "account_number": "2116",
+                        "account_type": "Accumulated Depreciation",
+                        "account_category": "Tangible Assets"
+                    }
+                },
+                "Биет бус хөрөнгө": {
+                    "account_number": "220",
+                    "Программ хангамж": {
+                        "account_number": "2201",
+                        "account_type": "Fixed Asset",
+                        "account_category": "Intangible Assets"
+                    },
+                    "Газар эзэмших эрх": {
+                        "account_number": "2202",
+                        "account_type": "Fixed Asset",
+                        "account_category": "Intangible Assets"
+                    },
+                    "Бусад биет бус хөрөнгө": {
+                        "account_number": "2203",
+                        "account_type": "Fixed Asset",
+                        "account_category": "Intangible Assets"
+                    },
+                    "Биет бус хөрөнгийн хуримтлагдсан хорогдол": {
+                        "account_number": "2209",
+                        "account_type": "Accumulated Depreciation",
+                        "account_category": "Intangible Assets"
+                    }
+                },
+                "Урт хугацаат хөрөнгө оруулалт": {
+                    "account_number": "230",
+                    "Урт хугацаат хөрөнгө оруулалт": {
+                        "account_number": "2301",
+                        "account_category": "Long-term Investments"
+                    }
+                },
+                "Бусад эргэлтийн бус хөрөнгө": {
+                    "account_number": "240",
+                    "Хойшлогдсон татварын хөрөнгө": {
+                        "account_number": "2401",
+                        "account_category": "Other Non-current Assets"
+                    },
+                    "Бусад эргэлтийн бус хөрөнгө": {
+                        "account_number": "2409",
+                        "account_category": "Other Non-current Assets"
+                    }
+                }
+            }
+        },
+        "Өр төлбөр": {
+            "root_type": "Liability",
+            "Богино хугацаат өр төлбөр": {
+                "account_number": "3",
+                "Дансны өглөг": {
+                    "account_number": "310",
+                    "Дансны өглөг": {
+                        "account_number": "3101",
+                        "account_type": "Payable",
+                        "account_category": "Trade Payables"
+                    },
+                    "Хүлээн авсан боловч нэхэмжлэгдээгүй бараа": {
+                        "account_number": "3102",
+                        "account_type": "Stock Received But Not Billed",
+                        "account_category": "Trade Payables"
+                    },
+                    "Хүлээн авсан боловч нэхэмжлэгдээгүй хөрөнгө": {
+                        "account_number": "3103",
+                        "account_type": "Asset Received But Not Billed",
+                        "account_category": "Trade Payables"
+                    }
+                },
+                "Цалингийн өглөг": {
+                    "account_number": "320",
+                    "Цалингийн өглөг": {
+                        "account_number": "3201",
+                        "account_category": "Other Payables"
+                    }
+                },
+                "Татварын өр": {
+                    "account_number": "330",
+                    "account_type": "Tax",
+                    "is_group": 1,
+                    "account_category": "Current Tax Liabilities",
+                    "НӨАТ-ын өглөг": {
+                        "account_number": "3301",
+                        "account_type": "Tax",
+                        "tax_rate": 10.0,
+                        "account_category": "Current Tax Liabilities"
+                    },
+                    "ХХОАТ-ын өглөг": {
+                        "account_number": "3302",
+                        "account_type": "Tax",
+                        "account_category": "Current Tax Liabilities"
+                    },
+                    "ААНОАТ-ын өглөг": {
+                        "account_number": "3303",
+                        "account_type": "Tax",
+                        "account_category": "Current Tax Liabilities"
+                    },
+                    "НХАТ-ын өглөг": {
+                        "account_number": "3304",
+                        "account_type": "Tax",
+                        "account_category": "Current Tax Liabilities"
+                    },
+                    "Онцгой албан татварын өглөг": {
+                        "account_number": "3305",
+                        "account_type": "Tax",
+                        "account_category": "Current Tax Liabilities"
+                    },
+                    "Бусад татварын өглөг": {
+                        "account_number": "3309",
+                        "account_type": "Tax",
+                        "account_category": "Current Tax Liabilities"
+                    }
+                },
+                "НДШ-ийн өглөг": {
+                    "account_number": "340",
+                    "НДШ-ийн өглөг": {
+                        "account_number": "3401",
+                        "account_category": "Other Payables"
+                    }
+                },
+                "Богино хугацаат зээл": {
+                    "account_number": "350",
+                    "Богино хугацаат зээл": {
+                        "account_number": "3501",
+                        "account_category": "Short-term Borrowings"
+                    },
+                    "Банкны овердрафт": {
+                        "account_number": "3502",
+                        "account_category": "Short-term Borrowings"
+                    }
+                },
+                "Урьдчилж орсон орлого": {
+                    "account_number": "360",
+                    "Урьдчилж орсон орлого": {
+                        "account_number": "3601",
+                        "account_category": "Other Current Liabilities"
+                    },
+                    "Худалдан авагчаас авсан урьдчилгаа": {
+                        "account_number": "3602",
+                        "account_category": "Other Current Liabilities"
+                    }
+                },
+                "Бусад богино хугацаат өр төлбөр": {
+                    "account_number": "370",
+                    "Хүүний өглөг": {
+                        "account_number": "3701",
+                        "account_category": "Other Current Liabilities"
+                    },
+                    "Ногдол ашгийн өглөг": {
+                        "account_number": "3702",
+                        "account_category": "Other Current Liabilities"
+                    },
+                    "Хуримтлагдсан зардал": {
+                        "account_number": "3703",
+                        "account_category": "Other Current Liabilities"
+                    },
+                    "Богино хугацаат нөөц": {
+                        "account_number": "3704",
+                        "account_category": "Short-term Provisions"
+                    },
+                    "Бусад богино хугацаат өглөг": {
+                        "account_number": "3709",
+                        "account_category": "Other Current Liabilities"
+                    }
+                }
+            },
+            "Урт хугацаат өр төлбөр": {
+                "account_number": "38",
+                "Урт хугацаат зээл": {
+                    "account_number": "380",
+                    "Урт хугацаат зээл": {
+                        "account_number": "3801",
+                        "account_category": "Long-term Borrowings"
+                    }
+                },
+                "Бусад урт хугацаат өр төлбөр": {
+                    "account_number": "390",
+                    "Хойшлогдсон татварын өр": {
+                        "account_number": "3901",
+                        "account_category": "Other Non-current Liabilities"
+                    },
+                    "Урт хугацаат нөөц": {
+                        "account_number": "3902",
+                        "account_category": "Long-term Provisions"
+                    },
+                    "Бусад урт хугацаат өр төлбөр": {
+                        "account_number": "3909",
+                        "account_category": "Other Non-current Liabilities"
+                    }
+                }
+            }
+        },
+        "Эздийн өмч": {
+            "root_type": "Equity",
+            "Өмч": {
+                "account_number": "4101",
+                "account_type": "Equity",
+                "account_category": "Share Capital"
+            },
+            "Нэмж төлөгдсөн капитал": {
+                "account_number": "4201",
+                "account_type": "Equity",
+                "account_category": "Share Capital"
+            },
+            "Хөрөнгийн дахин үнэлгээний нэмэгдэл": {
+                "account_number": "4301",
+                "account_type": "Equity",
+                "account_category": "Reserves and Surplus"
+            },
+            "Хуримтлагдсан ашиг": {
+                "account_number": "4401",
+                "account_type": "Equity",
+                "account_category": "Reserves and Surplus"
+            },
+            "Хувьцаа эзэмшигчдэд олгосон ногдол ашиг": {
+                "account_number": "4402",
+                "account_type": "Equity",
+                "account_category": "Reserves and Surplus"
+            },
+            "Эхний үлдэгдлийн өмч": {
+                "account_number": "4501",
+                "account_type": "Equity",
+                "account_category": "Reserves and Surplus"
+            }
+        },
+        "Орлого": {
+            "root_type": "Income",
+            "Борлуулалтын орлого": {
+                "account_number": "510",
+                "Барааны борлуулалтын орлого": {
+                    "account_number": "5101",
+                    "account_type": "Income Account",
+                    "account_category": "Revenue from Operations"
+                },
+                "Үйлчилгээний орлого": {
+                    "account_number": "5102",
+                    "account_type": "Income Account",
+                    "account_category": "Revenue from Operations"
+                },
+                "Борлуулалтын буцаалт, хөнгөлөлт": {
+                    "account_number": "5103",
+                    "account_category": "Revenue from Operations"
+                }
+            },
+            "Бусад орлого": {
+                "account_number": "520",
+                "Хүүний орлого": {
+                    "account_number": "5201",
+                    "account_category": "Investment Income"
+                },
+                "Ногдол ашгийн орлого": {
+                    "account_number": "5202",
+                    "account_category": "Investment Income"
+                },
+                "Түрээсийн орлого": {
+                    "account_number": "5203",
+                    "account_category": "Other Operating Income"
+                },
+                "Бусад орлого": {
+                    "account_number": "5209",
+                    "account_category": "Other Operating Income"
+                }
+            }
+        },
+        "Зардал": {
+            "root_type": "Expense",
+            "Борлуулсан бүтээгдэхүүний өртөг": {
+                "account_number": "6",
+                "Борлуулсан бараа, бүтээгдэхүүний өртөг": {
+                    "account_number": "6101",
+                    "account_type": "Cost of Goods Sold",
+                    "account_category": "Cost of Goods Sold"
+                },
+                "Өртөгт шингэсэн зардал": {
+                    "account_number": "6102",
+                    "account_type": "Expenses Included In Valuation",
+                    "account_category": "Other Direct Costs"
+                },
+                "Хөрөнгийн өртөгт шингэсэн зардал": {
+                    "account_number": "6103",
+                    "account_type": "Expenses Included In Asset Valuation",
+                    "account_category": "Other Direct Costs"
+                },
+                "Бараа материалын тохируулга": {
+                    "account_number": "6104",
+                    "account_type": "Stock Adjustment",
+                    "account_category": "Other Direct Costs"
+                }
+            },
+            "Үйл ажиллагааны зардал": {
+                "account_number": "7",
+                "Борлуулалт, маркетингийн зардал": {
+                    "account_number": "710",
+                    "Зар сурталчилгааны зардал": {
+                        "account_number": "7101",
+                        "account_type": "Chargeable",
+                        "account_category": "Operating Expenses"
+                    },
+                    "Тээвэр, хүргэлтийн зардал": {
+                        "account_number": "7102",
+                        "account_type": "Chargeable",
+                        "account_category": "Operating Expenses"
+                    },
+                    "Борлуулалтын шимтгэл": {
+                        "account_number": "7103",
+                        "account_category": "Operating Expenses"
+                    }
+                },
+                "Ерөнхий ба удирдлагын зардал": {
+                    "account_number": "720",
+                    "Цалингийн зардал": {
+                        "account_number": "7201",
+                        "account_category": "Operating Expenses"
+                    },
+                    "Ажил олгогчийн НДШ-ийн зардал": {
+                        "account_number": "7202",
+                        "account_category": "Operating Expenses"
+                    },
+                    "Түрээсийн зардал": {
+                        "account_number": "7203",
+                        "account_category": "Operating Expenses"
+                    },
+                    "Ашиглалтын зардал (цахилгаан, дулаан, ус)": {
+                        "account_number": "7204",
+                        "account_category": "Operating Expenses"
+                    },
+                    "Холбоо, интернэтийн зардал": {
+                        "account_number": "7205",
+                        "account_category": "Operating Expenses"
+                    },
+                    "Бичиг хэргийн зардал": {
+                        "account_number": "7206",
+                        "account_category": "Operating Expenses"
+                    },
+                    "Томилолтын зардал": {
+                        "account_number": "7207",
+                        "account_category": "Operating Expenses"
+                    },
+                    "Засвар үйлчилгээний зардал": {
+                        "account_number": "7208",
+                        "account_category": "Operating Expenses"
+                    },
+                    "Элэгдлийн зардал": {
+                        "account_number": "7209",
+                        "account_type": "Depreciation",
+                        "account_category": "Operating Expenses"
+                    },
+                    "Даатгалын зардал": {
+                        "account_number": "7210",
+                        "account_category": "Operating Expenses"
+                    },
+                    "Мэргэжлийн үйлчилгээний зардал": {
+                        "account_number": "7211",
+                        "account_category": "Operating Expenses"
+                    },
+                    "Татвар, хураамжийн зардал": {
+                        "account_number": "7212",
+                        "account_category": "Operating Expenses"
+                    },
+                    "Найдваргүй авлагын зардал": {
+                        "account_number": "7213",
+                        "account_category": "Operating Expenses"
+                    },
+                    "Хорогдуулсан дүн": {
+                        "account_number": "7214",
+                        "account_category": "Operating Expenses"
+                    },
+                    "Тоймлолтын зөрүү": {
+                        "account_number": "7215",
+                        "account_type": "Round Off",
+                        "account_category": "Operating Expenses"
+                    },
+                    "Бусад ерөнхий зардал": {
+                        "account_number": "7219",
+                        "account_type": "Chargeable",
+                        "account_category": "Operating Expenses"
+                    }
+                }
+            },
+            "Бусад зардал": {
+                "account_number": "8",
+                "Хүүний зардал": {
+                    "account_number": "8101",
+                    "account_category": "Finance Costs"
+                },
+                "Банкны шимтгэл": {
+                    "account_number": "8102",
+                    "account_category": "Finance Costs"
+                },
+                "Ханшийн зөрүүний олз, гарз": {
+                    "account_number": "8103",
+                    "account_category": "Operating Expenses"
+                },
+                "Үндсэн хөрөнгө данснаас хассаны олз, гарз": {
+                    "account_number": "8104",
+                    "account_category": "Other Operating Income"
+                },
+                "Үнэ цэнийн бууралтын гарз": {
+                    "account_number": "8105",
+                    "account_category": "Operating Expenses"
+                },
+                "Торгууль, алданги": {
+                    "account_number": "8106",
+                    "account_category": "Operating Expenses"
+                }
+            },
+            "Орлогын албан татварын зардал": {
+                "account_number": "9",
+                "ААНОАТ-ын зардал": {
+                    "account_number": "9101",
+                    "account_category": "Tax Expense"
+                }
+            }
+        }
+    }
+}

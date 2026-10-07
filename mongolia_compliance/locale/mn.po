@@ -1,0 +1,4081 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mongolia_compliance\n"
+"Language: mn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "# Req'd Items"
+msgstr "# Шаардлагатай бараанууд"
+
+msgid "% Cost allocation for Finished Good"
+msgstr "Бэлэн бүтээгдэхүүнд хуваарилах зардлын %"
+
+msgid "% Process Loss"
+msgstr "Үйлдвэрлэлийн хорогдлын %"
+
+msgid "% Process loss"
+msgstr "Үйлдвэрлэлийн хорогдлын %"
+
+msgid "% of Component Cost"
+msgstr "Бүрэлдэхүүний өртгийн %"
+
+msgid "'Update Stock' cannot be checked for fixed asset sale"
+msgstr "Үндсэн хөрөнгийн борлуулалтын хувьд 'Бараа материалыг шинэчлэх'-ийг шалгах боломжгүй"
+
+msgid "'{0}' is a reserved name and cannot be used as a line reference"
+msgstr "'{0}' нь нөөцлөгдсөн нэр тул мөрийн лавлагаа болгон ашиглах боломжгүй"
+
+msgid "(D) Balance Stock Value"
+msgstr "(D) Үлдэгдэл бараа материалын үнэ цэнэ"
+
+msgid "(E) Balance Stock Value in Queue"
+msgstr "(E) Дараалалд байгаа үлдэгдэл бараа материалын үнэ цэнэ"
+
+msgid "(F) Change in Stock Value"
+msgstr "(F) Бараа материалын үнийн өөрчлөлт"
+
+msgid "(G) Sum of Change in Stock Value"
+msgstr "(G) Бараа материалын үнийн өөрчлөлтийн нийлбэр"
+
+msgid "(H) Change in Stock Value (FIFO Queue)"
+msgstr "(H) Бараа материалын үнийн өөрчлөлт (FIFO дараалал)"
+
+msgid "(H) Valuation Rate"
+msgstr "(H) Үнэлгээний үнэ"
+
+msgid "(I) Valuation Rate"
+msgstr "(I) Үнэлгээний үнэ"
+
+msgid "(J) Valuation Rate as per FIFO"
+msgstr "(J) ФИФО-гийн дагуух үнэлгээний үнэ"
+
+msgid ""
+"<h3>About Product Bundle</h3>\n"
+"\n"
+"<p>Aggregate group of <b>Items</b> into another <b>Item</b>. This is useful if you are bundling a certain <b>Items</b> into a package and you maintain stock of the packed <b>Items</b> and not the aggregate <b>Item</b>.</p>\n"
+"<p>The package <b>Item</b> will have <code>Is Stock Item</code> as <b>No</b> and <code>Is Sales Item</code> as <b>Yes</b>.</p>\n"
+"<h4>Example:</h4>\n"
+"<p>If you are selling Laptops and Backpacks separately and have a special price if the customer buys both, then the Laptop + Backpack will be a new Product Bundle Item.</p>"
+msgstr ""
+"<h3>Бүтээгдэхүүний багцын тухай</h3>\n"
+"\n"
+"<p> <b>барааны нийлбэр бүлгийг</b> өөр <b>бараанд</b>нэгтгэх. Хэрэв та тодорхой <b>барааг</b> багцад хийж байгаа бөгөөд нийт <b>барааг</b>биш харин савласан <b>барааны</b> нөөцтэй байгаа бол энэ нь ашигтай юм.</p>\n"
+"<p>багц <b>бараа</b> нь <code>Бэлэн бараа</code> бөгөөд <b>Үгүй</b> ба <code>Худалдааны бараа</code> мөн <b>Тийм</b>.</p>\n"
+"<h4>Жишээ:</h4>\n"
+"<p>Хэрэв та зөөврийн компьютер болон үүргэвчийг тусад нь зарж байгаа бөгөөд хэрэглэгч хоёуланг нь худалдаж авбал тусгай үнээр зарж байгаа бол зөөврийн компьютер + үүргэвч нь шинэ бүтээгдэхүүний багцын бараа болно.</p>"
+
+msgid "<li>Item {0} in row(s) {1} billed more than {2}</li>"
+msgstr "<li>Мөр(үүд) дэх {0} бараа {1} {2}-с илүү төлбөртэй</li>"
+
+msgid ""
+"<table class=\"table table-bordered table-condensed\">\n"
+"<thead>\n"
+"  <tr>\n"
+"         <th class=\"table-sr\" style=\"width: 50%;\">Child Document</th>\n"
+"         <th class=\"table-sr\" style=\"width: 50%;\">Non Child Document</th>\n"
+"   </tr>\n"
+"</thead>\n"
+"<tbody>\n"
+"<tr>\n"
+"         <td>\n"
+"                  <p> To access parent document field use parent.fieldname and to access child table document field use doc.fieldname </p>\n"
+"\n"
+"         </td>\n"
+"         <td>\n"
+"                    <p>To access document field use doc.fieldname </p>\n"
+"         </td>\n"
+"</tr>\n"
+"<tr>\n"
+"        <td>\n"
+"                   <p><b>Example: </b> parent.doctype == \"Stock Entry\" and doc.item_code == \"Test\" </p>\n"
+"\n"
+"        </td>\n"
+"         <td>\n"
+"                   <p><b>Example: </b> doc.doctype == \"Stock Entry\" and doc.purpose == \"Manufacture\"</p>    \n"
+"          </td>\n"
+"</tr>\n"
+"\n"
+"</tbody>\n"
+"</table>\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+msgstr ""
+"<table class=\"table table-bordered table-condensed\">\n"
+"<thead>\n"
+"  <tr>\n"
+"         <th class=\"table-sr\" style=\"width: 50%;\">Хүүхдийн баримт бичиг</th>\n"
+"         <th class=\"table-sr\" style=\"width: 50%;\">Хүүхдийн бус баримт бичиг</th>\n"
+"   </tr>\n"
+"</thead>\n"
+"<tbody>\n"
+"<tr>\n"
+"         <td>\n"
+"                  <p> Эцэг баримтын талбарт хандахын тулд parent.fieldname файлыг, хүүхдийн хүснэгтийн баримтын талбарт хандахын тулд doc.fieldname файлыг ашиглана уу </p>\n"
+"\n"
+"         </td>\n"
+"         <td>\n"
+"                    <p>Баримт бичгийн талбарт хандахын тулд doc.fieldname ашиглана уу </p>\n"
+"         </td>\n"
+"</tr>\n"
+"<tr>\n"
+"        <td>\n"
+"                   <p><b>Жишээ: </b> parent.doctype == \"Бараа материалын оруулга\" болон doc.item_code == \"Туршилт\" </p>\n"
+"\n"
+"        </td>\n"
+"         <td>\n"
+"                   <p><b>Жишээ: </b> doc.doctype == \"Барааны бүртгэл\" болон doc.purpose == \"Үйлдвэрлэл\"</p>    \n"
+"          </td>\n"
+"</tr>\n"
+"\n"
+"</tbody>\n"
+"</table>\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+
+msgid "A finished good conversion entry must consume the production item {0} of the Work Order {1}."
+msgstr "Бэлэн бүтээгдэхүүний хөрвүүлэлтийн бичилт нь Ажлын захиалга {1}-ийн үйлдвэрлэлийн бараа {0}-г зарцуулсан байх ёстой."
+
+msgid "A finished good conversion entry must have the purpose 'Repack'."
+msgstr "Бэлэн бүтээгдэхүүний хөрвүүлэлтийн бичилтийн зорилго нь 'Дахин савлах' байх ёстой."
+
+msgid "A quality inspection must be completed before generating a Delivery Note for this item."
+msgstr "Энэ барааны хүргэлтийн баримт гаргахаас өмнө чанарын шалгалтыг хийх ёстой."
+
+msgid "A revision must be for the same {0} as Quotation {1}."
+msgstr "Шинэчилсэн хувилбар нь Үнийн санал {1}-тэй ижил {0}-д хамаарах ёстой."
+
+msgid "A revision must have the same company as Quotation {0}."
+msgstr "Шинэчилсэн хувилбар нь Үнийн санал {0}-тэй ижил компанид хамаарах ёстой."
+
+msgid "A sub-assembly is a component with its own BOM. By default it's broken down into its own raw materials; enable this to keep it as a single finished part."
+msgstr "Дэд угсралт гэдэг нь өөрийн БОМ-той бүрэлдэхүүн юм. Анхдагчаар түүнийг түүхий эдүүдэд нь задалдаг; нэг бүтэн хэсэг хэвээр үлдээхийг хүсвэл үүнийг идэвхжүүлнэ үү."
+
+msgid "API Method Path"
+msgstr "API аргын зам"
+
+msgid "Account Filter"
+msgstr "Дансны шүүлтүүр"
+
+msgid "Account balance already in Credit, you are not allowed to set 'Balance Must Be' as 'Debit'"
+msgstr "Дансны үлдэгдэл аль хэдийн Кредитэд орсон байна, та 'Үлдэгдлийн байх ёстой'-г 'Дебет' болгож тохируулах эрхгүй."
+
+msgid "Account to track value added to stock via Stock Entry, Stock Reconciliation or Landed Cost Voucher"
+msgstr "Бараа материалын бүртгэл, Бараа материалын нэгтгэл эсвэл Буудлын өртгийн ваучераар дамжуулан бараа материалд нэмэгдсэн үнэ цэнийг хянах данс"
+
+msgid "Account {0} does not belong to Company {1}"
+msgstr "Данс {0} нь Компани {1}-д хамаарахгүй"
+
+msgid "Account: {0} can only be updated via Stock Transactions"
+msgstr "Данс: {0} -г зөвхөн Бараа материалын Гүйлгээгээр дамжуулан шинэчлэх боломжтой"
+
+msgid "Accounting Entry for Stock"
+msgstr "Бараа материалын нягтлан бодох бүртгэлийн бичилт"
+
+msgid "Activate Serial / Batch No for Item"
+msgstr "Барааны цуврал / багцын дугаарыг идэвхжүүлэх"
+
+msgid "Active Customers"
+msgstr "Идэвхтэй харилцагчид"
+
+msgid "Active Suppliers"
+msgstr "Идэвхтэй нийлүүлэгчид"
+
+msgid "Actual Finished Goods"
+msgstr "Бодит бэлэн бүтээгдэхүүн"
+
+msgid "Actual Finished Item"
+msgstr "Бодит бэлэн бараа"
+
+msgid "Add Item"
+msgstr "Бараа нэмэх"
+
+msgid "Add Items"
+msgstr "Бараанууд нэмэх"
+
+msgid "Add Items in the Purpose Table"
+msgstr "Зорилгын хүснэгтэд бараанууд нэмэх"
+
+msgid "Add Opening Stock"
+msgstr "Нээлтийн бараа материал нэмэх"
+
+msgid "Add Phantom Item"
+msgstr "Хий үзэгдлийн бараа нэмэх"
+
+msgid "Add Raw Material"
+msgstr "Түүхий эд нэмэх"
+
+msgid "Add Stock"
+msgstr "Бараа материал нэмэх"
+
+msgid "Add items in the Item Locations table"
+msgstr "Барааны байршлын хүснэгтэд бараанууд нэмэх"
+
+msgid "Add items with a warehouse in the Item Locations table"
+msgstr "Барааны байршлын хүснэгтэд агуулахтай бараануудыг нэмнэ үү"
+
+msgid "Against Delivery Note Item"
+msgstr "Хүргэлтийн баримтын барааны эсрэг"
+
+msgid "Against Journal Entry {0} does not have any unmatched {1} entry"
+msgstr "Эсрэг журналын бичилт {0} нь тохирохгүй {1} тэмдэглэлгүй байна"
+
+msgid "Against Sales Invoice Item"
+msgstr "Борлуулалтын нэхэмжлэхийн барааны эсрэг"
+
+msgid "Against Sales Order Item"
+msgstr "Борлуулалтын захиалгын барааны эсрэг"
+
+msgid "Against Stock Entry"
+msgstr "Бараа материалд орохын эсрэг"
+
+msgid "All Item Groups"
+msgstr "Бүх барааны бүлгүүд"
+
+msgid "All Items"
+msgstr "Бүх бараанууд"
+
+msgid "All the Comments and Emails will be copied from one document to another newly created document(Lead -> Opportunity -> Quotation) throughout the CRM documents."
+msgstr "Бүх сэтгэгдэл болон имэйлийг CRM баримт бичгүүд даяар нэг баримт бичгээс шинээр үүсгэсэн өөр баримт бичиг (Lead -> Боломж -> Үнийн санал) руу хуулна."
+
+msgid "Allow Alternative Finished Goods"
+msgstr "Орлуулах бэлэн бүтээгдэхүүнийг зөвшөөрөх"
+
+msgid "Allow Alternative Item"
+msgstr "Өөр бараа зөвшөөрөх"
+
+msgid "Allow Alternative Item must be checked on Item {0}"
+msgstr "{0} бараа дээр Өөр барааг зөвшөөрөх сонголтыг тэмдэглэсэн байх ёстой"
+
+msgid "Allow Editing of Items and Quantities in Work Order"
+msgstr "Ажлын захиалга дахь бараанууд болон тоо хэмжээг засварлахыг зөвшөөрөх"
+
+msgid "Allow Item to Be Added Multiple Times in a Transaction"
+msgstr "Гүйлгээнд барааг олон удаа нэмэхийг зөвшөөрөх"
+
+msgid "Allow Item to be added multiple times in a transaction"
+msgstr "Гүйлгээнд барааг олон удаа нэмэхийг зөвшөөрөх"
+
+msgid "Allow Negative Stock"
+msgstr "Сөрөг бараа материалыг зөвшөөрөх"
+
+msgid "Allow UOM with conversion rate defined in Item"
+msgstr "Бараа дотор тодорхойлсон хөрвүүлэлтийн хурдтай UOM-г зөвшөөрөх"
+
+msgid "Allow alternative raw material"
+msgstr "Орлуулах түүхий эдийг зөвшөөрөх"
+
+msgid "Allow negative rates for Items"
+msgstr "Бараануудын сөрөг үнэлгээг зөвшөөрөх"
+
+msgid "Allow same Item to be added multiple times in a transaction"
+msgstr "Гүйлгээнд ижил барааг олон удаа нэмэхийг зөвшөөрөх"
+
+msgid "Allow stock to go below zero for this item, even if negative stock is disabled in Stock Settings."
+msgstr "Бараа материалын тохиргоо хэсэгт сөрөг бараа материалыг идэвхгүй болгосон байсан ч энэ барааны бараа материалыг тэгээс доош байлгахыг зөвшөөрнө үү."
+
+msgid "Allow this component to be swapped for a defined alternative during production. Copied from the item's setting, works only when the BOM's \"Allow alternative raw materials\" is on."
+msgstr "Үйлдвэрлэлийн явцад энэ бүрэлдэхүүнийг тодорхойлсон орлуулагчаар солихыг зөвшөөрнө. Барааны тохиргооноос хуулагдах ба БОМ-ын \"Орлуулах түүхий эдийг зөвшөөрөх\" идэвхтэй үед л ажиллана."
+
+msgid "Allow to edit stock UOM qty for Stock Entry"
+msgstr "Бараа материалын оруулгын хувьд UOM-ийн бараа материалын тоо хэмжээг засахыг зөвшөөрөх"
+
+msgid "Allowed Items"
+msgstr "Зөвшөөрөгдсөн бараанууд"
+
+msgid "Alternate Item"
+msgstr "Өөр бараа"
+
+msgid "Alternative For Item"
+msgstr "Барааны өөр хувилбар"
+
+msgid "Alternative Item Code"
+msgstr "Өөр барааны код"
+
+msgid "Alternative Item Name"
+msgstr "Өөр барааны нэр"
+
+msgid "Alternative Items"
+msgstr "Өөр бараанууд"
+
+msgid "An Item Group is a way to classify items based on types."
+msgstr "Барааны бүлэг гэдэг нь бараануудыг төрлөөр нь ангилах арга юм."
+
+msgid "An error occurred for certain Items while creating Material Requests based on Re-order level. Please rectify these issues :"
+msgstr "Дахин захиалгын түвшинд үндэслэн материалын хүсэлт үүсгэх явцад зарим бараануудын хувьд алдаа гарлаа. Дараах асуудлыг засна уу:"
+
+msgid "Annual Purchase"
+msgstr "Жилийн худалдан авалт"
+
+msgid "Annual Sales"
+msgstr "Жилийн борлуулалт"
+
+msgid "Apply Rule On Item Code"
+msgstr "Барааны код дээр дүрмийг хэрэглэх"
+
+msgid "Apply Rule On Item Group"
+msgstr "Барааны бүлэгт дүрмийг хэрэгжүүлэх"
+
+msgid "Applying a Discount Amount? When this Sales Order is partially fulfilled through multiple Delivery Notes and Sales Invoices, the Discount Amount is allocated on a FIFO basis. The earlier transactions receive a larger share of the discount. To spread the discount proportionally across item prices, use Additional Discount Percentage instead."
+msgstr "Хөнгөлөлтийн хэмжээг хэрэглэх үү? Энэхүү Борлуулалтын захиалгыг олон Хүргэлтийн баримт болон Борлуулалтын нэхэмжлэхээр хэсэгчлэн биелүүлсэн тохиолдолд Хөнгөлөлтийн хэмжээг FIFO-ийн үндсэн дээр хуваарилдаг. Өмнөх гүйлгээнүүд хөнгөлөлтийн илүү их хувийг авдаг. Хөнгөлөлтийг барааны үнэд пропорциональ байдлаар хуваарилахын тулд Нэмэлт Хөнгөлөлтийн Хувь хэмжээг ашиглана уу."
+
+msgid "Are you sure you want to delete this Item?"
+msgstr "Та энэ барааг устгахдаа итгэлтэй байна уу?"
+
+msgid "As per Stock UOM"
+msgstr "Бараа материалын UOM-ийн дагуу"
+
+msgid "As there are sufficient Sub Assembly Items, Work Order is not required for Warehouse {0}."
+msgstr "Хангалттай хэмжээний дэд угсралтын бараанууд байгаа тул {0} агуулахын хувьд ажлын захиалга шаардлагагүй."
+
+msgid "Assembly Items"
+msgstr "Угсралтын бараанууд"
+
+msgid "Asset Capitalization Asset Item"
+msgstr "Хөрөнгийн капиталжуулалт Хөрөнгийн бараа"
+
+msgid "Asset Capitalization Service Item"
+msgstr "Хөрөнгийн капиталжуулалтын үйлчилгээний бараа"
+
+msgid "Asset Capitalization Stock Item"
+msgstr "Хөрөнгийн капиталжуулалтын бараа материалын бараа"
+
+msgid "Asset Movement Item"
+msgstr "Хөрөнгийн хөдөлгөөний бараа"
+
+msgid "Asset Repair Consumed Item"
+msgstr "Хөрөнгийн засварт зарцуулсан бараа"
+
+msgid "Asset {0} does not belong to Item {1}"
+msgstr "{0} хөрөнгө нь {1} бараанд хамаарахгүй"
+
+msgid "At row #{0}: the Difference Account must not be a Stock type account..."
+msgstr "#{0}мөрөнд: Зөрүүний данс нь Бараа материалын төрлийн данс байх ёсгүй..."
+
+msgid "At row {0}: Batch No is mandatory for Item {1}"
+msgstr "{0}мөрөнд: {1} бараанд багцын дугаар заавал байх ёстой"
+
+msgid "At row {0}: Serial No is mandatory for Item {1}"
+msgstr "{0}мөрөнд: {1} барааны серийн дугаар заавал байх ёстой"
+
+msgid "Automatically Add Filtered Item To Cart"
+msgstr "Шүүлтүүртэй барааг сагсанд автоматаар нэмэх"
+
+msgid "Available produced qty of the item {0} is {1}."
+msgstr "{0} барааны үйлдвэрлэгдсэн боломжит тоо хэмжээ {1} байна."
+
+msgid "Avg Rate (Balance Stock)"
+msgstr "Дундаж ханш (Үлдэгдлийн бараа материал)"
+
+msgid "BOM Creator Item"
+msgstr "BOM Бүтээгчийн Бараа"
+
+msgid "BOM Explosion Item"
+msgstr "BOM дэлбэрэлтийн бараа"
+
+msgid "BOM Item"
+msgstr "BOM бараа"
+
+msgid "BOM Secondary Item"
+msgstr "BOM хоёрдогч бараа"
+
+msgid "BOM Secondary Item Reference"
+msgstr "BOM Хоёрдогч Барааны Лавлагаа"
+
+msgid "BOM Stock Analysis"
+msgstr "Монголбанкны бараа материалын шинжилгээ"
+
+msgid "BOM Website Item"
+msgstr "BOM вэбсайтын бараа"
+
+msgid "BOM {0} does not belong to Item {1}"
+msgstr "BOM {0} нь {1} бараанд хамаарахгүй"
+
+msgid "Backdated Stock Entry"
+msgstr "Бараа материалын огноо хуучирсан оруулга"
+
+msgid "Backflush Materials from WIP Warehouse"
+msgstr "Дуусаагүй үйлдвэрлэлийн агуулахаас материалыг автоматаар зарлагадах"
+
+msgid "Backflush materials from WIP Warehouse"
+msgstr "Дуусаагүй үйлдвэрлэлийн агуулахаас материалыг автоматаар зарлагадах"
+
+msgid "Balance Stock Qty"
+msgstr "Балансын бараа материалын тоо хэмжээ"
+
+msgid "Balance Stock Value"
+msgstr "Балансын бараа материалын үнэ цэнэ"
+
+msgid "Balance Type is required for Account Data"
+msgstr "Дансны өгөгдөлд үлдэгдлийн төрөл заавал шаардлагатай"
+
+msgid "Bank Charges"
+msgstr "Банкны шимтгэл"
+
+msgid "Bank Transaction {0} added as {1}"
+msgstr "Банкны гүйлгээ {0}-г {1} болгон нэмлээ"
+
+msgid "Banking Setup"
+msgstr "Банкны тохиргоо"
+
+msgid "Barcode {0} already used in Item {1}"
+msgstr "{1} бараанд {0} бар код аль хэдийн ашиглагдаж байна"
+
+msgid "Base Cost per Unit"
+msgstr "Нэгжийн суурь өртөг"
+
+msgid "Base hour rate(Company Currency)"
+msgstr "Цагийн үнэлгээ (Компанийн валютаар)"
+
+msgid "Basic Rate (as per Stock UOM)"
+msgstr "Үндсэн ханш (Бараа материалын UOM-ын дагуу)"
+
+msgid "Batch Item settings"
+msgstr "Багцын барааны тохиргоо"
+
+msgid "Batch No {0} is linked with Item {1} which has serial no. Please scan serial no instead."
+msgstr "Багцын дугаар {0} нь серийн дугаартай {1} бараатай холбогдсон байна. Үүний оронд серийн дугаарыг уншуулна уу."
+
+msgid "Batch Split"
+msgstr "Багц хуваах"
+
+msgid "Batch Split Tree"
+msgstr "Багц хуваалтын мод"
+
+msgid "Batch size"
+msgstr "Багцын хэмжээ"
+
+msgid "Batch split"
+msgstr "Багц хуваах"
+
+msgid "Batch {0} of Item {1} has expired."
+msgstr "{1} барааны {0} багцын хугацаа дууссан."
+
+msgid "Batch {0} of Item {1} is disabled."
+msgstr "{1} барааны {0} багцыг идэвхгүй болгосон."
+
+msgid "Billed Items To Be Received"
+msgstr "Хүлээн авах төлбөртэй бараанууд"
+
+msgid "Blanket Order"
+msgstr "Хүрээ гэрээт захиалга"
+
+msgid "Blanket Order Expired"
+msgstr "Хүрээ гэрээт захиалгын хугацаа дууссан"
+
+msgid "Blanket Order Item"
+msgstr "Хүрээ гэрээт захиалгын бараа"
+
+msgid "Blanket Order {0} expired on {1}"
+msgstr "Хүрээ гэрээт захиалга {0}-ийн хугацаа {1}-нд дууссан"
+
+msgid "Blanket Order {0} is closed"
+msgstr "Хүрээ гэрээт захиалга {0} хаагдсан байна"
+
+msgid "Blanket Orders"
+msgstr "Хүрээ гэрээт захиалга"
+
+msgid "Block Customer"
+msgstr "Харилцагчийг хаах"
+
+msgid "Blocks saving or submitting Sales Orders, Delivery Notes, Sales Invoices and POS Invoices for this customer."
+msgstr "Энэ харилцагчийн Борлуулалтын захиалга, Хүргэлтийн баримт, Борлуулалтын нэхэмжлэх, ПОС нэхэмжлэхийг хадгалах болон батлахыг хориглоно."
+
+msgid "Books Purchase Expense and Expenses Added To Stock account pairs against stock value. On enabling this, the accounts become mandatory in Company or Item Defaults for Purchase Receipt, Purchase Invoice, Stock Entry, Stock Reconciliation and Landed Cost Voucher"
+msgstr "Ном худалдан авах зардал болон Бараа материалд нэмэгдсэн зардлын дансны хосууд нь бараа материалын үнийн дүнтэй харьцуулагдана. Үүнийг идэвхжүүлснээр, Худалдан авалтын баримт, Худалдан авалтын нэхэмжлэх, Бараа материалын оруулга, Бараа материалын тохируулга болон Буудлын зардлын ваучерын хувьд Компани эсвэл Барааны Анхдагч тохиргоонд дансууд заавал байх ёстой болно."
+
+msgid "Budgeting"
+msgstr "Төсөвлөлт"
+
+msgid "Buffer Time (Days)"
+msgstr "Нөөц хугацаа (өдөр)"
+
+msgid "Bulk Transaction"
+msgstr "Бөөнөөр гүйлгээ хийх"
+
+msgid "Bundle Items"
+msgstr "Багцын бараанууд"
+
+msgid "By Item"
+msgstr "Бараагаар"
+
+msgid "By Workstation"
+msgstr "Ажлын станцаар"
+
+msgid "COGS By Item Group"
+msgstr "Барааны бүлгээр нь COGS"
+
+msgid "COGS Debit"
+msgstr "COGS дебет"
+
+msgid "Calculation Formula"
+msgstr "Тооцооны томьёо"
+
+msgid "Campaign Item"
+msgstr "Кампанит ажлын бараа"
+
+msgid "Cannot apply taxes"
+msgstr "Татвар тооцох боломжгүй"
+
+msgid "Cannot apply taxes from this address"
+msgstr "Энэ хаягаас татвар тооцох боломжгүй"
+
+msgid "Cannot be a fixed asset item as Stock Ledger is created."
+msgstr "Бараа материалын дэвтэр үүсгэсэн тул үндсэн хөрөнгийн зүйл байж болохгүй."
+
+msgid "Cannot cancel because submitted Stock Entry {0} exists"
+msgstr "Илгээсэн {0} бараа материалын бүртгэл байгаа тул цуцлах боломжгүй"
+
+msgid "Cannot change Attributes after stock transaction. Make a new Item and transfer stock to the new Item"
+msgstr "Хувьцааны гүйлгээний дараа шинж чанаруудыг өөрчлөх боломжгүй. Шинэ бараа үүсгээд, хувьцааг шинэ бараа рүү шилжүүлнэ үү"
+
+msgid "Cannot change Item {0} from serialized to non-serialized because a Serial and Batch Bundle exists for it. Please delete or cancel the Serial and Batch Bundle first."
+msgstr "Цуваа болон Багц багц байгаа тул {0} барааг цуваачилснаас цуваачилаагүй болгон өөрчлөх боломжгүй. Эхлээд Цуваа болон Багц багцыг устгах эсвэл цуцална уу."
+
+msgid "Cannot change Variant properties after stock transaction. You will have to make a new Item to do this."
+msgstr "Хувьцааны гүйлгээний дараа Хувилбарын шинж чанарыг өөрчлөх боломжгүй. Үүнийг хийхийн тулд та шинэ бараа үүсгэх шаардлагатай болно."
+
+msgid "Cannot create {0} from a Bank Transaction"
+msgstr "Банкны гүйлгээнээс {0} үүсгэх боломжгүй"
+
+msgid "Cannot declare as Lost because an active Quotation exists."
+msgstr "Идэвхтэй үнийн санал байгаа тул алдагдсан гэж зарлах боломжгүй."
+
+msgid "Cannot disable Serial and Batch No for Item, as there are existing records for serial / batch."
+msgstr "Цуваа / багцын бүртгэл байгаа тул Барааны Цуваа болон Багцын дугаарыг идэвхгүй болгох боломжгүй."
+
+msgid "Cannot disable perpetual inventory, as there are existing Stock Ledger Entries for the company {0}. Please cancel the stock transactions first and try again."
+msgstr "{0}компанийн хувьд Бараа материалын дэвтрийн бичилтүүд байгаа тул байнгын бараа материалыг идэвхгүй болгох боломжгүй. Эхлээд бараа материалын гүйлгээг цуцлаад дахин оролдоно уу."
+
+msgid "Cannot find Item with this Barcode"
+msgstr "Энэ бар кодтой бараа олдсонгүй"
+
+msgid "Cannot find a default warehouse for item {0}. Please select one in the Update Items dialog, or set a default in the Item Master or in the Company."
+msgstr "{0}барааны анхдагч агуулахыг олж чадсангүй. Бараануудыг шинэчлэх харилцах цонхноос нэгийг нь сонгох эсвэл Барааны мастер эсвэл Компанид анхдагчаар тохируулна уу."
+
+msgid "Cannot load {0} details"
+msgstr "{0}-ийн мэдээллийг ачаалах боломжгүй"
+
+msgid "Cannot post Standard Cost item {0} on {1}: it is before {2}, the effective date of its latest Standard Valuation Rate {3}."
+msgstr "Стандарт өртгийн {0} зүйлийг {1}дээр байршуулах боломжгүй: энэ нь {2}-ээс өмнө буюу хамгийн сүүлийн Стандарт үнэлгээний үнэ {3} хүчин төгөлдөр болсон өдрөөс өмнө байна."
+
+msgid "Cannot revise a Quotation with status {0}."
+msgstr "{0} төлөвтэй Үнийн саналыг шинэчлэх боломжгүй."
+
+msgid "Cannot set multiple Item Defaults for a company."
+msgstr "Компанийн хувьд олон барааны анхдагч утгыг тохируулах боломжгүй."
+
+msgid "Capital Stock"
+msgstr "Капитал Бараа материал"
+
+msgid "Categorize by Item"
+msgstr "Бараагаар ангилах"
+
+msgid "Change Finished Item"
+msgstr "Бэлэн бүтээгдэхүүнийг солих"
+
+msgid "Change in Stock Value"
+msgstr "Бараа материалын үнийн өөрчлөлт"
+
+msgid "Circular dependency detected: {0}"
+msgstr "Хүрээлсэн хамаарал илэрлээ: {0}"
+
+msgid "Clearance Summary"
+msgstr "Тооцоо нийцүүлэлтийн хураангуй"
+
+msgid "Click to change the closing balance as per statement"
+msgstr "Хуулгын дагуу эцсийн үлдэгдлийг өөрчлөхийн тулд дарна уу"
+
+msgid "Close Items"
+msgstr "Мөрүүдийг хаах"
+
+msgid "Closed rows can no longer be ordered. They are skipped when creating an order from this Blanket Order."
+msgstr "Хаагдсан мөрүүдийг дахин захиалах боломжгүй. Энэ Хүрээ гэрээт захиалгаас захиалга үүсгэхэд тэдгээрийг алгасна."
+
+msgid "Closed rows stop being expected. Their pending quantity is written off and they are skipped when creating a Purchase Receipt or Purchase Invoice."
+msgstr "Хаагдсан мөрүүдийг цаашид хүлээхгүй. Үлдсэн тоо хэмжээг хасаж, Худалдан авалтын баримт эсвэл Худалдан авалтын нэхэмжлэх үүсгэхэд алгасна."
+
+msgid "Closed rows stop being expected. Their pending quantity is written off, stock is no longer reserved for them, and they are skipped when creating a Delivery Note or Sales Invoice."
+msgstr "Хаагдсан мөрүүдийг цаашид хүлээхгүй. Үлдсэн тоо хэмжээг хасаж, тэдгээрт нөөцөлсөн бараа материалыг чөлөөлж, Хүргэлтийн баримт эсвэл Борлуулалтын нэхэмжлэх үүсгэхэд алгасна."
+
+msgid "Closed rows stop being expected. Their unbilled amount is written off and they are skipped when creating a {0}."
+msgstr "Хаагдсан мөрүүдийг цаашид хүлээхгүй. Нэхэмжлээгүй дүнг хасаж, {0} үүсгэхэд алгасна."
+
+msgid "Closing (statement)"
+msgstr "Эцсийн үлдэгдэл (хуулга)"
+
+msgid "Closing (system)"
+msgstr "Эцсийн үлдэгдэл (систем)"
+
+msgid "Communication {0} is not on the timeline of Issue {1}"
+msgstr "Харилцаа {0} нь Асуудал {1}-ийн цагийн хэлхээс дээр байхгүй"
+
+msgid "Compact Item Print"
+msgstr "Авсаархан бараа хэвлэх"
+
+msgid "Company is required to apply taxes. Set Company, then select {0} again."
+msgstr "Татвар тооцоход Компани шаардлагатай. Компанийг сонгоод {0}-г дахин сонгоно уу."
+
+msgid "Company is required to load address, taxes, and payment terms. Set Company, then select {0} again."
+msgstr "Хаяг, татвар, төлбөрийн нөхцөлийг ачаалахад Компани шаардлагатай. Компанийг сонгоод {0}-г дахин сонгоно уу."
+
+msgid "Completed Quantity cannot be negative"
+msgstr "Гүйцэтгэсэн тоо хэмжээ сөрөг байж болохгүй"
+
+msgid "Completed quantity cannot be negative."
+msgstr "Гүйцэтгэсэн тоо хэмжээ сөрөг байж болохгүй."
+
+msgid "Completed, Process Loss or Pending Qty is required for Job Card {0}, please start and complete the job card before submission"
+msgstr "Ажлын карт {0}-д гүйцэтгэсэн, үйлдвэрлэлийн хорогдол эсвэл хүлээгдэж буй тоо хэмжээ шаардлагатай. Батлахаас өмнө ажлын картыг эхлүүлж, дуусгана уу"
+
+msgid "Component quantities are derived from their percentage of the Output Qty. One component row can be marked as Balance Item to absorb the remaining percentage."
+msgstr "Бүрэлдэхүүн хэсгийн тоо хэмжээг тэдгээрийн гаралтын тоо хэмжээний эзлэх хувиас гаргаж авдаг. Үлдсэн хувийг шингээхийн тулд нэг бүрэлдэхүүн хэсгийн мөрийг Балансын бараа гэж тэмдэглэж болно."
+
+msgid "Components total 100%."
+msgstr "Бүрэлдэхүүний нийлбэр 100%."
+
+msgid "Components total {0}%. Mark a Balance Item or adjust the percentages to reach 100%."
+msgstr "Бүрэлдэхүүний нийлбэр {0}%. 100%-д хүргэхийн тулд үлдэгдэл бараа тэмдэглэх эсвэл хувийг тохируулна уу."
+
+msgid "Consolidate Sales Order Items"
+msgstr "Борлуулалтын захиалгын бараануудыг нэгтгэх"
+
+msgid "Consolidate Sub Assembly Items"
+msgstr "Дэд угсралтын бараануудыг нэгтгэх"
+
+msgid "Consolidated Accounts Payable"
+msgstr "Нэгтгэсэн дансны өглөг"
+
+msgid "Consolidated Accounts Payable Summary"
+msgstr "Нэгтгэсэн дансны өглөгийн хураангуй"
+
+msgid "Consolidated Accounts Receivable"
+msgstr "Нэгтгэсэн дансны авлага"
+
+msgid "Consolidated Accounts Receivable Summary"
+msgstr "Нэгтгэсэн дансны авлагын хураангуй"
+
+msgid "Consumed Items"
+msgstr "Хэрэглэсэн бараанууд"
+
+msgid "Consumed Items Cost"
+msgstr "Хэрэглэсэн бараануудын өртөг"
+
+msgid "Consumed Stock Items, Consumed Asset Items or Consumed Service Items is mandatory for Capitalization"
+msgstr "Хэрэглэсэн бараа, хэрэглэсэн хөрөнгийн бараанууд эсвэл хэрэглэсэн үйлчилгээний бараанууд капиталжуулалтад заавал байх ёстой"
+
+msgid "Control Historical Stock Transactions"
+msgstr "Түүхэн бараа материалын гүйлгээг хянах"
+
+msgid "Conversion rate"
+msgstr "Хөрвүүлэх ханш"
+
+msgid "Convert Item description to clean HTML in transactions"
+msgstr "Барааны тайлбарыг гүйлгээнд цэвэр HTML болгон хөрвүүлэх"
+
+msgid "Convert to Item Based Reposting"
+msgstr "Бараа дээр суурилсан дахин нийтлэх рүү хөрвүүлэх"
+
+msgid "Convert to Phantom Item"
+msgstr "Хийсвэр бараа болгох"
+
+msgid "Convert to Sub Assembly"
+msgstr "Дэд угсралт болгох"
+
+msgid "Cost Center for Item rows has been updated to {0}"
+msgstr "Барааны мөрүүдийн зардлын төвийг {0} болгон шинэчилсэн"
+
+msgid "Cost allocation for Finished Good"
+msgstr "Бэлэн бүтээгдэхүүнд хуваарилах зардал"
+
+msgid "Cost per Unit"
+msgstr "Нэгжийн өртөг"
+
+msgid "Cost this sub-assembly by rolling up its BOM cost instead of the item's own valuation or price-list rate. Applies only to this component."
+msgstr "Энэ дэд угсралтын өртгийг барааны өөрийн үнэлгээ эсвэл үнийн жагсаалтын үнээр бус, БОМ-ын өртгийг нэгтгэн тооцно. Зөвхөн энэ бүрэлдэхүүнд хамаарна."
+
+msgid "Could not validate {0}: {1}"
+msgstr "{0}-г шалгаж чадсангүй: {1}"
+
+msgid "Create Asset Item"
+msgstr "Хөрөнгийн бараа үүсгэх"
+
+msgid "Create Delivery Note"
+msgstr "Хүргэлтийн баримт үүсгэх"
+
+msgid "Create GL Reposting Entries"
+msgstr "Ерөнхий дэвтрийг дахин бүртгэх бичилт үүсгэх"
+
+msgid "Create Item"
+msgstr "Бараа үүсгэх"
+
+msgid "Create Material Request"
+msgstr "Материалын хүсэлт үүсгэх"
+
+msgid "Create Service Item"
+msgstr "Үйлчилгээний бараа үүсгэх"
+
+msgid "Create Stock Entry"
+msgstr "Бараа материалын оруулга үүсгэх"
+
+msgid "Create Subcontracted Item"
+msgstr "Туслан гэрээт бараа үүсгэх"
+
+msgid "Create a Stock Closing Entry for the entire company with To Date as {0} before submitting the Period Closing Voucher."
+msgstr "Хугацааны хаалтын баримтыг илгээхээсээ өмнө компанийн нийт бараа материалын хаалтын бичилтийг {0} гэж бичнэ үү."
+
+msgid "Create an incoming stock transaction for the Item."
+msgstr "Тухайн бараанд зориулж ирж буй хувьцааны гүйлгээг үүсгэнэ үү."
+
+msgid "Create your first Material Request to get started."
+msgstr "Эхлэхийн тулд анхны Материалын хүсэлтээ үүсгэнэ үү."
+
+msgid "Created Via"
+msgstr "Үүсгэсэн суваг"
+
+msgid "Creating Delivery Note ..."
+msgstr "Хүргэлтийн баримт үүсгэж байна ..."
+
+msgid "Creating Opening Stock Entry..."
+msgstr "Бараа материалын бүртгэлийг нээхийг үүсгэж байна..."
+
+msgid "Creating Stock Entry"
+msgstr "Бараа материалын оруулга үүсгэх"
+
+msgid "Credit"
+msgstr "Кредит"
+
+msgid "Cross Listing of Item in multiple groups"
+msgstr "Олон бүлэгт байгаа бараануудын хөндлөн жагсаалт"
+
+msgid "Current Stock"
+msgstr "Одоогийн бараа материал"
+
+msgid "Current Valuation Rate"
+msgstr "Одоогийн үнэлгээний үнэ"
+
+msgid "Debit"
+msgstr "Дебет"
+
+msgid "Debit (Transaction)"
+msgstr "Дебет (Гүйлгээ)"
+
+msgid "Debit ({0})"
+msgstr "Дебет ({0})"
+
+msgid "Debit / Credit Note Posting Date"
+msgstr "Дебет / Кредитийн тэмдэглэл байршуулсан огноо"
+
+msgid "Debit Account"
+msgstr "Дебет данс"
+
+msgid "Debit Amount"
+msgstr "Дебет дүн"
+
+msgid "Debit Amount in Account Currency"
+msgstr "Дансны валютаар илэрхийлсэн дебет дүн"
+
+msgid "Debit Amount in Reporting Currency"
+msgstr "Тайлангийн валютаар илэрхийлсэн дебет дүн"
+
+msgid "Debit Amount in Transaction Currency"
+msgstr "Гүйлгээний валютаар илэрхийлсэн дебет дүн"
+
+msgid "Debit Note"
+msgstr "Дебет тэмдэглэл"
+
+msgid "Debit Note Amount"
+msgstr "Дебет тэмдэглэлийн дүн"
+
+msgid "Debit To"
+msgstr "Дебет карт"
+
+msgid "Debit To is required"
+msgstr "Дебет карт шаардлагатай"
+
+msgid "Debit and Credit not equal for {0} #{1}. Difference is {2}."
+msgstr "Дебет болон Кредит нь {0} #{1}-н хувьд тэнцүү биш байна. Ялгаа нь {2} байна."
+
+msgid "Debit in Company Currency"
+msgstr "Компанийн валютаар хийсэн дебет"
+
+msgid "Debit to"
+msgstr "Дебет карт"
+
+msgid "Debit-Credit Mismatch"
+msgstr "Дебет-Кредитийн тохиромжгүй байдал"
+
+msgid "Debit-Credit mismatch"
+msgstr "Дебет-Кредитийн зөрүү"
+
+msgid "Debit/Credit"
+msgstr "Дебет/Кредит"
+
+msgid "Debits"
+msgstr "Дебет"
+
+msgid "Default BOM not found for FG Item {0}"
+msgstr "FG барааны анхдагч BOM олдсонгүй {0}"
+
+msgid "Default BOM not found for Item {0} and Project {1}"
+msgstr "{0} бараа болон {1} төслийн хувьд анхдагч BOM олдсонгүй"
+
+msgid "Default Item Group"
+msgstr "Анхдагч барааны бүлэг"
+
+msgid "Default Stock Valuation Method"
+msgstr "Бараа материалын анхдагч үнэлгээний арга"
+
+msgid "Default Supplier for {0} not found"
+msgstr "{0}-ийн анхдагч нийлүүлэгч олдсонгүй"
+
+msgid "Default Target Warehouse {0} must be a Transit warehouse when Add to Transit is enabled."
+msgstr "Замд шилжүүлэх идэвхтэй үед анхдагч хүлээн авах агуулах {0} нь замын агуулах байх ёстой."
+
+msgid "Default Unit of Measure for Item {0} cannot be changed directly because you have already made some transaction(s) with another UOM. You need to either cancel the linked documents or create a new Item."
+msgstr "Та өөр UOM-той аль хэдийн гүйлгээ хийсэн тул {0} барааны анхдагч хэмжих нэгжийг шууд өөрчлөх боломжгүй. Та холбогдсон баримт бичгүүдийг цуцлах эсвэл шинэ бараа үүсгэх шаардлагатай."
+
+msgid "Default Unit of Measure for Item {0} cannot be changed directly because you have already made some transaction(s) with another UOM. You will need to create a new Item to use a different Default UOM."
+msgstr "Та өөр UOM-той аль хэдийн гүйлгээ хийсэн тул {0} барааны анхдагч хэмжих нэгжийг шууд өөрчлөх боломжгүй. Өөр анхдагч UOM ашиглахын тулд та шинэ бараа үүсгэх шаардлагатай болно."
+
+msgid "Default source Warehouse"
+msgstr "Анхдагч гаргах агуулах"
+
+msgid "Default warehouse from Item Defaults."
+msgstr "Барааны Анхдагч Тохиргооноос Анхдагч Агуулах."
+
+msgid "Delayed Item Report"
+msgstr "Хойшлогдсон барааны тайлан"
+
+msgid "Delete Accounting and Stock Ledger entries on deletion of transaction"
+msgstr "Гүйлгээг устгах үед нягтлан бодох бүртгэл болон бараа материалын дэвтрийн бичилтийг устгах"
+
+msgid "Delete Item"
+msgstr "Бараа устгах"
+
+msgid "Deliver secondary Items"
+msgstr "Хоёрдогч бараануудыг хүргэх"
+
+msgid "Delivered Items To Be Billed"
+msgstr "Төлбөр тооцох хүргэгдсэн бараанууд"
+
+msgid "Delivery Note"
+msgstr "Хүргэлтийн баримт"
+
+msgid "Delivery Note Item"
+msgstr "Хүргэлтийн баримтын бараа"
+
+msgid "Delivery Note No"
+msgstr "Хүргэлтийн баримтын дугаар"
+
+msgid "Delivery Note Packed Item"
+msgstr "Хүргэлтийн баримт Савласан бараа"
+
+msgid "Delivery Note Trends"
+msgstr "Хүргэлтийн баримтын чиг хандлага"
+
+msgid "Delivery Note {0} is not submitted"
+msgstr "Хүргэлтийн баримт {0} ирүүлээгүй байна"
+
+msgid "Delivery Notes"
+msgstr "Хүргэлтийн баримт"
+
+msgid "Delivery Notes {0} updated"
+msgstr "Хүргэлтийн баримт {0} шинэчлэгдсэн"
+
+msgid "Delivery Schedule Item"
+msgstr "Хүргэлтийн хуваарийн бараа"
+
+msgid "Difference Account in Items Table"
+msgstr "Бараануудын хүснэгт дэх зөрүүний данс"
+
+msgid "Difference Account must be an Asset/Liability type account (Temporary Opening), since this Stock Entry is an Opening Entry"
+msgstr "Энэхүү Бараа материалын Бичлэг нь Нээлтийн Бичлэг тул Зөрүүний Данс нь Хөрөнгө/Өр төлбөрийн төрлийн данс (Түр Нээлтийн) байх ёстой."
+
+msgid "Difference Account must be an Asset/Liability type account, since this Stock Reconciliation is an Opening Entry"
+msgstr "Энэхүү Бараа материалын Тохируулга нь Нээлтийн Бичлэг тул Зөрүүний Данс нь Хөрөнгө/Өр төлбөрийн төрлийн данс байх ёстой."
+
+msgid "Disabled Item {0} cannot be used in BOMs."
+msgstr "Идэвхгүй бараа {0}-г БОМ-д ашиглах боломжгүй."
+
+msgid "Disabled Price List"
+msgstr "Идэвхгүй үнийн жагсаалт"
+
+msgid "Distinct unit of an Item"
+msgstr "Барааны тусдаа нэгж"
+
+msgid "Do not explode"
+msgstr "Задлахгүй"
+
+msgid "Due to period closing, you cannot repost item valuation before {0}"
+msgstr "Тайлант үеийг хаасан тул {0}-өөс өмнөх барааны үнэлгээг дахин бүртгэх боломжгүй"
+
+msgid "Duplicate Item Group"
+msgstr "Давхардсан барааны бүлэг"
+
+msgid "Duplicate Item Under Same Parent"
+msgstr "Ижил эцэг эхийн доор хуулбар бараа"
+
+msgid "Duplicate POS Search Fields"
+msgstr "ПОС хайлтын давхардсан талбарууд"
+
+msgid "Duplicate Stock Closing Entry"
+msgstr "Бараа материалын хаалтын бичилтийг давхардуулсан"
+
+msgid "Duplicate line reference: '{0}'"
+msgstr "Давхардсан мөрийн лавлагаа: '{0}'"
+
+msgid "Duties and Taxes"
+msgstr "Татвар, хураамж"
+
+msgid "EDI"
+msgstr "EDI"
+
+msgid "ERPNext Integrations"
+msgstr "ERPNext интеграцууд"
+
+msgid "Each operation produces its own semi-finished output. Supply its raw materials either by linking that output's BOM in BOM No, or by adding them manually."
+msgstr "Үйлдлүүд тус бүр өөрийн хагас боловсруулсан бүтээгдэхүүнийг гаргана. Түүний түүхий эдийг тухайн бүтээгдэхүүний БОМ-ыг БОМ дугаарт холбох эсвэл гараар нэмэх замаар нийлүүлнэ үү."
+
+msgid "Enable 'Allow Alternative Finished Goods' in Manufacturing Settings to make a finished good conversion entry."
+msgstr "Бэлэн бүтээгдэхүүний хөрвүүлэлтийн бичилт хийхийн тулд Үйлдвэрлэлийн тохиргоонд 'Орлуулах бэлэн бүтээгдэхүүнийг зөвшөөрөх'-ийг идэвхжүүлнэ үү."
+
+msgid "Enable <b>{0}</b> on the Item master to proceed with {1} inspection."
+msgstr "{1} шалгалтыг үргэлжлүүлэхийн тулд Барааны мастер дээр <b>{0}</b> гэснийг идэвхжүүлнэ үү."
+
+msgid "Enable Item Search Index"
+msgstr "Барааны хайлтын индексийг идэвхжүүлэх"
+
+msgid "Enable Item-wise Inventory Account"
+msgstr "Барааны дагуух бараа материалын бүртгэлийг идэвхжүүлэх"
+
+msgid "Enable Provisional Accounting For Non Stock Items"
+msgstr "Бараа материалын бус барааны түр нягтлан бодох бүртгэлийг идэвхжүүлэх"
+
+msgid "Enable cut-off date on creating bulk Delivery Notes"
+msgstr "Бөөнөөр хүргэлтийн баримт үүсгэх үед дуусах хугацааг идэвхжүүлэх"
+
+msgid "Enable this to define the BOM as a logical grouping of raw materials without producing an item. The Production Item must be non-stock and will be automatically exploded when used as a raw material in another BOM."
+msgstr "БОМ-ыг бараа үйлдвэрлэхгүйгээр түүхий эдийн логик бүлэг болгон тодорхойлохын тулд үүнийг идэвхжүүлнэ. Үйлдвэрлэлийн бараа нь бараа материалын бус байх ёстой бөгөөд өөр БОМ-д түүхий эд болгон ашиглахад автоматаар задлагдана."
+
+msgid "Enable this to select an alternative material when the required item is unavailable.\n"
+msgstr "Шаардлагатай бараа байхгүй үед орлуулах материал сонгохын тулд үүнийг идэвхжүүлнэ.\n"
+
+msgid "Enable to make this supplier selectable as a transporter on Delivery Notes and Stock Entries"
+msgstr "Энэ нийлүүлэгчийг Хүргэлтийн баримт болон Барааны бүртгэл дээр тээвэрлэгчээр сонгох боломжтой болгохыг идэвхжүүлнэ үү"
+
+msgid ""
+"Enabling this will do the following:\n"
+"<ul style=\"padding-left:16px\">\n"
+"<li>Make the rate column of all Packed/Bundle Items tables editable.</li>\n"
+"<li>Calculate the prices of all <a href=\"/desk/product-bundle\" rel=\"noopener noreferrer\">Product Bundles</a> in the Items table, based on the prices of its child Items, specified in the Packed/Bundle Items table. </li>\n"
+"</ul>\n"
+"Note: If this is enabled, updating the rate of the Product Bundle in the Items table will not change its price. It will get reset to the price based on its Child Items on saving the doc."
+msgstr ""
+"Үүнийг идэвхжүүлснээр дараах бараануудыг хийх болно:\n"
+"<ul style=\"padding-left:16px\">\n"
+"<li>Бүх Савласан/Багцалсан барааны хүснэгтийн үнийн баганыг засварлах боломжтой болгоно.</li>\n"
+"<li>Барааны хүснэгт дэх бүх <a href=\"/desk/product-bundle\" rel=\"noopener noreferrer\">Бүтээгдэхүүний багц</a> -ийн үнийг Савласан/Багцалсан барааны хүснэгтэд заасан хүүхдийн барааны үнэ дээр үндэслэн тооцоолно. </li>\n"
+"</ul>\n"
+"Тэмдэглэл: Хэрэв үүнийг идэвхжүүлсэн бол Бараануудын хүснэгт дэх Бүтээгдэхүүний Багцын үнийг шинэчлэхэд түүний үнэ өөрчлөгдөхгүй. Баримт бичгийг хадгалахад хүүхдийн барааны үнэд үндэслэн дахин тохируулагдана."
+
+msgid "Enter the quantity to manufacture. Raw material Items will be fetched only when this is set."
+msgstr "Үйлдвэрлэх тоо хэмжээг оруулна уу. Түүхий эд. Үүнийг тохируулсны дараа л эд бараануудыг авчрах болно."
+
+msgid "Every row has a document"
+msgstr "Мөр бүрт баримт байна"
+
+msgid "Every row of {0} is closed. Reopen the rows you need instead, using {1}."
+msgstr "{0}-ийн бүх мөр хаагдсан байна. Оронд нь {1}-ийг ашиглан хэрэгтэй мөрүүдээ дахин нээнэ үү."
+
+msgid "Everything requested or in stock"
+msgstr "Хүсэлт гаргасан эсвэл нөөцөд байгаа бүх зүйл"
+
+msgid "Example: ABCD.#####. If series is set and Batch No is not mentioned in transactions, then automatic batch number will be created based on this series. If you always want to explicitly mention Batch No for this item, leave this blank. Note: this setting will take priority over the Naming Series Prefix in Stock Settings."
+msgstr "Жишээ: ABCD.#####. Хэрэв цуврал тохируулагдсан бөгөөд гүйлгээнд Багцын дугаарыг дурдаагүй бол энэ цуврал дээр үндэслэн автоматаар багцын дугаар үүсгэгдэх болно. Хэрэв та энэ зүйлийн Багцын дугаарыг үргэлж тодорхой дурдах хүсэлтэй бол үүнийг хоосон орхино уу. Тэмдэглэл: энэ тохиргоо нь Бараа материалын тохиргоо дахь Нэрлэх Цувралын Угтвараас давуу эрхтэй болно."
+
+msgid "Exchange Gain/Loss"
+msgstr "Ханшийн зөрүүний олз/гарз"
+
+msgid "Expand / Collapse All"
+msgstr "Бүгдийг дэлгэх / хураах"
+
+msgid "Expected Stock Value"
+msgstr "Хүлээгдэж буй бараа материалын үнэ цэнэ"
+
+msgid "Expenses Added To Stock Account"
+msgstr "Бараа материалын дансанд нэмэгдсэн зардал"
+
+msgid "Expenses Added To Stock Contra Account"
+msgstr "Бараа материалын эсрэг дансанд нэмэгдсэн зардал"
+
+msgid "Exploded Items"
+msgstr "Тэсрэх бараанууд"
+
+msgid "FG / Semi FG Item"
+msgstr "FG / Хагас FG бараа"
+
+msgid "FG Items to Make"
+msgstr "Хийх бараанууд"
+
+msgid "FIFO Stock Queue (qty, rate)"
+msgstr "FIFO Бараа материалын дараалал (тоо хэмжээ, ханш)"
+
+msgid "FY"
+msgstr "СЖ"
+
+msgid "Field '{0}' is not a valid Account field"
+msgstr "'{0}' талбар нь Дансны хүчинтэй талбар биш байна"
+
+msgid "Field and operator must be strings"
+msgstr "Талбар болон оператор нь тэмдэгт мөр байх ёстой"
+
+msgid "Filter items..."
+msgstr "Бараа шүүх..."
+
+msgid "Filter must be [field, operator, value]"
+msgstr "Шүүлтүүр нь [талбар, оператор, утга] хэлбэртэй байх ёстой"
+
+msgid "Filter must be a list or dict"
+msgstr "Шүүлтүүр нь жагсаалт эсвэл толь бичиг байх ёстой"
+
+msgid "Finished Good"
+msgstr "Бэлэн бүтээгдэхүүн"
+
+msgid "Finished Good Item"
+msgstr "Бэлэн бүтээгдэхүүн бараа"
+
+msgid "Finished Good Serial / Batch"
+msgstr "Цуврал / Багцаар бэлэн бүтээгдэхүүн"
+
+msgid "Finished Good {0} does not have a default BOM."
+msgstr "Бэлэн бүтээгдэхүүн {0} нь анхдагч BOM-гүй байна."
+
+msgid "Finished Good {0} is disabled."
+msgstr "Бэлэн бүтээгдэхүүн {0} идэвхгүй байна."
+
+msgid "Finished Good {0} must be a stock item."
+msgstr "Бэлэн бүтээгдэхүүн {0} нь бэлэн бараа байх ёстой."
+
+msgid "Finished Good {0} must be a sub-contracted item."
+msgstr "Бэлэн бүтээгдэхүүн {0} нь гэрээт гүйцэтгэгчээр худалдан авсан бараа байх ёстой."
+
+msgid "Finished Goods Item"
+msgstr "Бэлэн бүтээгдэхүүний бараа"
+
+msgid "Finished Items"
+msgstr "Бэлэн бүтээгдэхүүнүүд"
+
+msgid "Finished goods based operating cost"
+msgstr "Бэлэн бүтээгдэхүүнд суурилсан үйл ажиллагааны зардал"
+
+msgid "Fixed Asset Item must be a non-stock item."
+msgstr "Үндсэн хөрөнгийн бараа нь хувьцаанд ороогүй бараа байх ёстой."
+
+msgid "Fixed time"
+msgstr "Тогтмол хугацаа"
+
+msgid "Focus on Item Group filter"
+msgstr "Барааны бүлгийн шүүлтүүр дээр төвлөрөх"
+
+msgid "For All Stock Asset Accounts"
+msgstr "Бүх бараа материалын хөрөнгийн дансанд зориулсан"
+
+msgid "For Item"
+msgstr "Барааны хувьд"
+
+msgid "For Qty"
+msgstr "Тоо хэмжээнд"
+
+msgid "For row {0} in {1}. To include {2} in Item rate, rows {3} must also be included"
+msgstr "{1}доторх {0} мөрийн хувьд. Барааны ханшид {2} мөрийг оруулахын тулд {3} мөрийг мөн оруулах ёстой."
+
+msgid "For the convenience of customers, these codes can be used in print formats like Invoices and Delivery Notes"
+msgstr "Үйлчлүүлэгчдэд тав тухтай байлгах үүднээс эдгээр кодыг Нэхэмжлэх болон Хүргэлтийн баримт гэх мэт хэвлэх хэлбэрээр ашиглаж болно."
+
+msgid "Formula evaluation error: {0}"
+msgstr "Томьёо тооцоолох алдаа: {0}"
+
+msgid "Formula has unbalanced parentheses"
+msgstr "Томьёоны хаалт тэнцвэргүй байна"
+
+msgid "Formula must return a numeric value, got {0}"
+msgstr "Томьёо тоон утга буцаах ёстой, {0} ирлээ"
+
+msgid "Formula references itself ('{0}')"
+msgstr "Томьёо өөрөө өөрийгөө иш татаж байна ('{0}')"
+
+msgid "From Reference Date cannot be greater than To Reference Date"
+msgstr "Лавлагааны эхлэх огноо нь лавлагааны дуусах огнооноос хойш байж болохгүй"
+
+msgid "Frozen - entries restricted"
+msgstr "Хөлдөөсөн - бичилт хязгаарлагдсан"
+
+msgid "GL Reposting Entries"
+msgstr "Ерөнхий дэвтрийг дахин бүртгэх бичилтүүд"
+
+msgid "GL reposting entries created: {0}"
+msgstr "Ерөнхий дэвтрийг дахин бүртгэх бичилт үүсгэлээ: {0}"
+
+msgid "GL reposting is not allowed against the voucher type {0}."
+msgstr "{0} баримтын төрөлд ерөнхий дэвтрийг дахин бүртгэхийг зөвшөөрөхгүй."
+
+msgid "Generate Stock Closing Entry"
+msgstr "Бараа материалын хаалтын бичилт үүсгэх"
+
+msgid "Get Current Stock"
+msgstr "Одоогийн бараа материалыг авах"
+
+msgid "Get Item Locations"
+msgstr "Барааны байршлыг авах"
+
+msgid "Get Items From"
+msgstr "Бараануудыг эндээс аваарай"
+
+msgid "Get Items for Purchase / Transfer"
+msgstr "Худалдан авах / шилжүүлэх бараанууд авах"
+
+msgid "Get Secondary Items"
+msgstr "Хоёрдогч бараануудыг авах"
+
+msgid "Get Stock"
+msgstr "Бараа материал авах"
+
+msgid "Get Sub Assembly Items"
+msgstr "Дэд угсралтын бараануудыг авах"
+
+msgid "Getting Secondary Items"
+msgstr "Хоёрдогч бараануудыг авах"
+
+msgid "Group By Company"
+msgstr "Компаниар бүлэглэх"
+
+msgid "Group Same Items"
+msgstr "Ижил бараануудыг бүлэглэх"
+
+msgid "Group by Item"
+msgstr "Бараагаар бүлэглэх"
+
+msgid "Group the report by Sales Order or by Item, not both."
+msgstr "Тайланг Борлуулалтын захиалгаар эсвэл Бараагаар бүлэглэнэ үү, хоёуланг нь биш."
+
+msgid "Has Alternative Item"
+msgstr "Өөр бараатай"
+
+msgid "Has Item Scanned"
+msgstr "Барааг сканнердсан"
+
+msgid "Has Unit Price Items"
+msgstr "Нэгжийн үнэтэй бараануудтай"
+
+msgid "Has variants"
+msgstr "Хувилбартай"
+
+msgid "Hide Item Quantity in Print"
+msgstr "Хэвлэмэл хэлбэрээр барааны тоо хэмжээг нуух"
+
+msgid "Hide Unavailable Items"
+msgstr "Боломжгүй бараануудыг нуух"
+
+msgid "Hour rate"
+msgstr "Цагийн үнэлгээ"
+
+msgid "If checked, the rejected quantity is billed anywhere in the purchase cycle."
+msgstr "Сонгосон бол буцаасан тоо хэмжээг худалдан авалтын мөчлөгийн аль ч үе шатанд нэхэмжилнэ."
+
+msgid "If checked, this Item is only available for transactions in the companies listed below."
+msgstr "Хэрэв тэмдэглэгдсэн бол энэ бараа нь зөвхөн доор жагсаасан компаниудын гүйлгээнд л боломжтой."
+
+msgid "If checked, updates inventory; stock and accounting entries are created together. Leave unchecked if a Delivery Note is created separately."
+msgstr "Хэрэв тэмдэглэсэн бол бараа материалын нөөцийг шинэчилнэ; бараа материал болон нягтлан бодох бүртгэлийн бичилтүүдийг хамтад нь үүсгэнэ. Хэрэв Хүргэлтийн баримтыг тусад нь үүсгэсэн бол тэмдэглээгүй орхино уу."
+
+msgid "If enabled, the Secondary Items generated against a Finished Good will also be added in the Stock Entry when delivering that Finished Good."
+msgstr "Хэрэв идэвхжүүлсэн бол тухайн бэлэн бүтээгдэхүүнийг хүргэх үед бэлэн бүтээгдэхүүний үндсэн дээр үүссэн хоёрдогч бараануудыг Нөөцийн бүртгэлд мөн нэмнэ."
+
+msgid "If enabled, the produced item of a Work Order can be converted into one of its alternative items (defined via Item Alternative) using the 'Change Finished Item' action. The conversion creates a Repack entry linked to the Work Order."
+msgstr "Идэвхжүүлсэн бол Ажлын захиалгын үйлдвэрлэсэн барааг 'Бэлэн бүтээгдэхүүнийг солих' үйлдлээр түүний орлуулах бараануудын (Барааны орлуулагчаар тодорхойлсон) аль нэг рүү хөрвүүлж болно. Хөрвүүлэлт нь Ажлын захиалгатай холбогдсон Дахин савлах бичилт үүсгэнэ."
+
+msgid "If enabled, the system will allow negative stock entries for this batch, overriding the 'Allow negative stock for Batch' setting in Stock Settings. This may lead to incorrect valuation rates, so it is recommended to avoid using this option."
+msgstr "Хэрэв идэвхжүүлсэн бол систем нь энэ багцын хувьд сөрөг бараа материалын оруулгыг зөвшөөрөх бөгөөд Бараа материалын тохиргоон дахь 'Багцын хувьд сөрөг бараа материалыг зөвшөөрөх' тохиргоог хүчингүй болгоно. Энэ нь буруу үнэлгээний түвшинд хүргэж болзошгүй тул энэ сонголтыг ашиглахаас зайлсхийхийг зөвлөж байна."
+
+msgid "If enabled, the system will generate an accounting entry for material rejected anywhere in the purchase cycle."
+msgstr "Идэвхжүүлсэн бол худалдан авалтын мөчлөгийн аль ч үе шатанд буцаасан материалд систем нягтлан бодох бүртгэлийн бичилт үүсгэнэ."
+
+msgid "If the item is transacting as a Zero Valuation Rate item in this entry, please enable 'Allow Zero Valuation Rate' in the {0} Item table."
+msgstr "Хэрэв энэ оруулгад тухайн бараа Тэг үнэлгээний хувьтай бараа хэлбэрээр гүйлгээ хийж байгаа бол {0} Барааны хүснэгтэд 'Тэг үнэлгээний хувь хэмжээг зөвшөөрөх' сонголтыг идэвхжүүлнэ үү."
+
+msgid "Ignore System Generated Credit / Debit Notes"
+msgstr "Системийн үүсгэсэн кредит / дебет тэмдэглэлийг үл тоомсорлох"
+
+msgid "Import 1 transaction"
+msgstr "1 гүйлгээ импортлох"
+
+msgid "Importing 1 transaction"
+msgstr "1 гүйлгээ импортлож байна"
+
+msgid "Importing {0} of {1} transactions"
+msgstr "{1} гүйлгээнээс {0}-г импортлож байна"
+
+msgid "In Words (Export) will be visible once you save the Delivery Note."
+msgstr "Хүргэлтийн баримтыг хадгалсны дараа Words (Экспорт) харагдах болно."
+
+msgid "In Words will be visible once you save the Delivery Note."
+msgstr "Хүргэлтийн баримтыг хадгалсны дараа Words дээр харагдах болно."
+
+msgid "In a multi-operation BOM, marks the operation that produces this BOM's final item, the others produce intermediate semi-finished goods. Its FG item is set to the BOM's item automatically and must match it."
+msgstr "Олон үйлдэлтэй БОМ-д энэ БОМ-ын эцсийн барааг үйлдвэрлэх үйлдлийг тэмдэглэнэ, бусад нь завсрын хагас боловсруулсан бүтээгдэхүүн үйлдвэрлэнэ. Түүний бэлэн бүтээгдэхүүн нь БОМ-ын бараагаар автоматаар тохирох ба түүнтэй таарах ёстой."
+
+msgid "In progress"
+msgstr "Явагдаж байна"
+
+msgid "In this section, you can define Company-wide transaction-related defaults for this Item. Eg. Default Warehouse, Default Price List, Supplier, etc."
+msgstr "Энэ хэсэгт та энэ барааны Компанийн хэмжээнд гүйлгээтэй холбоотой анхдагч тохиргоог тодорхойлж болно. Жишээлбэл, Анхдагч Агуулах, Анхдагч Үнийн Жагсаалт, Нийлүүлэгч гэх мэт."
+
+msgid "Include Exploded Items"
+msgstr "Дэлбэрсэн бараануудыг оруулах"
+
+msgid "Include Item in manufacturing"
+msgstr "Барааг үйлдвэрлэлд оруулах"
+
+msgid "Include Non Stock Items"
+msgstr "Барааны бус бараануудыг оруулах"
+
+msgid "Include Revaluation Journals"
+msgstr "Дахин үнэлгээний журналыг оруулах"
+
+msgid "Include Subcontracted Items"
+msgstr "Туслан гүйцэтгэсэн бараануудыг оруулах"
+
+msgid "Incoming Leads"
+msgstr "Ирж буй боломжит харилцагчид"
+
+msgid "Incorrect Inventory Dimension"
+msgstr "Бараа материалын хэмжээс буруу"
+
+msgid "Incorrect Reference Document (Purchase Receipt Item)"
+msgstr "Буруу лавлах баримт бичиг (Худалдан авалтын баримтын бараа)"
+
+msgid "Incorrect Stock Asset Account in {0}"
+msgstr "{0} доторх Бараа материалын хөрөнгийн данс буруу байна"
+
+msgid "Incorrect Stock Value Report"
+msgstr "Бараа материалын үнийн тайлан буруу байна"
+
+msgid "Incorrectly Cleared"
+msgstr "Буруу нийцүүлсэн"
+
+msgid "Individual Stock Ledger Entry cannot be cancelled."
+msgstr "Хувь хүний бараа материалын дэвтрийн бичилтийг цуцлах боломжгүй."
+
+msgid "Installation Note Item"
+msgstr "Суурилуулалтын тэмдэглэлийн бараа"
+
+msgid "Insufficient Stock for Product Bundle Items"
+msgstr "Бүтээгдэхүүний багцын бараануудын нөөц хангалтгүй байна"
+
+msgid "Internal Customer Already Exists"
+msgstr "Дотоод харилцагч аль хэдийн бүртгэлтэй"
+
+msgid "Internal Customer {0} already exists for {1}. Disable it to make this Customer internal."
+msgstr "{1}-д Дотоод харилцагч {0} аль хэдийн бүртгэлтэй байна. Энэ харилцагчийг дотоод болгохын тулд түүнийг идэвхгүй болгоно уу."
+
+msgid "Internal Supplier Already Exists"
+msgstr "Дотоод нийлүүлэгч аль хэдийн бүртгэлтэй"
+
+msgid "Internal Supplier {0} already exists for {1}. Disable it to make this Supplier internal."
+msgstr "{1}-д Дотоод нийлүүлэгч {0} аль хэдийн бүртгэлтэй байна. Энэ нийлүүлэгчийг дотоод болгохын тулд түүнийг идэвхгүй болгоно уу."
+
+msgid "Invalid Barcode. There is no Item attached to this barcode."
+msgstr "Бар код буруу байна. Энэ бар кодонд хавсаргасан бараа алга."
+
+msgid "Invalid Disassembly Item"
+msgstr "Буруу задлах бараа"
+
+msgid "Invalid Item"
+msgstr "Буруу бараа"
+
+msgid "Invalid Item Defaults"
+msgstr "Барааны анхдагч тохиргоонууд буруу байна"
+
+msgid "Invalid JSON format: {0}"
+msgstr "JSON формат буруу: {0}"
+
+msgid "Invalid POS Field"
+msgstr "ПОС талбар буруу"
+
+msgid "Invalid POS Fields"
+msgstr "ПОС талбарууд буруу"
+
+msgid "Invalid POS Search Field"
+msgstr "ПОС хайлтын талбар буруу"
+
+msgid "Invalid Price List"
+msgstr "Үнийн жагсаалт буруу"
+
+msgid "Invalid Process Loss Configuration"
+msgstr "Үйлдвэрлэлийн хорогдлын тохиргоо буруу байна"
+
+msgid "Invalid Sample Size"
+msgstr "Дээжийн хэмжээ буруу"
+
+msgid "Invalid Shipping Account"
+msgstr "Тээврийн данс буруу"
+
+msgid "Invalid Valuation Method"
+msgstr "Үнэлгээний арга буруу"
+
+msgid "Invalid Work Order"
+msgstr "Ажлын захиалга буруу"
+
+msgid "Invalid Work Order or Item"
+msgstr "Ажлын захиалга эсвэл бараа буруу"
+
+msgid "Invalid address"
+msgstr "Хаяг буруу"
+
+msgid "Invalid doctype"
+msgstr "Баримтын төрөл буруу"
+
+msgid "Invalid doctype {0}"
+msgstr "Баримтын төрөл {0} буруу"
+
+msgid "Invalid document type"
+msgstr "Баримтын төрөл буруу"
+
+msgid "Invalid field {0}"
+msgstr "Талбар {0} буруу"
+
+msgid "Invalid filter"
+msgstr "Шүүлтүүр буруу"
+
+msgid "Invalid line reference format: '{0}'. Must start with a letter and contain only letters, numbers and underscores"
+msgstr "Мөрийн лавлагааны формат буруу: '{0}'. Үсгээр эхэлж, зөвхөн үсэг, тоо, доогуур зураас агуулах ёстой"
+
+msgid "Invalid name"
+msgstr "Нэр буруу"
+
+msgid "Invalid operator '{0}'"
+msgstr "Оператор буруу '{0}'"
+
+msgid "Invalid reference"
+msgstr "Лавлагаа буруу"
+
+msgid "Invalid sort key"
+msgstr "Эрэмбэлэх түлхүүр буруу"
+
+msgid "Invalid tax master doctype"
+msgstr "Татварын мастер баримтын төрөл буруу"
+
+msgid "Invalid type"
+msgstr "Төрөл буруу"
+
+msgid "Inventory Dimension Negative Stock"
+msgstr "Бараа материалын хэмжээс Сөрөг бараа материал"
+
+msgid "Inward Order Summary"
+msgstr "Хүлээн авах захиалгын хураангуй"
+
+msgid "Is Active cannot be changed on a Lost Quotation."
+msgstr "Алдагдсан Үнийн санал дээр Идэвхтэй эсэхийг өөрчлөх боломжгүй."
+
+msgid "Is Additional Item"
+msgstr "Нэмэлт бараа үү"
+
+msgid "Is Balance Item"
+msgstr "Балансын бараа үү"
+
+msgid "Is Delivery Note required to create Sales Invoice?"
+msgstr "Борлуулалтын нэхэмжлэх үүсгэхэд хүргэлтийн баримт шаардлагатай юу?"
+
+msgid "Is Finished Good Conversion"
+msgstr "Бэлэн бүтээгдэхүүний хөрвүүлэлт эсэх"
+
+msgid "Is Finished Item"
+msgstr "Дууссан бараа"
+
+msgid "Is Latest Revision"
+msgstr "Хамгийн сүүлийн хувилбар эсэх"
+
+msgid "Is Phantom Item"
+msgstr "Хий үзэгдлийн бараа үү"
+
+msgid "Is Rate Adjustment Entry (Debit Note)"
+msgstr "Хүүгийн тохируулгын оруулга (Дебет тэмдэглэл)"
+
+msgid "Is Return (Debit Note)"
+msgstr "Буцаалт (Дебет тэмдэглэл)"
+
+msgid "Is Sales Order required to create Sales Invoice/Delivery Note?"
+msgstr "Борлуулалтын нэхэмжлэх/Хүргэлтийн баримт үүсгэхэд борлуулалтын захиалга шаардлагатай юу?"
+
+msgid "Is Sub Assembly Item"
+msgstr "Дэд угсралтын бараа мөн үү"
+
+msgid "Is Subcontracted Item"
+msgstr "Туслан гэрээт бараа мөн үү"
+
+msgid "Is active"
+msgstr "Идэвхтэй эсэх"
+
+msgid "Is final Finished Good"
+msgstr "Эцсийн бэлэн бүтээгдэхүүн эсэх"
+
+msgid "Is stock Item"
+msgstr "Бараа материал эсэх"
+
+msgid "Is sub assembly Item"
+msgstr "Дэд угсралтын бараа эсэх"
+
+msgid "Issued Items Against Work Order"
+msgstr "Ажлын тушаалын эсрэг олгосон бараанууд"
+
+msgid "Issues Opened"
+msgstr "Нээгдсэн асуудлууд"
+
+msgid "Item & Operation"
+msgstr "Бараа ба үйл ажиллагаа"
+
+msgid "Item / Document"
+msgstr "Бараа / Баримт бичиг"
+
+msgid "Item 1"
+msgstr "1-р бараа"
+
+msgid "Item 2"
+msgstr "Бараа 2"
+
+msgid "Item 3"
+msgstr "Бараа 3"
+
+msgid "Item 4"
+msgstr "Бараа 4"
+
+msgid "Item 5"
+msgstr "5-р бараа"
+
+msgid "Item Alternative"
+msgstr "Барааны хувилбар"
+
+msgid "Item Attribute"
+msgstr "Барааны шинж чанар"
+
+msgid "Item Attribute Value"
+msgstr "Барааны шинж чанарын утга"
+
+msgid "Item Attribute Values"
+msgstr "Барааны шинж чанарын утгууд"
+
+msgid "Item Attributes"
+msgstr "Барааны шинж чанарууд"
+
+msgid "Item Balance (Simple)"
+msgstr "Барааны үлдэгдэл (Энгийн)"
+
+msgid "Item Code"
+msgstr "Барааны код"
+
+msgid "Item Default"
+msgstr "Барааны анхдагч"
+
+msgid "Item Defaults"
+msgstr "Барааны анхдагч тохиргоонууд"
+
+msgid "Item Description"
+msgstr "Барааны тайлбар"
+
+msgid "Item Details"
+msgstr "Барааны дэлгэрэнгүй мэдээлэл"
+
+msgid "Item Group"
+msgstr "Барааны бүлэг"
+
+msgid "Item Group Defaults"
+msgstr "Барааны бүлгийн анхдагч тохиргоонууд"
+
+msgid "Item Group Name"
+msgstr "Барааны бүлгийн нэр"
+
+msgid "Item Group Override"
+msgstr "Барааны бүлгийн дарж бичих"
+
+msgid "Item Group Tree"
+msgstr "Барааны бүлгийн мод"
+
+msgid "Item Group not mentioned in item master for item {0}"
+msgstr "{0} барааны мастер хэсэгт барааны бүлэг дурдагдаагүй байна"
+
+msgid "Item Groups"
+msgstr "Барааны бүлгүүд"
+
+msgid "Item Image (if not slideshow)"
+msgstr "Барааны зураг (хэрэв слайд биш бол)"
+
+msgid "Item Information"
+msgstr "Барааны мэдээлэл"
+
+msgid "Item Lead Time Supplier"
+msgstr "Барааны нийлүүлэгчийн хүргэлтийн хугацаа"
+
+msgid "Item Locations"
+msgstr "Барааны байршил"
+
+msgid "Item Manager"
+msgstr "Барааны менежер"
+
+msgid "Item Name"
+msgstr "Барааны нэр"
+
+msgid "Item Name is required."
+msgstr "Барааны нэр шаардлагатай."
+
+msgid "Item Naming By"
+msgstr "Барааг нэрлэх"
+
+msgid "Item Override"
+msgstr "Барааг дарж бичих"
+
+msgid "Item Reference"
+msgstr "Барааны лавлагаа"
+
+msgid "Item Reorder"
+msgstr "Барааг дахин захиалах"
+
+msgid "Item Row"
+msgstr "Барааны мөр"
+
+msgid "Item Row {0}: {1} {2} does not exist in above '{1}' table"
+msgstr "Барааны мөр {0}: {1} {2} нь дээрх '{1}' хүснэгтэд байхгүй байна"
+
+msgid "Item Serial No"
+msgstr "Барааны серийн дугаар"
+
+msgid "Item Standard Cost"
+msgstr "Барааны стандарт өртөг"
+
+msgid "Item Tax"
+msgstr "Барааны татвар"
+
+msgid "Item Tax Rate"
+msgstr "Барааны татварын хувь хэмжээ"
+
+msgid "Item Tax Row {0} must have account of type Tax or Income or Expense or Chargeable"
+msgstr "Барааны татварын мөр {0} нь Татвар, Орлого, Зардал эсвэл Төлбөр ногдуулах төрлийн данстай байх ёстой"
+
+msgid "Item Tax Row {0}: Account must belong to Company - {1}"
+msgstr "Барааны татварын мөр {0}: Данс нь Компанийн өмч байх ёстой - {1}"
+
+msgid "Item Tax Template"
+msgstr "Барааны татварын загвар"
+
+msgid "Item Tax Template Detail"
+msgstr "Барааны татварын загварын дэлгэрэнгүй мэдээлэл"
+
+msgid "Item To Manufacture"
+msgstr "Үйлдвэрлэх бараа"
+
+msgid "Item Variant"
+msgstr "Барааны хувилбар"
+
+msgid "Item Variant Attribute"
+msgstr "Барааны Хувилбарын Аттрибут"
+
+msgid "Item Variant Details"
+msgstr "Барааны хувилбарын дэлгэрэнгүй мэдээлэл"
+
+msgid "Item Variant Settings"
+msgstr "Барааны Хувилбарын Тохиргоо"
+
+msgid "Item Variant {0} already exists with same attributes"
+msgstr "{0} барааны хувилбар нь ижил шинж чанаруудтай аль хэдийн байна"
+
+msgid "Item Variants updated"
+msgstr "Барааны хувилбарууд шинэчлэгдсэн"
+
+msgid "Item Website Specification"
+msgstr "Барааны вэбсайтын тодорхойлолт"
+
+msgid "Item Weight Details"
+msgstr "Барааны жингийн дэлгэрэнгүй мэдээлэл"
+
+msgid "Item Where Used"
+msgstr "Хэрэглэсэн бараа"
+
+msgid "Item Wise Consumption"
+msgstr "Барааны ухаалаг хэрэглээ"
+
+msgid "Item Wise Start Dates"
+msgstr "Барааны эхлэх огнооны тодорхойлолт"
+
+msgid "Item Wise Tax Detail"
+msgstr "Барааны татварын дэлгэрэнгүй мэдээлэл"
+
+msgid "Item Wise Tax Details"
+msgstr "Барааны татварын дэлгэрэнгүй мэдээлэл"
+
+msgid "Item Wise Tax Details do not match with Taxes and Charges at the following rows:"
+msgstr "Барааны татварын дэлгэрэнгүй мэдээлэл нь дараах мөрүүдийн Татвар ба төлбөртэй таарахгүй байна:"
+
+msgid "Item and Warehouse"
+msgstr "Бараа ба агуулах"
+
+msgid "Item for row {0} does not match Material Request"
+msgstr "{0} мөрийн бараа нь Материалын хүсэлттэй таарахгүй байна"
+
+msgid "Item has variants."
+msgstr "Бараа нь хувилбаруудтай."
+
+msgid "Item is mandatory in Raw Materials table."
+msgstr "Түүхий эдийн хүснэгтэд энэ барааг заавал оруулах ёстой."
+
+msgid "Item is removed since no serial / batch no selected."
+msgstr "Цуврал / багц сонгоогүй тул барааг устгасан."
+
+msgid "Item must be added using 'Get Items from Purchase Receipts' button"
+msgstr "'Худалдан авалтын баримтаас бараа авах' товчийг ашиглан барааг нэмэх шаардлагатай"
+
+msgid "Item name"
+msgstr "Барааны нэр"
+
+msgid "Item operation"
+msgstr "Барааны үйл ажиллагаа"
+
+msgid "Item rate has been updated to zero as Allow Zero Valuation Rate is checked for item {0}"
+msgstr "{0} барааны хувьд Тэг үнэлгээний түвшинг зөвшөөрөхийг шалгасан тул барааны хэмжээг тэг болгож шинэчилсэн"
+
+msgid "Item to Manufacture"
+msgstr "Үйлдвэрлэх бараа"
+
+msgid "Item to manufacture"
+msgstr "Үйлдвэрлэх бараа"
+
+msgid "Item valuation rate is recalculated considering landed cost voucher amount"
+msgstr "Барааны үнэлгээний түвшинг буултын өртгийн ваучерын хэмжээг харгалзан дахин тооцоолно"
+
+msgid "Item valuation reposting in progress. Report might show incorrect item valuation."
+msgstr "Барааны үнэлгээг дахин нийтэлж байна. Тайланд барааны үнэлгээ буруу байгааг харуулж магадгүй."
+
+msgid "Item variant {0} exists with same attributes"
+msgstr "Барааны хувилбар {0} ижил шинж чанаруудтай байна"
+
+msgid "Item {0} added multiple times under the same parent item {1} at rows {2} and {3}"
+msgstr "{0} гэсэн барааг {2} болон {3} мөрүүдэд {1} гэсэн ижил эцэг барааны доор олон удаа нэмсэн"
+
+msgid "Item {0} cannot be added as a sub-assembly of itself"
+msgstr "{0} барааг өөрийн дэд угсралт болгон нэмж болохгүй"
+
+msgid "Item {0} does not exist"
+msgstr "{0} гэсэн бараа байхгүй байна"
+
+msgid "Item {0} does not exist in the system or has expired"
+msgstr "{0} бараа системд байхгүй эсвэл хугацаа нь дууссан байна"
+
+msgid "Item {0} does not exist."
+msgstr "{0} гэсэн бараа байхгүй байна."
+
+msgid "Item {0} entered multiple times."
+msgstr "{0} барааг олон удаа оруулсан."
+
+msgid "Item {0} has been disabled"
+msgstr "{0} барааг идэвхгүй болгосон"
+
+msgid "Item {0} has no changes in delivered quantity. Please unselect the row if you do not wish to update its quantity."
+msgstr "{0} барааны хүргэлтийн тоо хэмжээнд өөрчлөлт ороогүй байна. Хэрэв та мөрийн тоо хэмжээг шинэчлэхийг хүсэхгүй байгаа бол сонголтыг болиулна уу."
+
+msgid "Item {0} has reached its end of life on {1}"
+msgstr "{0} бараа {1}-д ашиглалтын хугацаа нь дууссан."
+
+msgid "Item {0} is a template, please select one of its variants"
+msgstr "{0} бараа нь загвар бөгөөд хувилбаруудын аль нэгийг нь сонгоно уу"
+
+msgid "Item {0} is cancelled"
+msgstr "{0} бараа цуцлагдсан"
+
+msgid "Item {0} is closed in Blanket Order {1}"
+msgstr "Бараа {0} нь Хүрээ гэрээт захиалга {1}-д хаагдсан байна"
+
+msgid "Item {0} is disabled"
+msgstr "{0} бараа идэвхгүй болсон"
+
+msgid "Item {0} is not a serialized Item"
+msgstr "{0} бараа нь цувралжуулсан бараа биш байна"
+
+msgid "Item {0} is not a template item."
+msgstr "{0} бараа нь загвар бараа биш."
+
+msgid "Item {0} is not active or end of life has been reached"
+msgstr "{0} бараа идэвхгүй эсвэл ашиглалтын хугацаа нь дууссан байна"
+
+msgid "Item {0} must be a Fixed Asset Item"
+msgstr "{0} бараа нь Үндсэн хөрөнгийн бараа байх ёстой"
+
+msgid "Item {0} not found in 'Raw Materials Supplied' table in {1} {2}"
+msgstr "{1} {2} доторх 'Түүхий эд нийлүүлсэн' хүснэгтэд {0} гэсэн бараа олдсонгүй"
+
+msgid "Item {0} not found."
+msgstr "{0} гэсэн бараа олдсонгүй."
+
+msgid "Item: {0} does not exist in the system"
+msgstr "{0} гэсэн бараа системд байхгүй байна"
+
+msgid "Item: {0} with Stock UOM: {1} cannot have fractional process loss qty as UOM {2} is a whole number."
+msgstr "Бараа: {0} нь нөөц UOM-той: {1} нь бутархай үйл явцын алдагдлын тоотой байж болохгүй, учир нь UOM {2} нь бүхэл тоо юм."
+
+msgid "Items Filter"
+msgstr "Бараануудын шүүлтүүр"
+
+msgid "Items Required"
+msgstr "Шаардлагатай бараанууд"
+
+msgid "Items To Be Delivered"
+msgstr "Хүргэх бараанууд"
+
+msgid "Items To Be Received"
+msgstr "Хүлээн авах бараанууд"
+
+msgid "Items To Be Requested"
+msgstr "Хүсэлт гаргах бараанууд"
+
+msgid "Items cannot be updated as Subcontracting Inward Order(s) exist against this Subcontracted Sales Order."
+msgstr "Энэхүү Туслан гэрээт борлуулалтын захиалгын эсрэг Туслан гэрээт захиалга(ууд) байгаа тул бараануудыг шинэчлэх боломжгүй."
+
+msgid "Items cannot be updated as Subcontracting Order is created against the Purchase Order {0}."
+msgstr "Туслан гүйцэтгэгчийн захиалга нь {0} Худалдан авах захиалгын дагуу үүсгэгдсэн тул бараануудыг шинэчлэх боломжгүй."
+
+msgid "Items for Raw Material Request"
+msgstr "Түүхий эдийн хүсэлтийн бараанууд"
+
+msgid "Items must be a list of DocType names."
+msgstr "Бараанууд нь баримтын төрлийн нэрсийн жагсаалт байх ёстой."
+
+msgid "Items must be a list of Item codes"
+msgstr "Бараанууд нь барааны кодын жагсаалт байх ёстой"
+
+msgid "Items not found."
+msgstr "Бараанууд олдсонгүй."
+
+msgid "Items rate has been updated to zero as Allow Zero Valuation Rate is checked for the following items: {0}"
+msgstr "Дараах бараануудын хувьд Тэг үнэлгээний түвшинг зөвшөөрөхийг шалгасан тул барааны түвшинг тэг болгож шинэчилсэн: {0}"
+
+msgid "Items to Be Repost"
+msgstr "Дахин нийтлэх бараанууд"
+
+msgid "Items to Manufacture"
+msgstr "Үйлдвэрлэх бараанууд"
+
+msgid "Items to Manufacture are required to pull the Raw Materials associated with it."
+msgstr "Үйлдвэрлэх бараанууд нь үүнтэй холбоотой түүхий эдийг татах шаардлагатай."
+
+msgid "Items to Reserve"
+msgstr "Захиалга өгөх бараанууд"
+
+msgid "Items under this warehouse will be suggested"
+msgstr "Энэ агуулахын доорх бараануудыг санал болгоно"
+
+msgid "Items {0} do not exist in the Item master."
+msgstr "{0} гэсэн бараанууд нь Барааны мастер хэсэгт байхгүй байна."
+
+msgid "Itemwise Recommended Reorder Level"
+msgstr "Барааны дагуу санал болгож буй дахин захиалгын түвшин"
+
+msgid "Job Card Item"
+msgstr "Ажлын картын бараа"
+
+msgid "Job Card Secondary Item"
+msgstr "Ажлын картын хоёрдогч бараа"
+
+msgid "Job Worker Delivery Note"
+msgstr "Ажлын ажилтны хүргэлтийн баримт"
+
+msgid "Journal Entry"
+msgstr "Журналын бичилт"
+
+msgid "Landed Cost Item"
+msgstr "Буусан зардлын бараа"
+
+msgid "Lead"
+msgstr "Боломжит харилцагч"
+
+msgid "Lead -> Prospect"
+msgstr "Боломжит харилцагч -> Ирээдүй"
+
+msgid "Lead Details"
+msgstr "Боломжит харилцагчийн дэлгэрэнгүй мэдээлэл"
+
+msgid "Lead Source"
+msgstr "Боломжит харилцагчийн эх сурвалж"
+
+msgid "Leave blank if the Customer is blocked indefinitely"
+msgstr "Харилцагчийг хугацаагүй хаасан бол хоосон үлдээнэ үү"
+
+msgid "Leave blank to use the standard Delivery Note format"
+msgstr "Хүргэлтийн баримтын стандарт форматыг ашиглахын тулд хоосон үлдээнэ үү"
+
+msgid "Left column shows inherited defaults (Item Group → Company / Stock Settings). Right column is where you set overrides for this item only."
+msgstr "Зүүн баганад удамшсан анхдагч утгуудыг харуулна (Барааны бүлэг → Компани / Бараа материалын тохиргоо). Баруун баганад зөвхөн энэ бараанд зориулж дарж бичих тохиргоог тохируулсан хэсэг байна."
+
+msgid "Left column shows system-level defaults (Company / Stock Settings). Right column is where you set overrides for this item group."
+msgstr "Зүүн баганад системийн түвшний анхдагч тохиргоог харуулна (Компани / Бараа материалын тохиргоо). Баруун баганад энэ зүйлийн бүлгийн хувьд дарж бичих тохиргоог тохируулсан газар байна."
+
+msgid "Limit timeslot for Stock Reposting"
+msgstr "Бараа материалыг дахин байршуулах хугацааг хязгаарлах"
+
+msgid "Logical condition must have exactly one operator"
+msgstr "Логик нөхцөл яг нэг оператортой байх ёстой"
+
+msgid "Logical conditions need at least 1 sub-condition"
+msgstr "Логик нөхцөл дор хаяж 1 дэд нөхцөлтэй байх ёстой"
+
+msgid "Logical operators must be 'and' or 'or'"
+msgstr "Логик оператор нь 'and' эсвэл 'or' байх ёстой"
+
+msgid "Lost Quotation"
+msgstr "Алдагдсан үнийн санал"
+
+msgid "Main Item Code"
+msgstr "Үндсэн барааны код"
+
+msgid "Maintain Stock"
+msgstr "Бараа материалаа хадгалах"
+
+msgid "Maintenance Schedule Item"
+msgstr "Засвар үйлчилгээний хуваарийн бараа"
+
+msgid "Make Stock Entry"
+msgstr "Бараа материалын оруулга хийх"
+
+msgid "Manufactured Qty (including Process Loss)"
+msgstr "Үйлдвэрлэсэн тоо хэмжээ (үйлдвэрлэлийн хорогдлыг оруулаад)"
+
+msgid "Manufacturers used in Items"
+msgstr "Бараануудад ашигласан үйлдвэрлэгчид"
+
+msgid "Master Production Schedule Item"
+msgstr "Мастер үйлдвэрлэлийн хуваарийн бараа"
+
+msgid "Matched date"
+msgstr "Нийцүүлсэн огноо"
+
+msgid "Material Issue"
+msgstr "Материалын зарлага"
+
+msgid "Material Readiness"
+msgstr "Материалын бэлэн байдал"
+
+msgid "Material Receipt"
+msgstr "Материалын орлого"
+
+msgid "Material Request Item"
+msgstr "Материалын хүсэлтийн бараа"
+
+msgid "Material Request Plan Item"
+msgstr "Материалын хүсэлтийн төлөвлөгөөний бараа"
+
+msgid "Material Request used to make this Stock Entry"
+msgstr "Энэхүү бараа материалын оруулгыг хийхэд ашигласан материалын хүсэлт"
+
+msgid "Maximum Producible Items"
+msgstr "Хамгийн их үйлдвэрлэх боломжтой бараанууд"
+
+msgid "Maximum Samples - {0} can be retained for Item {1}."
+msgstr "Бараа {1}-д хамгийн ихдээ {0} дээж хадгалж болно."
+
+msgid "Maximum Samples - {0} have already been retained for Batch {1} and Item {2} in Batch {3}."
+msgstr "{3} багц дахь {1} багц болон {2} бараанд хамгийн их дээж - {0} -г аль хэдийн хадгалсан байна."
+
+msgid "Mention Valuation Rate in the Item master."
+msgstr "Барааны мастер хэсэгт Үнэлгээний түвшинг дурдана уу."
+
+msgid "Method '{0}' must be whitelisted and permit GET requests"
+msgstr "'{0}' арга нь зөвшөөрөгдсөн жагсаалтад байх ба GET хүсэлтийг зөвшөөрөх ёстой"
+
+msgid "Method {0} must permit GET requests"
+msgstr "{0} арга нь GET хүсэлтийг зөвшөөрөх ёстой"
+
+msgid "Missing Accounting Dimension"
+msgstr "Нягтлан бодох бүртгэлийн хэмжээс дутуу"
+
+msgid "Missing Company"
+msgstr "Компани дутуу"
+
+msgid "Missing Item"
+msgstr "Алга болсон бараа"
+
+msgid "Monthly Completed Work Order"
+msgstr "Сарын гүйцэтгэсэн ажлын захиалга"
+
+msgid "Move Item"
+msgstr "Барааг зөөх"
+
+msgid "Move Stock"
+msgstr "Бараа материал шилжүүлэх"
+
+msgid "Needed by {0}. Quantities are the plan totals, as on the Production Plan."
+msgstr "{0}-д шаардлагатай. Тоо хэмжээ нь Үйлдвэрлэлийн төлөвлөгөөн дээрх төлөвлөгөөний нийт дүн юм."
+
+msgid "Negative Stock"
+msgstr "Сөрөг бараа материал"
+
+msgid "Negative Stock Error"
+msgstr "Сөрөг бараа материалын алдаа"
+
+msgid "New Assets (This Year)"
+msgstr "Шинэ хөрөнгө (энэ жил)"
+
+msgid "Newer versions of this Quotation already exist. Create a new version anyway?"
+msgstr "Энэ Үнийн саналын шинэ хувилбарууд аль хэдийн байна. Ямар ч байсан шинэ хувилбар үүсгэх үү?"
+
+msgid "No Delivery Note selected for Customer {0}"
+msgstr "Харилцагч руу хүргэлтийн баримт сонгоогүй байна {0}"
+
+msgid "No Items selected for transfer."
+msgstr "Шилжүүлэх бараа сонгоогүй байна."
+
+msgid "No Items with Bill of Materials to Manufacture or all items already manufactured"
+msgstr "Үйлдвэрлэх материалын жагсаалттай эсвэл аль хэдийн үйлдвэрлэгдсэн бүх бараа байхгүй"
+
+msgid "No Items with Bill of Materials."
+msgstr "Материалын жагсаалттай бараа байхгүй."
+
+msgid "No Material Request created"
+msgstr "Материалын хүсэлт үүсгэгдээгүй"
+
+msgid "No Standard Valuation Rate found for Item {0} in Company {1} as on {2}. Please create an Item Standard Cost record."
+msgstr "{2}дээрх шиг {1} компанийн {0} барааны стандарт үнэлгээний үнэ олдсонгүй. Барааны стандарт өртгийн бүртгэл үүсгэнэ үү."
+
+msgid "No items to manufacture in this plan"
+msgstr "Энэ төлөвлөгөөнд үйлдвэрлэх бараа байхгүй"
+
+msgid "No new GL reposting entries were created for the selected rows."
+msgstr "Сонгосон мөрүүдэд ерөнхий дэвтрийг дахин бүртгэх шинэ бичилт үүсгэгдсэнгүй."
+
+msgid "No of Items to Repost"
+msgstr "Дахин нийтлэх бараануудын тоо"
+
+msgid "No of Parallel Reposting (Per Item)"
+msgstr "Зэрэгцээ дахин нийтлэх тоо (бараа тус бүрт)"
+
+msgid "No raw materials planned for this plan yet"
+msgstr "Энэ төлөвлөгөөнд түүхий эд хараахан төлөвлөөгүй байна"
+
+msgid "No schedule yet — use Schedule Items on the Production Plan to build one"
+msgstr "Хуваарь хараахан байхгүй — нэгийг үүсгэхийн тулд Үйлдвэрлэлийн төлөвлөгөөн дээр Бараа хуваарилах-ыг ашиглана уу"
+
+msgid "No {0} linked to this Work Order."
+msgstr "Энэ Ажлын захиалгатай холбогдсон {0} байхгүй."
+
+msgid "Non-stock items will not require a Delivery Note. Sales Orders will be marked as Completed once all stock items are delivered and the order is fully billed"
+msgstr "Бараа материалын бус бараанд Хүргэлтийн баримт шаардлагагүй. Бүх бараа материал хүргэгдэж, захиалга бүрэн нэхэмжлэгдсэний дараа Борлуулалтын захиалга Дууссан төлөвтэй болно"
+
+msgid "Not Ordered"
+msgstr "Захиалаагүй"
+
+msgid "Not linked to a finished good"
+msgstr "Бэлэн бүтээгдэхүүнтэй холбогдоогүй"
+
+msgid "Not permitted for {0}"
+msgstr "{0}-д зөвшөөрөгдөөгүй"
+
+msgid "Not scheduled yet"
+msgstr "Хараахан хуваарьт ороогүй"
+
+msgid "Not started"
+msgstr "Эхлээгүй"
+
+msgid "Note: If you want to use the finished good {0} as a raw material, then enable the 'Do Not Explode' checkbox in the Items table against the same raw material."
+msgstr "Тэмдэглэл: Хэрэв та бэлэн бүтээгдэхүүнийг {0} түүхий эд болгон ашиглахыг хүсвэл Бараануудын хүснэгтэд байгаа ижил түүхий эдийн эсрэг 'Дэлбэрж болохгүй' гэсэн тэмдэглэгээний нүдийг идэвхжүүлнэ үү."
+
+msgid "Note: Item {0} added multiple times"
+msgstr "Тэмдэглэл: {0} барааг олон удаа нэмсэн"
+
+msgid "On completion of the Job Card, split the consumed batch into one child batch per finished piece"
+msgstr "Ажлын карт дуусахад зарцуулсан багцыг бэлэн бүтээгдэхүүн бүрт нэг дэд багц болгон хуваана"
+
+msgid "On expanding a row in the Items to Manufacture table, you'll see an option to 'Include Exploded Items'. Ticking this includes raw materials of the sub-assembly items in the production process."
+msgstr "Үйлдвэрлэх бараануудын хүснэгтийн мөрийг өргөжүүлэхэд та 'Дэлбэрсэн бараануудыг оруулах' сонголтыг харах болно. Үүнийг тэмдэглэхэд үйлдвэрлэлийн процесст байгаа дэд угсралтын түүхий эдийг оруулна."
+
+msgid "On submission of the stock entry, the consumed batch is split into one child batch per finished piece"
+msgstr "Бараа материалын гүйлгээг батлахад зарцуулсан багцыг бэлэн бүтээгдэхүүн бүрт нэг дэд багц болгон хуваана"
+
+msgid "Once this Standard Cost is submitted, stock transactions for Item {0} in {1} cannot be posted with a date before the Effective Date {2}. Post any backdated entries before submitting."
+msgstr "Энэхүү Стандарт Зардлыг ирүүлсний дараа {1} доторх {0} барааны хувьцааны гүйлгээг Хүчин төгөлдөр болох өдрөөс {2}өмнөх огноогоор нийтлэх боломжгүй. Илгээхээс өмнө хуучирсан аливаа оруулгыг нийтэлнэ үү."
+
+msgid "Only one component can be marked as Balance Item."
+msgstr "Зөвхөн нэг бүрэлдэхүүн хэсгийг Балансын бараа гэж тэмдэглэж болно."
+
+msgid "Only one supplier can be marked as default in the Supplier Lead Times table"
+msgstr "Нийлүүлэгчийн хүргэлтийн хугацааны хүснэгтэд зөвхөн нэг нийлүүлэгчийг анхдагч болгож болно"
+
+msgid "Only one version of a Product Bundle can be active at a time for a given Parent Item. Activating a version deactivates the previously active one."
+msgstr "Бүтээгдэхүүний багцын зөвхөн нэг хувилбар нь өгөгдсөн эцэг бараанд нэг удаад идэвхтэй байж болно. Хувилбарыг идэвхжүүлснээр өмнө нь идэвхтэй байсан хувилбарыг идэвхгүй болгоно."
+
+msgid "Only show Items from these Item Groups"
+msgstr "Зөвхөн эдгээр Барааны Бүлгүүдээс Бараануудыг Үзүүл"
+
+msgid "Only the accounting ledgers (General Ledger and Payment Ledger) will be reposted, and only for the selected rows posted on or after the From Date. Selected rows posted before it are ignored. Stock Ledger Entries and item valuation rates are left untouched."
+msgstr "Зөвхөн нягтлан бодох бүртгэлийн дэвтрүүдийг (Ерөнхий дэвтэр ба Төлбөрийн дэвтэр) дахин бүртгэх ба зөвхөн Эхлэх огнооноос хойш бүртгэгдсэн сонгосон мөрүүдэд хамаарна. Түүнээс өмнө бүртгэгдсэн сонгосон мөрүүдийг үл тооно. Бараа материалын дэвтрийн бичилт болон барааны үнэлгээ өөрчлөгдөхгүй."
+
+msgid "Open Item {0}"
+msgstr "Нээх бараа {0}"
+
+msgid "Open Non Conformances"
+msgstr "Нээлттэй үл нийцлүүд"
+
+msgid "Open Opportunity"
+msgstr "Нээлттэй боломж"
+
+msgid "Open Quality Actions"
+msgstr "Нээлттэй чанарын арга хэмжээ"
+
+msgid "Open Quality Reviews"
+msgstr "Нээлттэй чанарын тоймууд"
+
+msgid "Opening Invoice Creation Tool Item"
+msgstr "Нэхэмжлэх үүсгэх хэрэгслийн барааг нээх"
+
+msgid "Opening Invoice Item"
+msgstr "Нэхэмжлэхийн бараа нээх"
+
+msgid "Opening Stock"
+msgstr "Нээлтийн бараа материал"
+
+msgid "Opening Stock cannot be created as stock transactions already exist for item {0}."
+msgstr "{0} барааны бараа материалын гүйлгээ аль хэдийн хийгдсэн тул нээлтийн бараа материалыг үүсгэх боломжгүй."
+
+msgid "Opening Stock reconciliation created with zero valuation rate: {0}"
+msgstr "Үнэлгээний тэг хувьтайгаар үүсгэсэн бараа материалын анхны тохируулга: {0}"
+
+msgid "Opening Stock reconciliation created: {0}"
+msgstr "Нээлтийн бараа материалын тохируулга үүссэн: {0}"
+
+msgid "Opening stock creation has been queued and will be created in the background. Please check the Stock Reconciliation after some time."
+msgstr "Нээлтийн бараа материал үүсгэх дараалалд орсон бөгөөд ард үүсгэгдэх болно. Хэсэг хугацааны дараа бараа материалын тохиролцоог шалгана уу."
+
+msgid "Operating cost"
+msgstr "Үйл ажиллагааны зардал"
+
+msgid "Operating cost per BOM quantity"
+msgstr "БОМ-ын тоо хэмжээнд ногдох үйл ажиллагааны зардал"
+
+msgid "Operating cost(Company Currency)"
+msgstr "Үйл ажиллагааны зардал (Компанийн валютаар)"
+
+msgid "Operation time"
+msgstr "Үйлдлийн хугацаа"
+
+msgid "Operator '{0}' requires a list value"
+msgstr "'{0}' оператор жагсаалт утга шаардана"
+
+msgid "Opportunity Item"
+msgstr "Боломжийн бараа"
+
+msgid "Outgoing Bills (Sales Invoice)"
+msgstr "Гарах нэхэмжлэх (Борлуулалтын нэхэмжлэх)"
+
+msgid "Overdue Issues"
+msgstr "Хугацаа хэтэрсэн асуудлууд"
+
+msgid "Overrides the Purchase Time above for the selected supplier. The row marked as default is used when no supplier is selected."
+msgstr "Сонгосон нийлүүлэгчийн хувьд дээрх Худалдан авалтын хугацааг дарж бичнэ. Нийлүүлэгч сонгоогүй үед анхдагч гэж тэмдэглэсэн мөрийг ашиглана."
+
+msgid "POS Invoice Item"
+msgstr "ПОС-ын нэхэмжлэхийн бараа"
+
+msgid "Packed Items"
+msgstr "Савласан бараанууд"
+
+msgid "Packed Items cannot be transferred internally"
+msgstr "Савласан бараануудыг дотооддоо зөөх боломжгүй"
+
+msgid "Paid From"
+msgstr "Төлсөн данс"
+
+msgid "Paid From and Paid To accounts must be different for an Internal Transfer."
+msgstr "Дотоод шилжүүлгийн хувьд Төлсөн данс болон Хүлээн авсан данс өөр байх ёстой."
+
+msgid "Paid To"
+msgstr "Хүлээн авсан данс"
+
+msgid "Parent Item"
+msgstr "Эцэг эхийн бараа"
+
+msgid "Parent Item Group"
+msgstr "Эцэг эхийн барааны бүлэг"
+
+msgid "Parent Item {0} must not be a Fixed Asset"
+msgstr "Эцэг эхийн бараа {0} нь үндсэн хөрөнгө байх ёсгүй"
+
+msgid "Parent document is required to search child rows"
+msgstr "Дэд мөрүүдийг хайхад эх баримт шаардлагатай"
+
+msgid "Party Specific Item"
+msgstr "Үдэшлэгт зориулсан бараа"
+
+msgid "Payment Entry"
+msgstr "Төлбөрийн бичилт"
+
+msgid "Pending qty"
+msgstr "Хүлээгдэж буй тоо хэмжээ"
+
+msgid "Period Closing Failed"
+msgstr "Тайлант үеийг хааж чадсангүй"
+
+msgid "Period Movement (Debits - Credits)"
+msgstr "Хугацааны хөдөлгөөн (Дебет - Кредит)"
+
+msgid "Phantom Item"
+msgstr "Хий үзэгдлийн бараа"
+
+msgid "Phantom Item is mandatory"
+msgstr "Хий үзэгдлийн бараа заавал байх ёстой"
+
+msgid "Pick List Item"
+msgstr "Жагсаалтын барааг сонгох"
+
+msgid "Pick a Production Plan"
+msgstr "Үйлдвэрлэлийн төлөвлөгөө сонгох"
+
+msgid "Plan Visualizer"
+msgstr "Төлөвлөгөөний дүрслэл"
+
+msgid "Planned End"
+msgstr "Төлөвлөсөн дуусах"
+
+msgid "Planned Start"
+msgstr "Төлөвлөсөн эхлэх"
+
+msgid "Please check the 'Activate Serial and Batch No for Item' checkbox in the {0} to make Serial and Batch Bundle for the item."
+msgstr "Барааны цуваа болон багцын багцыг үүсгэхийн тулд {0} доторх 'Барааны цуваа болон багцын дугаарыг идэвхжүүлэх' чагтыг чагтална уу."
+
+msgid "Please click on 'Generate Schedule' to fetch Serial No added for Item {0}"
+msgstr "{0} барааны серийн дугаарыг нэмэхийн тулд 'Хуваарь үүсгэх' дээр дарна уу"
+
+msgid "Please create Item Alternative records for the item {0} to change the finished item."
+msgstr "Бэлэн бүтээгдэхүүнийг солихын тулд бараа {0}-д Барааны орлуулагч бүртгэл үүсгэнэ үү."
+
+msgid "Please enter <b>Difference Account</b> or set default <b>Stock Adjustment Account</b> for company {0}"
+msgstr "<b>Зөрүүний данс</b> гэж оруулах эсвэл <b>Бараа материалын тохируулгын данс</b> -г {0} компанийн хувьд анхдагчаар тохируулна уу"
+
+msgid "Please enter Item first"
+msgstr "Эхлээд бараа оруулна уу"
+
+msgid "Please enter Production Item first"
+msgstr "Эхлээд Үйлдвэрлэлийн Бараагаа оруулна уу"
+
+msgid "Please select BOM for Item in Row {0}"
+msgstr "{0} мөр дэх барааны BOM-г сонгоно уу"
+
+msgid "Please select Items from the Table"
+msgstr "Хүснэгтээс бараануудыг сонгоно уу"
+
+msgid "Please select Start Date and End Date for Item {0}"
+msgstr "{0} барааны эхлэх огноо болон дуусах огноог сонгоно уу"
+
+msgid "Please select Stock Asset Account"
+msgstr "Бараа материалын хөрөнгийн дансыг сонгоно уу"
+
+msgid "Please select a BOM for {0}"
+msgstr "{0}-д БОМ сонгоно уу"
+
+msgid "Please select a Delivery Note"
+msgstr "Хүргэлтийн баримтыг сонгоно уу"
+
+msgid "Please select either the Item or Warehouse or Warehouse Type filter to generate the report."
+msgstr "Тайлан үүсгэхийн тулд Бараа эсвэл Агуулах эсвэл Агуулахын Төрөл шүүлтүүрийн аль нэгийг сонгоно уу."
+
+msgid "Please select rows to create GL Reposting Entries"
+msgstr "Ерөнхий дэвтрийг дахин бүртгэх бичилт үүсгэх мөрүүдийг сонгоно уу"
+
+msgid "Please select rows to create {0}"
+msgstr "{0} үүсгэх мөрүүдийг сонгоно уу"
+
+msgid "Please select the date to repost the accounting ledgers from"
+msgstr "Нягтлан бодох бүртгэлийн дэвтрүүдийг дахин бүртгэж эхлэх огноог сонгоно уу"
+
+msgid "Please set Finished Good Quantity before fetching items from the BOM."
+msgstr "БОМ-оос бараа татахаас өмнө бэлэн бүтээгдэхүүний тоо хэмжээг оруулна уу."
+
+msgid "Please set a Manufacturing Variance Account for Item {0} or a Default Manufacturing Variance Account in Company {1}."
+msgstr "{0} бараанд Үйлдвэрлэлийн Зөрүүний Данс эсвэл {1} компанийн Үйлдвэрлэлийн Зөрүүний Анхдагч Данс тохируулна уу."
+
+msgid "Please set a Temporary Opening account for company {0} to create an Opening Stock reconciliation."
+msgstr "Нээлтийн бараа материалын тохируулга хийхийн тулд {0} компанийн түр нээх данс үүсгэнэ үү."
+
+msgid "Please set a primary email ID for the Contact {0}"
+msgstr "Холбоо барих хүн {0}-д үндсэн и-мэйл хаяг тохируулна уу"
+
+msgid "Please set an Expense Account in the Items table"
+msgstr "Бараануудын хүснэгтэд Зардлын данс тохируулна уу"
+
+msgid "Please set company on the Document before requesting for invoices."
+msgstr "Нэхэмжлэх хүсэхээс өмнө баримт дээр компанийг тохируулна уу."
+
+msgid "Please set default UOM in Stock Settings"
+msgstr "Бараа материалын тохиргоо хэсэгт UOM-ийн анхдагч тохиргоог хийнэ үү"
+
+msgid "Please set the Weight Per Piece to split the produced quantity into batches in the Stock Entry {0}."
+msgstr "Бараа материалын гүйлгээ {0}-д үйлдвэрлэсэн тоо хэмжээг багцуудад хуваахын тулд Нэг ширхэгийн жинг оруулна уу."
+
+msgid "Please set {0} for Batched Item {1}, which is used to set {2} on Submit."
+msgstr "Илгээх дээр {2} тохируулахад ашигладаг Багцалсан бараа {1}-д {0} гэж тохируулна уу."
+
+msgid "Please set {0} in Company {1} or in the Item Defaults of Item {2}"
+msgstr "Компани {1} эсвэл {2} барааны Анхдагч тохиргоо хэсэгт {0} гэж тохируулна уу"
+
+msgid "Please specify either Quantity or Valuation Rate or both"
+msgstr "Тоо хэмжээ эсвэл Үнэлгээний үнэ эсвэл хоёуланг нь тодорхойлно уу"
+
+msgid "Please specify {0}. It is needed to fetch Item Details."
+msgstr "{0}гэж заана уу. Энэ нь Барааны Дэлгэрэнгүй мэдээллийг авахад шаардлагатай."
+
+msgid "Price List {0} cannot be used on a buying transaction"
+msgstr "Үнийн жагсаалт {0}-г худалдан авалтын гүйлгээнд ашиглах боломжгүй"
+
+msgid "Price List {0} cannot be used on a selling transaction"
+msgstr "Үнийн жагсаалт {0}-г борлуулалтын гүйлгээнд ашиглах боломжгүй"
+
+msgid "Price List {0} is disabled"
+msgstr "Үнийн жагсаалт {0} идэвхгүй байна"
+
+msgid "Price List {0} is not enabled for {1}"
+msgstr "Үнийн жагсаалт {0} нь {1}-д идэвхжээгүй байна"
+
+msgid "Pricing Rule Item Code"
+msgstr "Үнийн дүрмийн барааны код"
+
+msgid "Pricing Rule Item Group"
+msgstr "Үнийн дүрмийн барааны бүлэг"
+
+msgid "Pricing Rule {0} is disabled"
+msgstr "Үнийн дүрэм {0} идэвхгүй байна"
+
+msgid "Process Loss"
+msgstr "Үйлдвэрлэлийн хорогдол"
+
+msgid "Process Loss %"
+msgstr "Үйлдвэрлэлийн хорогдол %"
+
+msgid "Process Loss Percentage cannot be greater than 100"
+msgstr "Үйлдвэрлэлийн хорогдлын хувь 100-аас их байж болохгүй"
+
+msgid "Process Loss Qty"
+msgstr "Үйлдвэрлэлийн хорогдлын тоо хэмжээ"
+
+msgid "Process Loss Quantity"
+msgstr "Үйлдвэрлэлийн хорогдлын хэмжээ"
+
+msgid "Process Loss Quantity cannot be greater than {0}"
+msgstr "Үйлдвэрлэлийн хорогдлын хэмжээ нь {0}-с их байж болохгүй"
+
+msgid "Process Loss Report"
+msgstr "Үйлдвэрлэлийн хорогдлын тайлан"
+
+msgid "Process Loss Value"
+msgstr "Үйлдвэрлэлийн хорогдлын үнэ цэнэ"
+
+msgid "Process Loss qty"
+msgstr "Үйлдвэрлэлийн хорогдлын тоо хэмжээ"
+
+msgid "Process loss qty"
+msgstr "Үйлдвэрлэлийн хорогдлын тоо хэмжээ"
+
+msgid "Processing GL Entries"
+msgstr "Ерөнхий дэвтрийн бичилтүүдийг боловсруулж байна"
+
+msgid "Procurement ({0})"
+msgstr "Худалдан авалт ({0})"
+
+msgid "Produced quantity is split into one batch per this many units of the finished good"
+msgstr "Үйлдвэрлэсэн тоо хэмжээг бэлэн бүтээгдэхүүний энэ олон нэгж тутамд нэг багц болгон хуваана"
+
+msgid "Product Bundle Item"
+msgstr "Бүтээгдэхүүний багцын бараа"
+
+msgid "Production Item"
+msgstr "Үйлдвэрлэлийн бараа"
+
+msgid "Production Item Info"
+msgstr "Үйлдвэрлэлийн барааны мэдээлэл"
+
+msgid "Production Plan Item"
+msgstr "Үйлдвэрлэлийн төлөвлөгөөний бараа"
+
+msgid "Production Plan Item Reference"
+msgstr "Үйлдвэрлэлийн төлөвлөгөөний барааны лавлагаа"
+
+msgid "Production Plan Quantity Exceeded"
+msgstr "Үйлдвэрлэлийн төлөвлөгөөний тоо хэмжээ хэтэрсэн"
+
+msgid "Production Plan Schedule entries cannot be created manually. Use the Schedule Items action on the Production Plan."
+msgstr "Үйлдвэрлэлийн төлөвлөгөө Хуваарийн оруулгуудыг гараар үүсгэх боломжгүй. Үйлдвэрлэлийн төлөвлөгөөн дээрх Хуваарийн Бараанууд үйлдлийг ашиглана уу."
+
+msgid "Production Plan Sub Assembly Item"
+msgstr "Үйлдвэрлэлийн төлөвлөгөөний дэд угсралтын бараа"
+
+msgid "Production Plan Visualizer"
+msgstr "Үйлдвэрлэлийн төлөвлөгөөний дүрслэл"
+
+msgid "Proforma Email Template"
+msgstr "Проформа и-мэйлийн загвар"
+
+msgid "Proforma Invoice Item"
+msgstr "Проформа нэхэмжлэхийн бараа"
+
+msgid "Project wise Stock Tracking"
+msgstr "Төслийн дагуу бараа материалын хяналт"
+
+msgid "Project wise Stock Tracking "
+msgstr "Төслийн дагуу бараа материалын хяналт "
+
+msgid "Projected"
+msgstr "Төсөөлсөн"
+
+msgid "Purchase Invoice Item"
+msgstr "Нэхэмжлэхийн бараа худалдаж авах"
+
+msgid "Purchase Order Item"
+msgstr "Худалдан авах захиалгын бараа"
+
+msgid "Purchase Orders Items Overdue"
+msgstr "Худалдан авах захиалгын хугацаа хэтэрсэн бараанууд"
+
+msgid "Purchase Receipt Item"
+msgstr "Худалдан авалтын баримтын бараа"
+
+msgid "Purchase Time (Days)"
+msgstr "Худалдан авах хугацаа (өдөр)"
+
+msgid "Putaway Rule already exists for Item {0} in Warehouse {1}."
+msgstr "Агуулахын {1} доторх {0} барааны хувьд Putaway дүрэм аль хэдийн байна."
+
+msgid "Qty to Convert"
+msgstr "Хөрвүүлэх тоо хэмжээ"
+
+msgid "Qty to produce"
+msgstr "Үйлдвэрлэх тоо хэмжээ"
+
+msgid "Quality Inspection required"
+msgstr "Чанарын хяналт шаардлагатай"
+
+msgid "Quantity required for Item {0} in row {1}"
+msgstr "{1} мөрөнд байгаа {0} бараанд шаардлагатай тоо хэмжээ"
+
+msgid "Quick Stock Balance"
+msgstr "Бараа материалын хурдан үлдэгдэл"
+
+msgid "Quotation"
+msgstr "Үнийн санал"
+
+msgid "Quotation To"
+msgstr "Үнийн санал"
+
+msgid "Quotation {0} is Lost"
+msgstr "Үнийн санал {0} алдагдсан"
+
+msgid "Quotation {0} is Lost and cannot be revised."
+msgstr "Үнийн санал {0} алдагдсан тул шинэчлэх боломжгүй."
+
+msgid "Quotation {0} is inactive"
+msgstr "Үнийн санал {0} идэвхгүй байна"
+
+msgid "Quotation {0} not of type {1}"
+msgstr "{0} үнийн санал нь {1} төрөлд хамаарахгүй"
+
+msgid "Rate at which Price List Currency is converted to Company Currency"
+msgstr "Үнийн жагсаалтын валютыг компанийн валют руу хөрвүүлэх ханш"
+
+msgid "Rate at which document currency is converted to company currency"
+msgstr "Баримтын валютыг компанийн валют руу хөрвүүлэх ханш"
+
+msgid "Rate of Materials based on"
+msgstr "Материалын үнийн үндэслэл"
+
+msgid "Rate of Stock UOM"
+msgstr "UOM-ийн бараа материалын ханш"
+
+msgid "Raw Material Item"
+msgstr "Түүхий эд материалын бараа"
+
+msgid "Raw Materials To Be Received"
+msgstr "Хүлээн авах түүхий эд"
+
+msgid "Receipt Email Template"
+msgstr "Төлбөрийн баримтын и-мэйлийн загвар"
+
+msgid "Receipt Items"
+msgstr "Баримтын бараанууд"
+
+msgid "Receipts can only be emailed for a POS Invoice or a Sales Invoice."
+msgstr "Төлбөрийн баримтыг зөвхөн ПОС нэхэмжлэх эсвэл Борлуулалтын нэхэмжлэхийн хувьд и-мэйлээр илгээх боломжтой."
+
+msgid "Received Items To Be Billed"
+msgstr "Төлбөр тооцох хүлээн авсан бараанууд"
+
+msgid "Received Stock Entries"
+msgstr "Бараа материалын бүртгэлийг хүлээн авсан"
+
+msgid "Reconciliation Failed"
+msgstr "Нийцүүлэлт амжилтгүй боллоо"
+
+msgid "Recreate Stock Ledgers"
+msgstr "Бараа материалын дэвтрийг дахин үүсгэх"
+
+msgid "Regenerate Stock Closing Entry"
+msgstr "Бараа материалын хаалтын бүртгэлийг сэргээх"
+
+msgid "Related Item"
+msgstr "Холбоотой бараа"
+
+msgid "Remove Parent Row No in Items Table"
+msgstr "Бараануудын хүснэгтээс эх мөрийн дугаарыг устгах"
+
+msgid "Rename Attribute Value in Item Attribute."
+msgstr "Барааны шинж чанар дахь шинж чанарын утгыг нэрлэнэ үү."
+
+msgid "Reopen Items"
+msgstr "Мөрүүдийг дахин нээх"
+
+msgid ""
+"Replace a particular BOM in all other BOMs where it is used. It will replace the old BOM link, update cost and regenerate \"BOM Explosion Item\" table as per new BOM.\n"
+"It also updates latest price in all the BOMs."
+msgstr ""
+"Тухайн BOM-г ашиглаж байгаа бусад бүх BOM-уудад солино. Энэ нь хуучин BOM холбоосыг сольж, өртгийг шинэчилж, шинэ BOM-ын дагуу \"BOM-ын тэсрэлтийн бараа\" хүснэгтийг дахин үүсгэнэ.\n"
+"Энэ нь мөн бүх BOM-уудын хамгийн сүүлийн үеийн үнийг шинэчилнэ."
+
+msgid "Report Line Items"
+msgstr "Мөрийн бараануудыг мэдээлэх"
+
+msgid "Repost Accounting Ledger Items"
+msgstr "Нягтлан бодох бүртгэлийн дэвтрийн бараануудыг дахин байршуулах"
+
+msgid "Repost Item Valuation"
+msgstr "Барааны үнэлгээг дахин нийтлэх"
+
+msgid "Repost Item Valuation restarted for selected failed records."
+msgstr "Сонгогдсон амжилтгүй бичлэгүүдийн хувьд барааны үнэлгээг дахин нийтэлсэн."
+
+msgid "Repost Payment Ledger Items"
+msgstr "Төлбөрийн дэвтрийн бараануудыг дахин байршуулах"
+
+msgid "Reposting Entries"
+msgstr "Дахин бүртгэх бичилтүүд"
+
+msgid "Reposting Entries will change the value of accounts Stock In Hand, and Stock Expenses in the Trial Balance report and will also change the Balance Value in the Stock Balance report."
+msgstr "Бичлэгийг дахин байршуулснаар Туршилтын балансын тайлан дахь Гарт байгаа бараа материал болон Бараа материалын зардлын дансны үнэ цэнийг өөрчлөхөөс гадна Бараа материалын балансын тайлан дахь Балансын үнийг өөрчлөх болно."
+
+msgid "Reposting Entry will change the value of accounts Stock In Hand and Stock Expenses in the Trial Balance report and will also change the Balance Value in the Stock Balance report."
+msgstr "Бичлэгийг дахин байршуулснаар Туршилтын балансын тайлан дахь Гарт байгаа бараа материал болон Бараа материалын зардлын дансны үнэ цэнийг өөрчлөхөөс гадна Бараа материалын балансын тайлан дахь Балансын үнийг өөрчлөх болно."
+
+msgid "Reposting for Item-Wh Completed {0}%"
+msgstr "Дууссан Wh барааны дахин нийтэлж байна {0}%"
+
+msgid "Request {0}"
+msgstr "{0} хүсэх"
+
+msgid "Requested Items To Be Transferred"
+msgstr "Шилжүүлэхийг хүссэн бараанууд"
+
+msgid "Requested Items to Order and Receive"
+msgstr "Захиалга өгөх болон хүлээн авахыг хүссэн бараанууд"
+
+msgid "Requests"
+msgstr "Хүсэлтүүд"
+
+msgid "Required Items"
+msgstr "Шаардлагатай бараанууд"
+
+msgid "Reserve Stock"
+msgstr "Нөөцийн бараа материал"
+
+msgid "Reserved Stock"
+msgstr "Нөөцлөгдсөн бараа материал"
+
+msgid "Reserved Stock (Current)"
+msgstr "Нөөцөлсөн бараа материал (одоогийн)"
+
+msgid "Resolved Issues"
+msgstr "Шийдвэрлэсэн асуудлууд"
+
+msgid "Restrict Items Based On"
+msgstr "Бараануудыг дараах дээр үндэслэн хязгаарлах"
+
+msgid "Return / Debit Note"
+msgstr "Буцаалт / Дебет тэмдэглэл"
+
+msgid "Return Against Delivery Note"
+msgstr "Хүргэлтийн баримтын эсрэг буцаах"
+
+msgid "Returned by Customer"
+msgstr "Харилцагч буцаасан"
+
+msgid "Returned to Customer"
+msgstr "Харилцагчид буцаасан"
+
+msgid "Review Stock Settings"
+msgstr "Бараа материалын тохиргоог шалгах"
+
+msgid "Round Off"
+msgstr "Тоймлолт"
+
+msgid "Rounding gain/loss Entry for Stock Transfer"
+msgstr "Бараа материал шилжүүлэхэд зориулсан ашиг/алдагдлыг бөөрөнхийлөх оруулга"
+
+msgid "Row # {0}: Cannot return more than {1} for Item {2}"
+msgstr "Мөр # {0}: {2} барааны хувьд {1} -с илүүг буцаах боломжгүй"
+
+msgid "Row # {0}: Please add Serial and Batch Bundle for Item {1}"
+msgstr "Мөр # {0}: {1} бараанд зориулсан цуваа болон багц багцыг нэмнэ үү"
+
+msgid "Row # {0}: Returned Item {1} does not exist in {2} {3}"
+msgstr "Мөр # {0}: Буцаагдсан бараа {1} нь {2} {3} дотор байхгүй байна"
+
+msgid "Row #{0}: % of Component Cost needs a BOM secondary item. Choose Valuation Rate or Manual for {1}."
+msgstr "Мөр #{0}: Бүрэлдэхүүний өртгийн %-д БОМ-ын хоёрдогч бараа шаардлагатай. {1}-д Үнэлгээний үнэ эсвэл Гараар сонгоно уу."
+
+msgid "Row #{0}: '{1}' cannot be used to search items."
+msgstr "Мөр #{0}: '{1}'-ийг бараа хайхад ашиглах боломжгүй."
+
+msgid "Row #{0}: '{1}' does not match {2}."
+msgstr "Мөр #{0}: '{1}' нь {2}-тэй таарахгүй байна."
+
+msgid "Row #{0}: '{1}' is not a valid field of {2}."
+msgstr "Мөр #{0}: '{1}' нь {2}-ийн хүчинтэй талбар биш."
+
+msgid "Row #{0}: A Percentage is required for the Item {1} as 'Set Component Quantities Based On Percentage' is enabled."
+msgstr "Мөр #{0}: 'Хувь дээр суурилсан бүрэлдэхүүн хэсгийн тоо хэмжээг тохируулах' идэвхжсэн тул {1} бараанд хувь шаардлагатай."
+
+msgid "Row #{0}: BOM not found for FG Item {1}"
+msgstr "Мөр #{0}: FG барааны BOM олдсонгүй {1}"
+
+msgid "Row #{0}: Batch Split is only supported when 'Track Semi Finished Goods' is enabled."
+msgstr "Мөр #{0}: Багц хуваах нь зөвхөн 'Хагас боловсруулсан бүтээгдэхүүнийг хянах' идэвхтэй үед дэмжигдэнэ."
+
+msgid "Row #{0}: Cannot change item {1} because it is closed. Reopen the row first."
+msgstr "Мөр #{0}: Бараа {1} хаагдсан тул өөрчлөх боломжгүй. Эхлээд мөрийг дахин нээнэ үү."
+
+msgid "Row #{0}: Cannot delete item {1} which has an issued Proforma Invoice."
+msgstr "Мөр #{0}: Проформа нэхэмжлэх гаргасан бараа {1}-ийг устгах боломжгүй."
+
+msgid "Row #{0}: Cannot set Rate if the billed amount is greater than the amount for Item {1}."
+msgstr "Мөр #{0}: Хэрэв төлбөрийн хэмжээ нь {1} барааны хэмжээнээс их байвал хүүг тохируулах боломжгүй."
+
+msgid "Row #{0}: Cannot transfer more than Required Qty {1} for Item {2} against Job Card {3}"
+msgstr "Мөр #{0}: Ажлын карт {3}-ын эсрэг {2} барааны шаардлагатай тооноос {1} илүү шилжүүлж болохгүй"
+
+msgid "Row #{0}: Cannot transfer {1} {2} of Item {3}. Maximum transferable quantity is {4} {2}."
+msgstr "Мөр #{0}: {3}барааны {1} {2} -г шилжүүлэх боломжгүй. Шилжүүлж болох хамгийн их хэмжээ нь {4} {2} байна."
+
+msgid "Row #{0}: Child Item should not be a Product Bundle. Please remove Item {1} and Save"
+msgstr "Мөр #{0}: Хүүхдийн бараа нь Бүтээгдэхүүний багц байж болохгүй. {1} барааг устгаад хадгална уу"
+
+msgid "Row #{0}: Company {1} does not match with the company {2} in Serial and Batch Bundle {3}."
+msgstr "Мөр #{0}: Компани {1} нь Серийн дугаар ба багцын багц {3} дахь компани {2}-тэй таарахгүй байна."
+
+msgid "Row #{0}: Customer Provided Item {1} does not exist in the Required Items table linked to the Subcontracting Inward Order."
+msgstr "#{0}мөр: Хэрэглэгчийн нийлүүлсэн бараа {1} нь Туслан гүйцэтгэгч захиалгатай холбогдсон Шаардлагатай бараануудын хүснэгтэд байхгүй байна."
+
+msgid "Row #{0}: Default BOM not found for FG Item {1}"
+msgstr "Мөр #{0}: FG барааны анхдагч BOM олдсонгүй {1}"
+
+msgid "Row #{0}: Expense Account not set for the Item {1}. {2}"
+msgstr "Мөр #{0}: {1}барааны зардлын данс тохируулагдаагүй байна. {2}"
+
+msgid "Row #{0}: FG / Semi FG Item is required for the operation {1} as 'Track Semi Finished Goods' is enabled."
+msgstr "#{0}мөр: FG / Хагас FG бараа нь {1} үйлдэлд шаардлагатай бөгөөд 'Хагас боловсруулсан бүтээгдэхүүнийг хянах' функц идэвхжсэн байна."
+
+msgid "Row #{0}: Finished Good Item {1} cannot be added in the Secondary Items table."
+msgstr "#{0}мөр: Дууссан сайн бараа {1} -г Хоёрдогч бараануудын хүснэгтэд нэмэх боломжгүй."
+
+msgid "Row #{0}: Finished Good reference is mandatory for Secondary Item {1}."
+msgstr "Мөр #{0}: Дууссан. Хоёрдогч бараа {1}-д сайн лавлагаа заавал байх ёстой."
+
+msgid "Row #{0}: Item Code is Mandatory"
+msgstr "Мөр #{0}: Барааны код заавал байх ёстой"
+
+msgid "Row #{0}: Item added"
+msgstr "Мөр #{0}: Бараа нэмэгдсэн"
+
+msgid "Row #{0}: Item {1} cannot be transferred more than {2} against {3} {4}"
+msgstr "#{0}мөр: {1} барааг {2} -с илүүг {3} {4}-с илүү шилжүүлж болохгүй"
+
+msgid "Row #{0}: Item {1} does not exist"
+msgstr "Мөр #{0}: {1} бараа байхгүй байна"
+
+msgid "Row #{0}: Item {1} has zero rate but '{2}' is not enabled."
+msgstr "#{0}мөр: {1} бараа тэг хувьтай боловч '{2}' идэвхжээгүй байна."
+
+msgid "Row #{0}: Item {1} is already added with the same Type in the Secondary Items table."
+msgstr "Мөр #{0}: Бараа {1} хоёрдогч барааны хүснэгтэд ижил төрлөөр аль хэдийн нэмэгдсэн байна."
+
+msgid "Row #{0}: Item {1} is closed in {2} {3} and cannot be processed further"
+msgstr "Мөр #{0}: Бараа {1} нь {2} {3}-д хаагдсан тул цааш боловсруулах боломжгүй"
+
+msgid "Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it."
+msgstr "Мөр #{0}: {1} бараа нь цувралжуулсан/багцалсан бараа биш. Үүний эсрэг серийн дугаар/багцын дугаар байж болохгүй."
+
+msgid "Row #{0}: Item {1} is not a part of Subcontracting Inward Order {2}"
+msgstr "#{0}мөр: {1} бараа нь Дэд гэрээт гүйцэтгэгчтэй Оршин суух захиалгын нэг хэсэг биш {2}"
+
+msgid "Row #{0}: Item {1} is not an alternative item of the production item {2}."
+msgstr "Мөр #{0}: Бараа {1} нь үйлдвэрлэлийн бараа {2}-ийн орлуулах бараа биш."
+
+msgid "Row #{0}: Item {1} is not part of the source manufacture entry and cannot be added to this disassembly."
+msgstr "Мөр #{0}: {1} бараа нь эх үүсвэрийн үйлдвэрлэлийн оруулгын нэг хэсэг биш бөгөөд энэхүү задлах хэсэгт нэмэх боломжгүй."
+
+msgid "Row #{0}: Item {1} mismatch. Changing the item code is not permitted, add another row instead."
+msgstr "Мөр #{0}: Бараа {1} таарахгүй байна. Барааны кодыг өөрчлөхийг хориглоно, оронд нь өөр мөр нэмнэ үү."
+
+msgid "Row #{0}: Item {1} mismatch. Changing the item code is not permitted."
+msgstr "Мөр #{0}: Бараа {1} таарахгүй байна. Барааны кодыг өөрчлөхийг хориглоно."
+
+msgid "Row #{0}: Item {1} not found in 'Raw Materials Supplied' table in {2} {3}"
+msgstr "#{0}мөр: {2} {3} доторх 'Түүхий эд нийлүүлсэн' хүснэгтэд {1} гэсэн бараа олдсонгүй."
+
+msgid "Row #{0}: Only {1} available to reserve for the Item {2}"
+msgstr "Мөр #{0}: Зөвхөн {2} бараанд зориулж захиалга өгөх боломжтой {1} мөр"
+
+msgid "Row #{0}: Please select Item Code in Assembly Items"
+msgstr "Мөр #{0}: Ассемблерын бараануудаас Барааны кодыг сонгоно уу"
+
+msgid "Row #{0}: Please select the BOM No in Assembly Items"
+msgstr "Мөр #{0}: Угсралтын бараануудын BOM дугаарыг сонгоно уу"
+
+msgid "Row #{0}: Process Loss Percentage should be less than 100% for {1} Item {2}"
+msgstr "#{0}мөр: {1} бараа {2}-д үйлдвэрлэлийн хорогдлын хувь 100%-иас бага байх ёстой."
+
+msgid "Row #{0}: Quantity cannot be a non-positive number. Please increase the quantity or remove the Item {1}"
+msgstr "Мөр #{0}: Тоо хэмжээ нь эерэг бус тоо байж болохгүй. Тоо хэмжээг нэмэгдүүлэх эсвэл {1} гэсэн барааг хасна уу."
+
+msgid "Row #{0}: Quantity for Item {1} cannot be zero."
+msgstr "Мөр #{0}: {1} барааны тоо хэмжээ тэг байж болохгүй."
+
+msgid "Row #{0}: Quantity must be greater than 0 for Item {1}"
+msgstr "Мөр #{0}: {1} барааны тоо хэмжээ 0-ээс их байх ёстой"
+
+msgid "Row #{0}: Quantity to reserve for the Item {1} should be greater than 0."
+msgstr "Мөр #{0}: {1} бараанд нөөцлөх тоо хэмжээ 0-ээс их байх ёстой."
+
+msgid "Row #{0}: Rejected Qty cannot be set for Secondary Item {1}."
+msgstr "Мөр #{0}: Татгалзсан тоо хэмжээг Хоёрдогч бараа {1}-д тохируулж болохгүй."
+
+msgid "Row #{0}: Remove the Serial and Batch Bundle as the batches for the Batch Split item {1} are created automatically."
+msgstr "Мөр #{0}: Багц хуваах бараа {1}-ийн багцууд автоматаар үүсдэг тул Серийн дугаар ба багцын багцыг хасна уу."
+
+msgid "Row #{0}: Returned quantity cannot be greater than available quantity to return for Item {1}"
+msgstr "Мөр #{0}: Буцаагдсан тоо хэмжээ нь {1} барааны буцаахад бэлэн байгаа тоо хэмжээнээс их байж болохгүй."
+
+msgid "Row #{0}: Serial No {1} for Item {2} is not available in {3} {4} or might be reserved in another {5}."
+msgstr "#{0}мөр: {2} барааны серийн дугаар {1} нь {3} {4} дотор байхгүй эсвэл өөр {5} дотор нөөцлөгдсөн байж магадгүй."
+
+msgid "Row #{0}: Since 'Track Semi Finished Goods' is enabled, the BOM {1} cannot be used for Sub Assembly Items"
+msgstr "Мөр #{0}: 'Хагас боловсруулсан бүтээгдэхүүнийг хянах' идэвхжсэн тул BOM {1} -г дэд угсралтын бараануудад ашиглах боломжгүй."
+
+msgid "Row #{0}: Supplier {1} is already added in the Supplier Lead Times table"
+msgstr "Мөр #{0}: Нийлүүлэгч {1} нийлүүлэгчийн хүргэлтийн хугацааны хүснэгтэд аль хэдийн нэмэгдсэн байна"
+
+msgid "Row #{0}: Target Warehouse {1} must be a Transit warehouse when Add to Transit is enabled."
+msgstr "Мөр #{0}: Замд шилжүүлэх идэвхтэй үед хүлээн авах агуулах {1} нь замын агуулах байх ёстой."
+
+msgid "Row #{0}: The item {1} must have 'Has Batch No' and 'Automatically Create New Batch' enabled as the operation {2} is marked as Batch Split."
+msgstr "Мөр #{0}: {2} үйлдэл Багц хуваах гэж тэмдэглэгдсэн тул бараа {1}-д 'Багцын дугаартай' болон 'Шинэ багцыг автоматаар үүсгэх' идэвхтэй байх ёстой."
+
+msgid "Row #{0}: The item {1} must have 'Has Batch No' and 'Automatically Create New Batch' enabled for the Batch Split operation."
+msgstr "Мөр #{0}: Багц хуваах үйлдлийн хувьд бараа {1}-д 'Багцын дугаартай' болон 'Шинэ багцыг автоматаар үүсгэх' идэвхтэй байх ёстой."
+
+msgid "Row #{0}: The line does not belong to Sales Order {1}"
+msgstr "Мөр #{0}: Энэ мөр Борлуулалтын захиалга {1}-д хамаарахгүй"
+
+msgid "Row #{0}: The operation {1} has 'Is Final Finished Good' checked, so its FG / Semi FG Item must be {2}."
+msgstr "Мөр #{0}: {1} үйлдэл нь 'Эцсийн дууссан сайн' гэж тэмдэглэгдсэн тул түүний FG / Хагас FG бараа нь {2} байх ёстой."
+
+msgid "Row #{0}: The quantity of the Item {1} cannot be derived from its percentage because there is no UOM Conversion Factor from {2} to {3}."
+msgstr "Мөр #{0}: {1} барааны тоо хэмжээг түүний хувиас гаргаж авах боломжгүй, учир нь {2} -аас {3} хүртэлх UOM хөрвүүлэх хүчин бараа байхгүй."
+
+msgid "Row #{0}: The quantity {1} of the Batch Split item {2} must be a multiple of the Weight Per Piece {3}."
+msgstr "Мөр #{0}: Багц хуваах бараа {2}-ийн тоо хэмжээ {1} нь Нэг ширхэгийн жин {3}-ийн үржвэр байх ёстой."
+
+msgid "Row #{0}: Weight Per Piece is required for the Batch Split operation {1}."
+msgstr "Мөр #{0}: Багц хуваах үйлдэл {1}-д Нэг ширхэгийн жин шаардлагатай."
+
+msgid "Row #{0}: You must select an Asset for Item {1}."
+msgstr "Мөр #{0}: Та {1} бараанд зориулж хөрөнгө сонгох ёстой."
+
+msgid "Row #{0}: {1} has reserved stock. Unreserve it before closing the row."
+msgstr "Мөр #{0}: {1} нөөцөлсөн бараа материалтай байна. Мөрийг хаахаас өмнө нөөцийг цуцална уу."
+
+msgid "Row #{0}: {1} is already completed in full, so there is nothing to close"
+msgstr "Мөр #{0}: {1} бүрэн гүйцэтгэгдсэн тул хаах зүйл алга"
+
+msgid "Row #{0}:Quantity for Item {1} cannot be zero."
+msgstr "Мөр #{0}: {1} барааны тоо хэмжээ тэг байж болохгүй."
+
+msgid "Row #{idx}: Received Qty must be equal to Accepted + Rejected Qty for Item {item_code}."
+msgstr "#{idx}мөр: Хүлээн авсан тоо хэмжээ нь {item_code} барааны хувьд Хүлээн авсан + Татгалзсан тоо хэмжээтэй тэнцүү байх ёстой."
+
+msgid "Row {0} in {1} {2}: Work Order quantity after process loss {3} exceeds the remaining allowed quantity {4}."
+msgstr "{1} {2}-ийн мөр {0}: Үйлдвэрлэлийн хорогдлын дараах Ажлын захиалгын тоо хэмжээ {3} нь зөвшөөрөгдсөн үлдэгдэл тоо хэмжээ {4}-өөс хэтэрч байна."
+
+msgid "Row {0}: Accounting Dimension {1} is mandatory for account {2}. Set it on this Taxes and Charges row, or on Item Row {3} ({4})."
+msgstr "Мөр {0}: Данс {2}-д Нягтлан бодох бүртгэлийн хэмжээс {1} заавал шаардлагатай. Үүнийг энэ Татвар, хураамжийн мөрөнд эсвэл Барааны мөр {3} ({4})-д тохируулна уу."
+
+msgid "Row {0}: Bill of Materials not found for the Item {1}"
+msgstr "Мөр {0}: {1} барааны материалын жагсаалт олдсонгүй"
+
+msgid "Row {0}: Both Debit and Credit values cannot be zero"
+msgstr "Мөр {0}: Дебет болон зээлийн утга хоёулаа тэг байж болохгүй"
+
+msgid "Row {0}: Debit entry can not be linked with a {1}"
+msgstr "Мөр {0}: Дебет оруулгыг {1}-тай холбож болохгүй"
+
+msgid "Row {0}: Either Delivery Note Item or Packed Item reference is mandatory."
+msgstr "Мөр {0}: Хүргэлтийн баримтын бараа эсвэл савласан барааны аль нэгийг заавал оруулах шаардлагатай."
+
+msgid "Row {0}: Expense Head changed to {1} as no Purchase Receipt is created against Item {2}."
+msgstr "Мөр {0}: {2} бараа дээр худалдан авалтын баримт үүсгээгүй тул зардлын толгой хэсгийг {1} болгон өөрчилсөн."
+
+msgid "Row {0}: Item Tax template for {1} updated as per validity and rate applied"
+msgstr "Мөр {0}: {1} -н барааны татварын загварыг хүчинтэй хугацаа болон хэрэглэсэн хувь хэмжээний дагуу шинэчилсэн"
+
+msgid "Row {0}: Item {1} must be linked to a {2}."
+msgstr "Мөр {0}: {1} бараа нь {2} мөртэй холбогдсон байх ёстой."
+
+msgid "Row {0}: Item {1}'s quantity cannot be higher than the available quantity."
+msgstr "Мөр {0}: {1}барааны тоо хэмжээ нь байгаа тоо хэмжээнээс их байж болохгүй."
+
+msgid "Row {0}: Packing Slip is already created for Item {1}."
+msgstr "Мөр {0}: {1} бараанд зориулсан сав баглаа боодлын хуудсыг аль хэдийн үүсгэсэн байна."
+
+msgid "Row {0}: Please provide a valid Delivery Note Item or Packed Item reference."
+msgstr "Мөр {0}: Хүргэлтийн баримтын бараа эсвэл савласан барааны хүчинтэй лавлагаа оруулна уу."
+
+msgid "Row {0}: Please select a BOM for Item {1}."
+msgstr "Мөр {0}: {1} барааны үндсэн агуулгыг сонгоно уу."
+
+msgid "Row {0}: Please select a valid BOM for Item {1}."
+msgstr "Мөр {0}: {1} бараанд хүчинтэй BOM сонгоно уу."
+
+msgid "Row {0}: Please select an active BOM for Item {1}."
+msgstr "Мөр {0}: {1} барааны идэвхтэй BOM-г сонгоно уу."
+
+msgid "Row {0}: Qty cannot be greater than {1} for the Item {2}."
+msgstr "{0}мөр: {2} барааны хувьд тоо хэмжээ нь {1} -ээс их байж болохгүй."
+
+msgid "Row {0}: Update Stock must be checked for item {1} because it is against Pick List {2}."
+msgstr "Мөр {0}: Энэ нь Pick List {2}-тай зөрчилдөж байгаа тул {1} зүйлийн хувьд Шинэчлэлтийн Бараа материалыг шалгах шаардлагатай."
+
+msgid "Row {0}: {2} Item {1} does not exist in {2} {3}"
+msgstr "{0}мөр: {2} {1} бараа нь {2} {3} мөрөнд байхгүй байна"
+
+msgid "Rows of {0} cannot be closed individually"
+msgstr "{0}-ийн мөрүүдийг тус тусад нь хаах боломжгүй"
+
+msgid "SMS Settings.allowed_roles not found. Update the Frappe Framework app to a version that includes this field, then re-run bench migrate."
+msgstr "SMS Settings.allowed_roles олдсонгүй. Frappe Framework-ийг энэ талбарыг агуулсан хувилбар руу шинэчлээд bench migrate-ийг дахин ажиллуулна уу."
+
+msgid "Sales Forecast Item"
+msgstr "Борлуулалтын урьдчилсан мэдээний бараа"
+
+msgid "Sales Invoice Item"
+msgstr "Борлуулалтын нэхэмжлэхийн бараа"
+
+msgid "Sales Order Item"
+msgstr "Борлуулалтын захиалгын бараа"
+
+msgid "Same Item"
+msgstr "Ижил бараа"
+
+msgid "Sample Retention Stock Entry"
+msgstr "Хадгалах бараа материалын оруулгын жишээ"
+
+msgid "Sample Size must be greater than zero"
+msgstr "Дээжийн хэмжээ тэгээс их байх ёстой"
+
+msgid "Save the Work Order to view linked documents."
+msgstr "Холбогдсон баримтуудыг харахын тулд Ажлын захиалгыг хадгална уу."
+
+msgid "Schedule Items"
+msgstr "Хуваарьт бараанууд"
+
+msgid "Scheduling & Costing"
+msgstr "Хуваарь ба өртөг"
+
+msgid "Search item or document..."
+msgstr "Бараа эсвэл баримт хайх..."
+
+msgid "Secondary Item Code"
+msgstr "Хоёрдогч барааны код"
+
+msgid "Secondary Item Name"
+msgstr "Хоёрдогч барааны нэр"
+
+msgid "Secondary Items"
+msgstr "Хоёрдогч бараанууд"
+
+msgid "Secondary Items (as per BOM)"
+msgstr "Хоёрдогч бараанууд (BOM-ын дагуу)"
+
+msgid "Secondary Items (as per Manufacture Entries)"
+msgstr "Хоёрдогч бараанууд (Үйлдвэрлэлийн бүртгэлийн дагуу)"
+
+msgid "Secondary Items Cost"
+msgstr "Хоёрдогч бараануудын өртөг"
+
+msgid "Secondary Items Cost (Company Currency)"
+msgstr "Хоёрдогч бараануудын өртөг (Компанийн валют)"
+
+msgid "Secondary Items Cost Per Qty"
+msgstr "Хоёрдогч бараануудын тоо ширхэг тутамд ногдох өртөг"
+
+msgid "Secondary Items Generated"
+msgstr "Үүсгэсэн хоёрдогч бараанууд"
+
+msgid "Select Alternate Item"
+msgstr "Өөр бараа сонгох"
+
+msgid "Select Alternative Items for Sales Order"
+msgstr "Борлуулалтын захиалгад өөр бараанууд сонгох"
+
+msgid "Select Items"
+msgstr "Бараануудыг сонгох"
+
+msgid "Select Items for Quality Inspection"
+msgstr "Чанарын шалгалтад зориулсан бараануудыг сонгоно уу"
+
+msgid "Select Items to Manufacture"
+msgstr "Үйлдвэрлэх бараануудыг сонгох"
+
+msgid "Select Items to Receive"
+msgstr "Хүлээн авах бараануудыг сонгоно уу"
+
+msgid "Select Items up to Delivery Date"
+msgstr "Хүргэлтийн огноо хүртэлх бараануудыг сонгоно уу"
+
+msgid "Select an Item Group."
+msgstr "Барааны бүлгийг сонгоно уу."
+
+msgid "Select at least one Item"
+msgstr "Дор хаяж нэг бараа сонгоно уу"
+
+msgid "Select at least one row"
+msgstr "Дор хаяж нэг мөр сонгоно уу"
+
+msgid "Select the Item to be manufactured."
+msgstr "Үйлдвэрлэх гэж буй бараагаа сонгоно уу."
+
+msgid ""
+"Select whether to get items from a Sales Order or a Material Request. For now select <b>Sales Order</b>.\n"
+" A Production Plan can also be created manually where you can select the Items to manufacture."
+msgstr ""
+"Борлуулалтын захиалга эсвэл материалын хүсэлтээс бараа авах эсэхээ сонгоно уу. Одоогоор <b>Борлуулалтын захиалга</b>гэснийг сонгоно уу.\n"
+" Үйлдвэрлэлийн төлөвлөгөөг гараар үүсгэж болох бөгөөд та үйлдвэрлэх бараануудыг сонгож болно."
+
+msgid "Semi finished goods"
+msgstr "Хагас боловсруулсан бүтээгдэхүүн"
+
+msgid "Serial Item settings"
+msgstr "Цуврал барааны тохиргоо"
+
+msgid "Serial No Bundle is mandatory for Item {0}"
+msgstr "{0} бараанд серийн дугаарын багц заавал байх ёстой"
+
+msgid "Serial No Wise Valuation cannot be enabled for Item {0} because Serial Nos already exist for it. Valuation for those Serial Nos was not tracked, so enabling it now would value outward entries incorrectly."
+msgstr "Бараа {0}-д Серийн дугаар аль хэдийн байгаа тул Серийн дугаараар үнэлэхийг идэвхжүүлэх боломжгүй. Тэдгээр серийн дугаарын үнэлгээг хянаагүй тул одоо идэвхжүүлбэл зарлагын бичилтийг буруу үнэлнэ."
+
+msgid "Serial No is mandatory for Item {0}"
+msgstr "{0} барааны серийн дугаар заавал байх ёстой"
+
+msgid "Serial No {0} does not belong to Item {1}"
+msgstr "Серийн дугаар {0} нь {1} бараанд хамаарахгүй"
+
+msgid "Serial No {0} is not available in the selected inventory dimensions: {1}"
+msgstr "Серийн дугаар {0} сонгосон бараа материалын хэмжээсүүдэд байхгүй байна: {1}"
+
+msgid "Serial Nos Exist"
+msgstr "Серийн дугаар бүртгэлтэй байна"
+
+msgid "Serial and Batch No for Item Disabled"
+msgstr "Барааны цуваа болон багцын дугаар идэвхгүй болсон"
+
+msgid "Serial and Batch Wise Stock Balance"
+msgstr "Серийн дугаар ба багцаарх бараа материалын үлдэгдэл"
+
+msgid "Serialized items are valued at Moving Average once stock transactions exist and Serial No Wise Valuation is disabled."
+msgstr "Бараа материалын гүйлгээ бий болсон бөгөөд Серийн дугаараар үнэлэх идэвхгүй бол серийн дугаартай барааг Хөдөлгөөнт дунджаар үнэлнэ."
+
+msgid "Service Item"
+msgstr "Үйлчилгээний бараа"
+
+msgid "Service Item UOM"
+msgstr "Үйлчилгээний бараа UOM"
+
+msgid "Service Item {0} is disabled."
+msgstr "Үйлчилгээний бараа {0} идэвхгүй байна."
+
+msgid "Service Items"
+msgstr "Үйлчилгээний бараанууд"
+
+msgid "Set Opening Stock"
+msgstr "Нээлтийн бараа материалыг тохируулах"
+
+msgid "Set Operating Cost / Secondary Items From Sub-assemblies"
+msgstr "Дэд угсралтаас үйл ажиллагааны зардал / хоёрдогч бараануудыг тохируулах"
+
+msgid "Set Parent Row No in Items Table"
+msgstr "Бараануудын хүснэгтэд эцэг мөрийн дугаарыг тохируулах"
+
+msgid "Set Process Loss Item Quantity"
+msgstr "Үйлдвэрлэлийн хорогдлын барааны тоо хэмжээг тохируулах"
+
+msgid "Set as Phantom BOM"
+msgstr "Хийсвэр БОМ болгох"
+
+msgid "Set automatically when this component is a semi-finished good produced by an operation in this BOM. It's made in-house during the process, so it's excluded from raw-material requirement and explosion calculations to avoid double-counting."
+msgstr "Энэ бүрэлдэхүүн нь энэ БОМ-ын аль нэг үйлдлээр үйлдвэрлэгдэх хагас боловсруулсан бүтээгдэхүүн бол автоматаар тохирно. Үйлдвэрлэлийн явцад дотооддоо хийгддэг тул давхар тооцохоос сэргийлж түүхий эдийн хэрэгцээ болон задаргааны тооцооноос хасагдана."
+
+msgid "Set by Item Tax Template"
+msgstr "Барааны татварын загвараар тохируулсан"
+
+msgid "Set component quantities based on percentage"
+msgstr "Бүрэлдэхүүний тоо хэмжээг хувиар тохируулах"
+
+msgid "Set operating cost based on BOM Quantity"
+msgstr "Үйл ажиллагааны зардлыг БОМ-ын тоо хэмжээнд үндэслэн тохируулах"
+
+msgid "Set rate based on sub-assembly BOM"
+msgstr "Үнийг дэд угсралтын БОМ-д үндэслэн тохируулах"
+
+msgid "Sets 'Accepted Warehouse' in each row of the Items table."
+msgstr "Бараануудын хүснэгтийн мөр бүрт 'Хүлээн зөвшөөрөгдсөн агуулах'-г тохируулна."
+
+msgid "Sets 'Rejected Warehouse' in each row of the Items table."
+msgstr "Бараануудын хүснэгтийн мөр бүрт 'Татгалзсан агуулах' гэж тохируулна."
+
+msgid "Sets 'Reserve Warehouse' in each row of the Supplied Items table."
+msgstr "Нийлүүлсэн бараануудын хүснэгтийн мөр бүрт 'Нөөцийн агуулах' гэж тохируулна."
+
+msgid "Sets 'Warehouse' in each row of the Items table."
+msgstr "Бараануудын хүснэгтийн мөр бүрт 'Агуулах' гэж тохируулна."
+
+msgid "Setting Item Locations..."
+msgstr "Бараануудын байршлыг тохируулж байна..."
+
+msgid "Shipment Delivery Note"
+msgstr "Ачаа хүргэлтийн баримт"
+
+msgid "Shipping Account {0} does not belong to Company {1}"
+msgstr "Тээврийн данс {0} нь Компани {1}-д хамаарахгүй"
+
+msgid "Show Dimension Wise Stock"
+msgstr "Хэмжээний ухаалаг бараа материалыг харуулах"
+
+msgid "Show Disabled Items"
+msgstr "Идэвхгүй болгосон бараануудыг харуулах"
+
+msgid "Show Item Name"
+msgstr "Барааны нэрийг харуулах"
+
+msgid "Show Items"
+msgstr "Бараануудыг харуулах"
+
+msgid "Show Linked Delivery Notes"
+msgstr "Холбоостой хүргэлтийн баримтыг харуулах"
+
+msgid "Show Stock Ageing Data"
+msgstr "Бараа материалын насжилтын өгөгдлийг харуулах"
+
+msgid "Since {0} are Serial No/Batch No items, you cannot enable 'Recreate Stock Ledgers' in Repost Item Valuation."
+msgstr "{0} нь Серийн дугаар/Багцын дугааргүй бараа тул та Барааны үнэлгээг дахин нийтлэх хэсэгт 'Бараа материалын дэвтрийг дахин үүсгэх'-ийг идэвхжүүлэх боломжгүй."
+
+msgid "Since {0} has 'Update Stock' disabled, you cannot create repost item valuation against it"
+msgstr "{0} нь 'Бараа материалыг шинэчлэх'-ийг идэвхгүй болгосон тул та үүний эсрэг барааны үнэлгээг дахин нийтлэх боломжгүй."
+
+msgid "Skip Delivery"
+msgstr "Хүргэлтийг алгасах"
+
+msgid "Skip Delivery Note"
+msgstr "Хүргэлтийн баримтыг алгасах"
+
+msgid "Skip Delivery Note Creation for Service Items"
+msgstr "Үйлчилгээний бараанд Хүргэлтийн баримт үүсгэхийг алгасах"
+
+msgid "Source Stock Entry (Manufacture)"
+msgstr "Эх сурвалжийн бараа материалын оруулга (Үйлдвэрлэл)"
+
+msgid "Source Warehouse is mandatory for the Item {0}."
+msgstr "{0} бараанд Source Warehouse заавал байх ёстой."
+
+msgid "Source details"
+msgstr "Эх сурвалжийн мэдээлэл"
+
+msgid "Speeds up Item search on large catalogues. Requires a single app server: the index is a file on that server's disk, and several servers would each answer from a different copy. Building it takes about 20 minutes for 3 million items, and runs in the background."
+msgstr "Том каталогт барааны хайлтыг хурдасгана. Ганц апп сервер шаардлагатай: индекс нь тухайн серверийн диск дээрх файл тул олон сервертэй бол сервер бүр өөр хуулбараас хариулна. 3 сая бараанд индекс үүсгэхэд 20 орчим минут шаардагдах ба арын горимд ажиллана."
+
+msgid "Splits the produced quantity into one batch per this many units"
+msgstr "Үйлдвэрлэсэн тоо хэмжээг энэ олон нэгж тутамд нэг багц болгон хуваана"
+
+msgid "Standard Valuation Rate"
+msgstr "Стандарт үнэлгээний үнэ"
+
+msgid "Standard Valuation Rate must be greater than zero."
+msgstr "Стандарт үнэлгээний үнэ тэгээс их байх ёстой."
+
+msgid "Start date should be less than end date for Item {0}"
+msgstr "{0} барааны эхлэх огноо дуусах огнооноос бага байх ёстой"
+
+msgid "Stock"
+msgstr "Бараа материал"
+
+msgid "Stock Adjustment"
+msgstr "Бараа материалын тохируулга"
+
+msgid "Stock Adjustment Account"
+msgstr "Бараа материалын тохируулгын данс"
+
+msgid "Stock Ageing"
+msgstr "Бараа материалын хөгшрөлт"
+
+msgid "Stock Analytics"
+msgstr "Бараа материалын аналитик"
+
+msgid "Stock Asset Account"
+msgstr "Бараа материалын хөрөнгийн данс"
+
+msgid "Stock Assets"
+msgstr "Бараа материалын хөрөнгө"
+
+msgid "Stock Balance"
+msgstr "Бараа материалын үлдэгдэл"
+
+msgid "Stock Balance Report"
+msgstr "Бараа материалын балансын тайлан"
+
+msgid "Stock Closing"
+msgstr "Бараа материалын хаалт"
+
+msgid "Stock Closing Balance"
+msgstr "Бараа материалын хаалтын үлдэгдэл"
+
+msgid "Stock Closing Entry"
+msgstr "Бараа материалын хаалтын бүртгэл"
+
+msgid "Stock Closing Entry In Progress"
+msgstr "Бараа материал хаах бүртгэл явагдаж байна"
+
+msgid "Stock Closing Entry Outdated"
+msgstr "Бараа материалын хаалтын бүртгэл хуучирсан"
+
+msgid "Stock Closing Entry Required"
+msgstr "Бараа материал хаах бүртгэл шаардлагатай"
+
+msgid "Stock Closing Entry is ignored in this report. Balances are computed from the full stock ledger."
+msgstr "Энэ тайланд Бараа материалын хаалтын бичилтийг тооцохгүй. Үлдэгдлийг бараа материалын дэвтрийн бүрэн бичилтээс тооцно."
+
+msgid "Stock Closing Entry {0} already exists for the selected date range"
+msgstr "Сонгосон хугацааны хүрээнд бараа материалын хаалтын бүртгэл {0} аль хэдийн байна"
+
+msgid "Stock Closing Entry {0} belongs to a closed accounting period. Cancel the Period Closing Voucher {1} first."
+msgstr "Бараа материалын хаалтын бичилт {0} нь хаалттай нягтлан бодох бүртгэлийн хугацаанд хамаарна. Эхлээд хугацааны хаалтын ваучер {1} -г цуцална уу."
+
+msgid "Stock Closing Entry {0} has been queued for processing, the system will take some time to complete it."
+msgstr "Бараа материалын хаалтын бичилт {0} боловсруулахаар дараалалд орсон тул систем үүнийг дуусгахад хэсэг хугацаа шаардагдана."
+
+msgid "Stock Closing Log"
+msgstr "Бараа материалын хаалтын бүртгэл"
+
+msgid "Stock Delivered But Not Billed Account cannot be changed or disabled since account {0} contains outstanding Delivery Notes: {1}"
+msgstr "Хүргэгдсэн боловч төлбөр тооцоогүй бараа {0} дансанд хүлээгдэж буй хүргэлтийн баримт байгаа тул дансыг өөрчлөх эсвэл идэвхгүй болгох боломжгүй: {1}"
+
+msgid "Stock Details"
+msgstr "Бараа материалын дэлгэрэнгүй мэдээлэл"
+
+msgid "Stock Entries"
+msgstr "Бараа материалын гүйлгээнүүд"
+
+msgid "Stock Entry"
+msgstr "Бараа материалын гүйлгээ"
+
+msgid "Stock Entry (Outward GIT)"
+msgstr "Бараа материалын оруулга (Гаднах GIT)"
+
+msgid "Stock Entry Child"
+msgstr "Бараа материалын оруулгын хүүхэд"
+
+msgid "Stock Entry Detail"
+msgstr "Бараа материалын оруулгын дэлгэрэнгүй мэдээлэл"
+
+msgid "Stock Entry Item"
+msgstr "Бараа материалын оруулгын бараа"
+
+msgid "Stock Entry Type"
+msgstr "Бараа материалын оруулгын төрөл"
+
+msgid "Stock Entry Type {0} cannot be set as standard"
+msgstr "Бараа материалын оруулгын төрөл {0} -г стандарт болгож тохируулах боломжгүй"
+
+msgid "Stock Entry {0} created"
+msgstr "Бараа материалын оруулга {0} үүсгэсэн"
+
+msgid "Stock Entry {0} has been created"
+msgstr "Бараа материалын оруулга {0} үүсгэгдлээ"
+
+msgid "Stock Entry {0} is not submitted"
+msgstr "Бараа материалын оруулга {0} ирүүлээгүй байна"
+
+msgid "Stock Expense"
+msgstr "Бараа материалын зардал"
+
+msgid "Stock Expense Accounting"
+msgstr "Бараа материалын зардлын нягтлан бодох бүртгэл"
+
+msgid "Stock Expenses"
+msgstr "Бараа материалын зардал"
+
+msgid "Stock Held By"
+msgstr "Бараа материал эзэмшигч"
+
+msgid "Stock Held by Other Pick Lists"
+msgstr "Бусад сонголтын жагсаалтад байгаа бараа материал"
+
+msgid "Stock Ledger"
+msgstr "Бараа материалын дэвтэр"
+
+msgid "Stock Ledger Entries and GL Entries are reposted for the selected Purchase Receipts"
+msgstr "Сонгосон худалдан авалтын баримтуудын хувьд бараа материалын дэвтрийн бичилтүүд болон GL бичилтүүдийг дахин нийтэлнэ"
+
+msgid "Stock Ledger Entry"
+msgstr "Бараа материалын дэвтрийн бичилт"
+
+msgid "Stock Ledger ID"
+msgstr "Бараа материалын дэвтрийн дугаар"
+
+msgid "Stock Ledger Invariant Check"
+msgstr "Бараа материалын дэвтрийн инвариант чек"
+
+msgid "Stock Ledger Variance"
+msgstr "Бараа материалын дэвтрийн хэлбэлзэл"
+
+msgid "Stock Ledgers won’t be reposted."
+msgstr "Бараа материалын дэвтрийг дахин байршуулахгүй."
+
+msgid "Stock Levels"
+msgstr "Бараа материалын түвшин"
+
+msgid "Stock Levels HTML"
+msgstr "Бараа материалын түвшний HTML"
+
+msgid "Stock Liabilities"
+msgstr "Бараа материалын өр төлбөр"
+
+msgid "Stock Manager"
+msgstr "Бараа материалын менежер"
+
+msgid "Stock Movement"
+msgstr "Бараа материалын хөдөлгөөн"
+
+msgid "Stock Partially Reserved"
+msgstr "Бараа материал хэсэгчлэн нөөцлөгдсөн"
+
+msgid "Stock Planning"
+msgstr "Бараа материалын төлөвлөлт"
+
+msgid "Stock Projected Qty"
+msgstr "Бараа материалын таамагласан тоо хэмжээ"
+
+msgid "Stock Qty vs Serial No Count"
+msgstr "Бараа материалын тоо хэмжээ vs Серийн тоололгүй"
+
+msgid "Stock Received But Not Billed"
+msgstr "Бараа материал хүлээн авсан боловч төлбөр тооцоогүй"
+
+msgid "Stock Reconciliation"
+msgstr "Бараа материалын тохирол"
+
+msgid "Stock Reconciliation Item"
+msgstr "Бараа материалын тохируулгын бараа"
+
+msgid "Stock Reconciliation that revalues on-hand stock to this standard rate: auto-created when the rate is changed here, or the reconciliation that captured this rate (opening entry or rate change)."
+msgstr "Гар дээр байгаа бараа материалыг энэ стандарт ханшаар дахин үнэлдэг бараа материалын тохирол: ханш энд өөрчлөгдөхөд автоматаар үүсгэгддэг эсвэл энэ ханшийг (эхний оруулга эсвэл ханшийн өөрчлөлт) бүртгэсэн тохирол."
+
+msgid "Stock Reconciliations"
+msgstr "Бараа материалын тохирол"
+
+msgid "Stock Reposting Settings"
+msgstr "Бараа материалыг дахин байршуулах тохиргоо"
+
+msgid "Stock Reservation"
+msgstr "Бараа материалын захиалга"
+
+msgid "Stock Reservation Entries Cancelled"
+msgstr "Бараа материалын захиалгын бүртгэл цуцлагдсан"
+
+msgid "Stock Reservation Entry"
+msgstr "Бараа материалын нөөцийн оруулга"
+
+msgid "Stock Reservation Entry created against a Pick List cannot be updated. If you need to make changes, we recommend canceling the existing entry and creating a new one."
+msgstr "Сонголтын жагсаалтад үндэслэн үүсгэсэн Бараа материалын Нөөцийн Бичлэгийг шинэчлэх боломжгүй. Хэрэв та өөрчлөлт оруулах шаардлагатай бол одоо байгаа бичилтийг цуцалж, шинээр үүсгэхийг зөвлөж байна."
+
+msgid "Stock Reservation can only be created against {0}."
+msgstr "Бараа материалын нөөцийг зөвхөн {0} дээр үүсгэж болно."
+
+msgid "Stock Settings"
+msgstr "Бараа материалын тохиргоо"
+
+msgid "Stock Setup"
+msgstr "Бараа материалын тохиргоо"
+
+msgid "Stock Summary"
+msgstr "Бараа материалын хураангуй"
+
+msgid "Stock UOM"
+msgstr "Бараа материалын UOM"
+
+msgid "Stock Unreservation"
+msgstr "Бараа материалын захиалга цуцлах"
+
+msgid "Stock Update Not Allowed"
+msgstr "Бараа материалын шинэчлэлтийг зөвшөөрөхгүй"
+
+msgid "Stock User"
+msgstr "Бараа материалын хэрэглэгч"
+
+msgid "Stock Validations"
+msgstr "Бараа материалын баталгаажуулалт"
+
+msgid "Stock Value"
+msgstr "Бараа материалын үнэ цэнэ"
+
+msgid "Stock Value Mismatch"
+msgstr "Бараа материалын үнийн зөрүү"
+
+msgid "Stock Value by Item Group"
+msgstr "Барааны бүлгээр бараа материалын үнэ цэнэ"
+
+msgid "Stock and Account Value Comparison"
+msgstr "Бараа материал болон дансны үнийн харьцуулалт"
+
+msgid "Stock and accounting values could not be reconciled by reposting for {0}."
+msgstr "{0}-г дахин байршуулснаар бараа материал болон нягтлан бодох бүртгэлийн үнэ цэнийг тохируулж чадсангүй."
+
+msgid "Stock for this warehouse is not visible to you"
+msgstr "Энэ агуулахын бараа материал танд харагдахгүй"
+
+msgid "Stock frozen up to"
+msgstr "Бараа материал хөлдөөсөн"
+
+msgid "Stock transactions before {0} are frozen"
+msgstr "{0} -с өмнөх бараа материалын гүйлгээг царцаасан"
+
+msgid "Stock transactions dated on or before {0} are frozen because the period is closed and the Stock Closing Entry {1} has been generated. To make changes, cancel the Period Closing Voucher first."
+msgstr "Хугацаа хаагдсан бөгөөд Бараа материалын Хаалтын Бичлэг {1} үүссэн тул {0} -с өмнөх огноотой бараа материалын гүйлгээг хөлдөөсөн. Өөрчлөлт хийхийн тулд эхлээд Хугацаа Хаалтын Ваучерыг цуцална уу."
+
+msgid "Stock transactions that are older than the mentioned days cannot be modified."
+msgstr "Дээр дурдсан өдрүүдээс өмнөх бараа материалын гүйлгээг өөрчлөх боломжгүй."
+
+msgid "Stock transactions were created or modified after the Stock Closing Entry {0} was generated. Regenerate it before submitting the Period Closing Voucher."
+msgstr "Бараа материалын хаалтын бичилт {0} үүсгэсний дараа бараа материалын гүйлгээг үүсгэсэн эсвэл өөрчилсөн. Хугацааны хаалтын ваучерыг илгээхээс өмнө үүнийг дахин үүсгэнэ үү."
+
+msgid "Stock/Accounts can not be frozen as processing of backdated entries is going on. Please try again later."
+msgstr "Бараа материал/дансуудыг царцаах боломжгүй, учир нь огноо нь дууссан оруулгуудыг боловсруулж байна. Дараа дахин оролдоно уу."
+
+msgid "Sub Assembly Item"
+msgstr "Дэд угсралтын бараа"
+
+msgid "Sub Assembly Item Code"
+msgstr "Дэд угсралтын барааны код"
+
+msgid "Sub Assembly Item Reference"
+msgstr "Дэд угсралтын барааны лавлагаа"
+
+msgid "Sub Assembly Item is mandatory"
+msgstr "Дэд угсралтын бараа заавал байх ёстой"
+
+msgid "Sub Assembly Items"
+msgstr "Дэд угсралтын бараанууд"
+
+msgid "Sub assembly"
+msgstr "Дэд угсралт"
+
+msgid "Subcontracted Item"
+msgstr "Туслан гэрээт бараа"
+
+msgid "Subcontracted Items To Be Delivered"
+msgstr "Хүргэх туслан гүйцэтгэлийн бараанууд"
+
+msgid "Subcontracted Raw Materials To Be Received"
+msgstr "Хүлээн авах туслан гүйцэтгэлийн түүхий эд"
+
+msgid "Subcontracting Finished Good"
+msgstr "Туслан гүйцэтгэгчээр ажилласан, бэлэн бүтээгдэхүүн"
+
+msgid "Subcontracting Inward Order Summary"
+msgstr "Туслан гүйцэтгэлийн хүлээн авах захиалгын хураангуй"
+
+msgid "Subcontracting Order Item"
+msgstr "Туслан гэрээт гүйцэтгэгчийн захиалгын бараа"
+
+msgid "Subcontracting Order Service Item"
+msgstr "Туслан гүйцэтгэгч захиалгын үйлчилгээний бараа"
+
+msgid "Subcontracting Receipt Item"
+msgstr "Туслан гэрээт гүйцэтгэгчийн баримтын бараа"
+
+msgid "Subcontracting Receipt Supplied Item"
+msgstr "Туслан гэрээт гүйцэтгэгчийн баримт нийлүүлсэн бараа"
+
+msgid "Subcontracting Service Item"
+msgstr "Туслан гүйцэтгэгч үйлчилгээний бараа"
+
+msgid "Subject and message for receipts emailed from the POS. The template gets the invoice as doc. A message typed by the cashier replaces the template message. Leave empty to send the default email."
+msgstr "ПОС-оос и-мэйлээр илгээх төлбөрийн баримтын гарчиг ба мессеж. Загварт нэхэмжлэхийг doc болгон дамжуулна. Кассчны бичсэн мессеж загварын мессежийг орлоно. Анхдагч и-мэйл илгээх бол хоосон үлдээнэ үү."
+
+msgid "Subject and message used when emailing a Proforma Invoice. The template gets the Proforma Invoice as doc, e.g. {{ doc.customer_name }}. Leave empty to send the default text."
+msgstr "Проформа нэхэмжлэхийг и-мэйлээр илгээхэд ашиглах гарчиг ба мессеж. Загварт Проформа нэхэмжлэхийг doc болгон дамжуулна, жишээ нь {{ doc.customer_name }}. Анхдагч текст илгээх бол хоосон үлдээнэ үү."
+
+msgid "Successfully changed Stock UOM, please redefine conversion factors for new UOM."
+msgstr "Бараа материалын UOM-г амжилттай өөрчилсөн тул шинэ UOM-ийн хөрвүүлэх коэффициентийг дахин тодорхойлно уу."
+
+msgid "Supplied Items"
+msgstr "Нийлүүлсэн бараанууд"
+
+msgid "Supplier Delivery Note"
+msgstr "Нийлүүлэгчийн хүргэлтийн баримт"
+
+msgid "Supplier Lead Times"
+msgstr "Нийлүүлэгчийн хүргэлтийн хугацаа"
+
+msgid "Supplier Quotation Item"
+msgstr "Нийлүүлэгчийн үнийн саналын бараа"
+
+msgid "Supplier Quotation {0} already exists against Request for Quotation {1}"
+msgstr "Үнийн санал авах хүсэлт {1}-д Нийлүүлэгчийн үнийн санал {0} аль хэдийн бүртгэлтэй байна"
+
+msgid "Supplier Quotation {0} is cancelled"
+msgstr "Нийлүүлэгчийн үнийн санал {0} цуцлагдсан байна"
+
+msgid "Supplier Wise Purchase Time"
+msgstr "Нийлүүлэгч тус бүрийн худалдан авах хугацаа"
+
+msgid "System will not check over billing since amount for Item {0} in {1} is zero"
+msgstr "{1} доторх {0} барааны дүн тэг тул систем төлбөр тооцоог шалгахгүй."
+
+msgid "Table for Item that will be shown in Web Site"
+msgstr "Вэбсайтад харагдах барааны хүснэгт"
+
+msgid "Target Fieldname (Stock Ledger Entry)"
+msgstr "Зорилтот талбарын нэр (Бараа материалын дэвтрийн бичилт)"
+
+msgid "Target Item Code"
+msgstr "Зорилтот барааны код"
+
+msgid "Target Item {0} must be a Fixed Asset item"
+msgstr "Зорилтот бараа {0} нь Үндсэн хөрөнгийн бараа байх ёстой"
+
+msgid "Target Warehouse {0} must be same as Delivery Warehouse {1} in the Subcontracting Inward Order Item."
+msgstr "Туслан гэрээт гүйцэтгэгч Дотогшоо Захиалгын Бараа дэх Target Warehouse {0} нь Хүргэлтийн Warehouse {1} -тэй ижил байх ёстой."
+
+msgid "Template Item"
+msgstr "Загварын бараа"
+
+msgid "Template Item Selected"
+msgstr "Загварын бараа сонгогдсон"
+
+msgid "Territory Item"
+msgstr "Нутаг дэвсгэрийн бараа"
+
+msgid "Territory Target Variance Based On Item Group"
+msgstr "Барааны бүлэгт суурилсан нутаг дэвсгэрийн зорилтот хэлбэлзэл"
+
+msgid "The Batch Split entry {0} must consume exactly one batch tracked raw material, found {1} ({2})."
+msgstr "Багц хуваах бичилт {0} нь багцаар хянагддаг яг нэг түүхий эд зарцуулах ёстой, {1} ({2}) олдлоо."
+
+msgid "The Batch Split entry {0} must have exactly one finished good row."
+msgstr "Багц хуваах бичилт {0} нь яг нэг бэлэн бүтээгдэхүүний мөртэй байх ёстой."
+
+msgid "The Batch Split operation requires a batch tracked raw material to be consumed in the Stock Entry {0}."
+msgstr "Багц хуваах үйлдэлд Бараа материалын гүйлгээ {0}-д багцаар хянагддаг түүхий эд зарцуулах шаардлагатай."
+
+msgid "The Item {0} does not have Serial No or Batch No"
+msgstr "{0} бараа нь серийн дугаар эсвэл багцын дугааргүй байна"
+
+msgid "The Pick List having Stock Reservation Entries cannot be updated. If you need to make changes, we recommend canceling the existing Stock Reservation Entries before updating the Pick List."
+msgstr "Бараа материалын нөөцлөлтийн бичилт бүхий Сонголтын жагсаалтыг шинэчлэх боломжгүй. Хэрэв та өөрчлөлт оруулах шаардлагатай бол Сонголтын жагсаалтыг шинэчлэхээс өмнө одоо байгаа Бараа материалын нөөцлөлтийн бичилтийг цуцлахыг зөвлөж байна."
+
+msgid "The Stock Closing Entry for {0} is not completed yet. Wait for it to complete before submitting the Period Closing Voucher."
+msgstr "{0} -н бараа материалын хаалтын бүртгэл хараахан дуусаагүй байна. Хугацааны хаалтын ваучерыг илгээхээсээ өмнө дуусахыг хүлээнэ үү."
+
+msgid "The batches consumed in the Stock Entry {0} can supply only {1} whole pieces of {2} units each, but {3} pieces are required. Reduce the finished quantity or consume larger batches."
+msgstr "Бараа материалын гүйлгээ {0}-д зарцуулсан багцууд нь тус бүр {2} нэгжтэй зөвхөн {1} бүтэн ширхэг нийлүүлэх боломжтой, харин {3} ширхэг шаардлагатай. Бэлэн бүтээгдэхүүний тоо хэмжээг бууруулах эсвэл илүү том багц зарцуулна уу."
+
+msgid "The closing balance {0} of the Stock Asset accounts does not match the closing value {1} of the Stock Balance report as on {2}. Resolve the difference using the Stock Ledger Variance report before closing the period."
+msgstr "Бараа материалын хөрөнгийн дансны хаалтын үлдэгдэл {0} нь {2}дээрх Бараа материалын балансын тайлангийн хаалтын утга {1} -тай тохирохгүй байна. Хугацааг хаахаас өмнө Бараа материалын дэвтрийн хэлбэлзлийн тайланг ашиглан зөрүүг шийдвэрлэнэ үү."
+
+msgid "The cost of the secondary items cannot exceed the raw material cost of {0}."
+msgstr "Хоёрдогч бараануудын өртөг {0}-ийн түүхий эдийн өртгөөс хэтэрч болохгүй."
+
+msgid "The following Items, having Putaway Rules, could not be accommodated:"
+msgstr "Дараах бараануудыг Putaway дүрэмтэй хамт оруулж болохгүй:"
+
+msgid "The following rows are not valid fields of {0} and have to be removed: {1}"
+msgstr "Дараах мөрүүд {0}-ийн хүчинтэй талбар биш тул хасах шаардлагатай: {1}"
+
+msgid "The item {item} is not marked as {type_of} item. You can enable it as {type_of} item from its Item master."
+msgstr "{item} бараа нь {type_of} бараагаар тэмдэглэгдээгүй байна. Та үүнийг үндсэн бараанаас {type_of} бараагаар идэвхжүүлж болно."
+
+msgid "The items {items} are not marked as {type_of} item. You can enable them as {type_of} item from their Item masters."
+msgstr "{items} бараануудыг {type_of} бараа гэж тэмдэглээгүй байна. Та тэдгээрийг Барааны мастеруудаас {type_of} бараа болгон идэвхжүүлж болно."
+
+msgid "The other components already total {0}%, so no percentage remains for the Balance Item {1}."
+msgstr "Бусад бүрэлдэхүүн хэсгүүдийн нийт дүн {0}% байгаа тул Балансын бараа {1}-д хувь үлдээгүй байна."
+
+msgid "The other components already total {0}%, so no percentage remains for the Balance Item."
+msgstr "Бусад бүрэлдэхүүний нийлбэр аль хэдийн {0}% болсон тул үлдэгдэл бараанд хувь үлдсэнгүй."
+
+msgid "The other versions of this Quotation will also be set as Lost. Continue?"
+msgstr "Энэ Үнийн саналын бусад хувилбарууд мөн Алдагдсан болно. Үргэлжлүүлэх үү?"
+
+msgid "The percentages of the components must total 100%. The current total is {0}%. To fill the remaining percentage automatically, mark one component as Balance Item."
+msgstr "Бүрэлдэхүүн хэсгүүдийн хувь нийт 100% байх ёстой. Одоогийн нийлбэр нь {0}% байна. Үлдсэн хувийг автоматаар бөглөхийн тулд нэг бүрэлдэхүүн хэсгийг Балансын бараа гэж тэмдэглэнэ үү."
+
+msgid "The produced qty of the item {0} has already been converted in full."
+msgstr "{0} барааны үйлдвэрлэсэн тоо хэмжээ аль хэдийн бүрэн хөрвүүлэгдсэн байна."
+
+msgid "The qty to convert must be greater than zero."
+msgstr "Хөрвүүлэх тоо хэмжээ тэгээс их байх ёстой."
+
+msgid "The qty {0} of the item {1} to convert cannot be more than the available produced qty {2} against the Work Order {3}."
+msgstr "Хөрвүүлэх {1} барааны тоо хэмжээ {0} нь Ажлын захиалга {3}-ийн үйлдвэрлэсэн боломжит тоо хэмжээ {2}-оос их байж болохгүй."
+
+msgid "The total Issue / Transfer quantity {0} in Material Request {1} cannot be greater than allowed requested quantity {2} for Item {3}"
+msgstr "Материалын хүсэлт {1} дахь Гаргасан / Шилжүүлгийн нийт тоо хэмжээ {0} нь {3} барааны хүссэн тоо хэмжээ {2} -аас их байж болохгүй."
+
+msgid "The total Issue / Transfer quantity {0} in Material Request {1} cannot be greater than requested quantity {2} for Item {3}"
+msgstr "Материалын хүсэлт {1} дахь Гаргасан / Шилжүүлгийн нийт тоо хэмжээ {0} нь {3} барааны хүссэн тоо хэмжээнээс {2} их байж болохгүй."
+
+msgid "The total qty {0} of the alternative finished goods must be equal to the converted qty {1} of the production item {2}."
+msgstr "Орлуулах бэлэн бүтээгдэхүүний нийт тоо хэмжээ {0} нь үйлдвэрлэлийн бараа {2}-ийн хөрвүүлсэн тоо хэмжээ {1}-тэй тэнцүү байх ёстой."
+
+msgid "The value of {0} differs between Items {1} and {2}"
+msgstr "{0} -н утга нь {1} болон {2} бараануудын хооронд өөр байна."
+
+msgid "The value {0} is already assigned to an existing Item {1}."
+msgstr "{0} утга нь аль хэдийн байгаа {1} бараанд оноогдсон байна."
+
+msgid "The warehouse account(s) below are not of type 'Stock'. Please set a correct Stock asset account on the warehouse (Account Type must be 'Stock'):"
+msgstr "Доорх агуулахын данс(ууд) нь 'Бараа материал' төрлийн биш байна. Агуулах дээр зөв Бараа материалын хөрөнгийн данс тохируулна уу (Дансны төрөл нь 'Бараа материал' байх ёстой):"
+
+msgid "The {0} contains Unit Price Items."
+msgstr "{0} нь Нэгжийн Үнийн Бараануудыг агуулна."
+
+msgid "These items have no default BOM. Select one to create Work Orders."
+msgstr "Эдгээр бараанд анхдагч БОМ байхгүй. Ажлын захиалга үүсгэхийн тулд нэгийг сонгоно уу."
+
+msgid "This BOM will be selected by default in Work Orders etc. when the Item is selected."
+msgstr "Барааг сонгоход энэ БОМ Ажлын захиалга зэрэгт анхдагчаар сонгогдоно."
+
+msgid "This Item is a Template and cannot be used in transactions.<br>All fields present in the 'Copy Fields to Variant' table in Item Variant Settings will be copied to its variant items."
+msgstr "Энэ бараа нь Загвар бөгөөд гүйлгээнд ашиглах боломжгүй.<br>Хувилбарын барааны тохиргоон дахь 'Талбаруудыг Хувилбар руу хуулах' хүснэгтэд байгаа бүх талбаруудыг түүний хувилбарын бараанууд рүү хуулна."
+
+msgid "This Item is a Variant of {0} (Template)."
+msgstr "Энэ бараа нь {0} (Загвар)-ын хувилбар юм."
+
+msgid "This Job Card has no raw materials to transfer."
+msgstr "Энэ Ажлын картад шилжүүлэх түүхий эд байхгүй."
+
+msgid "This can be enabled at specific Item level as well"
+msgstr "Үүнийг тодорхой Барааны түвшинд идэвхжүүлж болно"
+
+msgid "This is enabled by default. If you want to plan materials for sub-assemblies of the Item you're manufacturing leave this enabled. If you plan and manufacture the sub-assemblies separately, you can disable this checkbox."
+msgstr "Үүнийг анхдагчаар идэвхжүүлсэн байдаг. Хэрэв та үйлдвэрлэж буй барааныхаа дэд угсралтын материалыг төлөвлөхийг хүсвэл үүнийг идэвхжүүлсэн хэвээр үлдээнэ үү. Хэрэв та дэд угсралтыг тусад нь төлөвлөж, үйлдвэрлэж байгаа бол энэ хайрцгийг идэвхгүй болгож болно."
+
+msgid "This is for raw material Items that'll be used to create finished goods. If the Item is an additional service like 'washing' that'll be used in the BOM, keep this unchecked."
+msgstr "Энэ нь бэлэн бүтээгдэхүүн үйлдвэрлэхэд ашиглагдах түүхий эд материалын бараануудад зориулагдсан болно. Хэрэв тухайн бараа нь 'угаалга' гэх мэт нэмэлт үйлчилгээ бөгөөд үндсэн хөрөнгө оруулалтын төлөвлөгөөнд ашиглагдах бол үүнийг тэмдэглээгүй байлгана уу."
+
+msgid "This section can be used to record the co-products, by-products, scrap, or additional finished goods that come out of the same production run alongside the main item, and to set how much of the total cost is allocated to each of them."
+msgstr "Энэ хэсэгт үндсэн бараатай хамт нэг үйлдвэрлэлийн явцаас гарах хамтарсан бүтээгдэхүүн, дайвар бүтээгдэхүүн, хаягдал эсвэл нэмэлт бэлэн бүтээгдэхүүнийг бүртгэж, нийт өртгөөс тус бүрд хэдийг хуваарилахыг тохируулна."
+
+msgid "This table is used to set details about the 'Item', 'Qty', 'Basic Rate', etc."
+msgstr "Энэ хүснэгтийг 'Бараа', 'Тоо ширхэг', 'Үндсэн үнэ' гэх мэт бараануудын талаарх дэлгэрэнгүй мэдээллийг тохируулахад ашигладаг."
+
+msgid "This will be applied if no naming series is configured in Item master"
+msgstr "Хэрэв Барааны мастер хэсэгт нэршлийн цуваа тохируулагдаагүй бол энэ нь хэрэгжинэ"
+
+msgid "Time logs"
+msgstr "Цагийн бүртгэл"
+
+msgid "Timesheet Working Hours"
+msgstr "Цагийн хуудасны ажлын цаг"
+
+msgid "Tip"
+msgstr "Зөвлөмж"
+
+msgid "Tip: Select report lines to view their accounts"
+msgstr "Зөвлөмж: Тайлангийн мөрүүдийг сонгож тэдгээрийн дансыг харна уу"
+
+msgid "To add subcontracted Item's raw materials if include exploded items is disabled."
+msgstr "Хэрэв дэлбэрсэн бараануудыг оруулах бол туслан гүйцэтгэгч барааны түүхий эдийг нэмэх тохиргоог идэвхгүй болгосон."
+
+msgid "To allow over billing, update \"Over Billing Allowance\" in Accounts Settings or the Item."
+msgstr "Илүү төлбөр тооцоог зөвшөөрөхийн тулд Дансны тохиргоо эсвэл Бараа дэх \"Илүү төлбөр тооцооны зөвшөөрөгдөх хэмжээ\"-г шинэчилнэ үү."
+
+msgid "To include non-stock items in the material request planning. i.e. Items for which 'Maintain Stock' checkbox is unticked."
+msgstr "Материалын хүсэлтийн төлөвлөлтөд нөөцийн бус бараануудыг оруулах, өөрөөр хэлбэл 'Нөөцийг хадгалах' гэсэн тэмдэглэгээг чагталаагүй бараануудыг оруулах."
+
+msgid "To include tax in row {0} in Item rate, taxes in rows {1} must also be included"
+msgstr "Барааны хувь хэмжээний {0} мөрөнд татвар оруулахын тулд {1} мөрөнд татварыг мөн оруулах ёстой"
+
+msgid "To still proceed with editing this Attribute Value, enable {0} in Item Variant Settings."
+msgstr "Энэ шинж чанарын утгыг засварлахын тулд Барааны Хувилбарын Тохиргоо дотроос {0} -г идэвхжүүлнэ үү."
+
+msgid "Top Customers"
+msgstr "Шилдэг харилцагчид"
+
+msgid "Total Active Items"
+msgstr "Нийт идэвхтэй бараанууд"
+
+msgid "Total Applicable Charges in Purchase Receipt Items table must be same as Total Taxes and Charges"
+msgstr "Худалдан авалтын баримтын бараануудын хүснэгт дэх холбогдох нийт төлбөр нь татвар, хураамжийн нийт дүнтэй ижил байх ёстой"
+
+msgid "Total Assets"
+msgstr "Нийт хөрөнгө"
+
+msgid "Total Completed Qty ({0}), Process Loss Qty ({1}) and Pending Qty ({2}) must add up to the Qty to Manufacture ({3})."
+msgstr "Нийт дууссан тоо хэмжээ ({0}), Үйлдвэрлэлийн хорогдол ({1}) болон Хүлээгдэж буй тоо хэмжээ ({2}) нь Үйлдвэрлэх тоо хэмжээтэй нийлбэр дүнгээр ({3} ) тэнцүү байх ёстой."
+
+msgid "Total Completed qty"
+msgstr "Нийт гүйцэтгэсэн тоо хэмжээ"
+
+msgid "Total Credit/ Debit Amount should be same as linked Journal Entry"
+msgstr "Нийт кредит/дебет дүн нь холбогдсон журналын бичилттэй ижил байх ёстой"
+
+msgid "Total Debit"
+msgstr "Нийт дебет"
+
+msgid "Total Debit Transactions"
+msgstr "Нийт дебет гүйлгээ"
+
+msgid "Total Debit must be equal to Total Credit. The difference is {0}"
+msgstr "Нийт дебет нь нийт кредиттэй тэнцүү байх ёстой. Зөрүү нь {0} байна."
+
+msgid "Total Debits"
+msgstr "Нийт дебет"
+
+msgid "Total Incoming Bills"
+msgstr "Нийт ирсэн нэхэмжлэх"
+
+msgid "Total Incoming Payment"
+msgstr "Нийт орсон төлбөр"
+
+msgid "Total Invoice Amount"
+msgstr "Нийт нэхэмжлэхийн дүн"
+
+msgid "Total Items"
+msgstr "Нийт бараанууд"
+
+msgid "Total Outgoing Bills"
+msgstr "Нийт гарсан нэхэмжлэх"
+
+msgid "Total Outgoing Payment"
+msgstr "Нийт гарсан төлбөр"
+
+msgid "Total Payment Amount"
+msgstr "Нийт төлбөрийн дүн"
+
+msgid "Total Stock Summary"
+msgstr "Нийт бараа материалын хураангуй"
+
+msgid "Total Stock Value"
+msgstr "Нийт бараа материалын үнэ цэнэ"
+
+msgid "Total {0} of all items is zero, charges cannot be distributed on it."
+msgstr "Бүх барааны нийт {0} тэг байгаа тул зардлыг хуваарилах боломжгүй."
+
+msgid "Total {0} of all items is zero. Set 'Distribute Charges Based On' to {1}."
+msgstr "Бүх барааны нийт {0} тэг байна. 'Зардлыг хуваарилах үндэслэл'-ийг {1} болгоно уу."
+
+msgid "Totals are dropped when the companies use different currencies"
+msgstr "Компаниуд өөр валют ашигладаг бол нийлбэр дүнг харуулахгүй"
+
+msgid "Track readiness, shortages, work orders and the shop floor schedule on one screen."
+msgstr "Бэлэн байдал, дутагдал, ажлын захиалга болон цехийн хуваарийг нэг дэлгэц дээр хянах."
+
+msgid "Track semi finished goods"
+msgstr "Хагас боловсруулсан бүтээгдэхүүнийг хянах"
+
+msgid "Transaction Date must be after {0}, the date of the latest version of this Quotation."
+msgstr "Гүйлгээний огноо нь энэ Үнийн саналын хамгийн сүүлийн хувилбарын огноо болох {0}-өөс хойш байх ёстой."
+
+msgid "Transaction Deletion Record Item"
+msgstr "Гүйлгээний Устгалын Бүртгэлийн Бараа"
+
+msgid "Transfer material against"
+msgstr "Материал шилжүүлэх үндэслэл"
+
+msgid "Transit"
+msgstr "Замд яваа"
+
+msgid "UOM conversion factor required for UOM: {0} in Item: {1}"
+msgstr "UOM-д шаардлагатай UOM хөрвүүлэх коэффициент: {0} бараа: {1}"
+
+msgid "UOM {0} not found in Item {1}"
+msgstr "UOM {0} нь {1} бараанаас олдсонгүй"
+
+msgid "Unassigned"
+msgstr "Хуваарилаагүй"
+
+msgid "Unlinked Sub Assemblies"
+msgstr "Холбогдоогүй дэд угсралтууд"
+
+msgid "Unreserve Stock"
+msgstr "Нөөцгүй бараа материал"
+
+msgid "Update Current Stock"
+msgstr "Одоогийн бараа материалыг шинэчлэх"
+
+msgid "Update Items"
+msgstr "Бараануудыг шинэчлэх"
+
+msgid "Update Stock"
+msgstr "Бараа материалыг шинэчлэх"
+
+msgid "Use Item Wise Start Dates"
+msgstr "Барааны Ухаалаг Эхлэх Огноо Ашиглах"
+
+msgid "Use Item based reposting"
+msgstr "Бараа дээр суурилсан дахин нийтлэхийг ашиглах"
+
+msgid "Use Serial No Wise Valuation"
+msgstr "Серийн дугаараар үнэлэх"
+
+msgid "Used by scheduling when an item has no BOM operations: scales the Item Lead Time daily capacity to this many shifts."
+msgstr "Тухайн бараанд BOM үйл ажиллагаа байхгүй үед хуваарь гаргахад ашиглагддаг: өдөр тутмын хүчин чадлыг энэ олон ээлжинд тохируулан хэмждэг."
+
+msgid "Utilities"
+msgstr "Ашиглалтын зардал"
+
+msgid "Validate Negative Stock"
+msgstr "Сөрөг бараа материалыг баталгаажуулах"
+
+msgid "Valuation Method for Item {0} must be Moving Average because Serial No Wise Valuation is disabled. Enable Serial No Wise Valuation to use FIFO, LIFO or Standard Cost."
+msgstr "Серийн дугаараар үнэлэх идэвхгүй тул бараа {0}-ийн үнэлгээний арга Хөдөлгөөнт дундаж байх ёстой. FIFO, LIFO эсвэл Стандарт өртөг ашиглахын тулд Серийн дугаараар үнэлэхийг идэвхжүүлнэ үү."
+
+msgid "Valuation Method of Item {0} must be set to 'Standard Cost'."
+msgstr "{0} барааны үнэлгээний аргыг 'Стандарт өртөг' болгож тохируулах ёстой."
+
+msgid "Valuation Rate"
+msgstr "Үнэлгээний үнэ"
+
+msgid "Valuation Rate Missing"
+msgstr "Үнэлгээний үнэ дутуу байна"
+
+msgid "Valuation Rate and Manual value this item on its own and deduct that cost from the raw material cost, like the pre-v16 scrap items. % of Component Cost allocates a percentage of the remaining raw material cost."
+msgstr "Үнэлгээний үнэ болон Гараар сонголт нь энэ барааг тусад нь үнэлж, тэр өртгийг түүхий эдийн өртгөөс хасна (v16-аас өмнөх хаягдал бараатай адил). Бүрэлдэхүүний өртгийн % нь үлдсэн түүхий эдийн өртгийн тодорхой хувийг хуваарилна."
+
+msgid "Valuation Rate for the Item {0}, is required to do accounting entries for {1} {2}."
+msgstr "{1} {2}-н нягтлан бодох бүртгэлийн бичилт хийхэд {0}барааны үнэлгээний үнэ шаардлагатай."
+
+msgid "Valuation Rate is mandatory if Opening Stock entered"
+msgstr "Хэрэв нээлтийн бараа материалыг оруулсан бол үнэлгээний үнэ заавал байх ёстой"
+
+msgid "Valuation Rate required for Item {0} at row {1}"
+msgstr "{1} мөрөнд байрлах {0} барааны үнэлгээний үнэ шаардлагатай"
+
+msgid "Valuation Type"
+msgstr "Үнэлгээний төрөл"
+
+msgid "Value every outward movement at each Serial No's own incoming rate. If unchecked, the item is valued at Moving Average once stock transactions exist. Cannot be enabled once Serial Nos exist for this item."
+msgstr "Зарлагын хөдөлгөөн бүрийг тухайн серийн дугаарын өөрийн орлогын үнээр үнэлнэ. Сонгоогүй бол бараа материалын гүйлгээ бий болсны дараа барааг Хөдөлгөөнт дунджаар үнэлнэ. Энэ бараанд серийн дугаар бүртгэгдсэний дараа идэвхжүүлэх боломжгүй."
+
+msgid "Variant Item"
+msgstr "Хувилбарын бараа"
+
+msgid "Variant Items"
+msgstr "Хувилбарын бараанууд"
+
+msgid "Versions"
+msgstr "Хувилбарууд"
+
+msgid "View Stock Balance"
+msgstr "Бараа материалын үлдэгдлийг харах"
+
+msgid "View Stock Balance Report"
+msgstr "Бараа материалын балансын тайланг харах"
+
+msgid "View Stock Ledger"
+msgstr "Бараа материалын дэвтрийг харах"
+
+msgid "Warehouse is required to get producible FG Items"
+msgstr "Үйлдвэрлэх боломжтой FG бараануудыг авахын тулд агуулах шаардлагатай"
+
+msgid "Warn or stop if Item rate is changed in Delivery Notes and Sales Invoices generated from a Sales Order."
+msgstr "Борлуулалтын захиалгаас үүссэн Хүргэлтийн баримт болон Борлуулалтын нэхэмжлэх дээр барааны үнэ өөрчлөгдсөн тохиолдолд анхааруулах эсвэл зогсоох."
+
+msgid "Warning on Negative Stock"
+msgstr "Сөрөг бараа материалын талаарх анхааруулга"
+
+msgid "Website Item Group"
+msgstr "Вэбсайтын барааны бүлэг"
+
+msgid "Weight Per Piece"
+msgstr "Нэг ширхэгийн жин"
+
+msgid "Weight per piece"
+msgstr "Нэг ширхэгийн жин"
+
+msgid "When creating an Item, entering a value for this field will automatically create an Item Price at the backend."
+msgstr "Бараа үүсгэх үед энэ талбарт утга оруулах нь арын хэсэгт Барааны үнийг автоматаар үүсгэх болно."
+
+msgid "When this is enabled it defines the BOM as a logical grouping of raw materials without producing an item. The Production Item must be non-stock and will be automatically exploded when used as a raw material in another BOM."
+msgstr "Үүнийг идэвхжүүлбэл БОМ-ыг бараа үйлдвэрлэхгүйгээр түүхий эдийн логик бүлэг болгон тодорхойлно. Үйлдвэрлэлийн бараа нь бараа материалын бус байх ёстой бөгөөд өөр БОМ-д түүхий эд болгон ашиглахад автоматаар задлагдана."
+
+msgid "Work Order Additional Item"
+msgstr "Ажлын захиалгын нэмэлт бараа"
+
+msgid "Work Order Item"
+msgstr "Ажлын захиалгын бараа"
+
+msgid "Work Order cannot be raised against an Item Template"
+msgstr "Ажлын захиалгыг Барааны Загварын эсрэг гаргаж болохгүй"
+
+msgid "Work Order is mandatory for a finished good conversion entry."
+msgstr "Бэлэн бүтээгдэхүүний хөрвүүлэлтийн бичилтэд Ажлын захиалга заавал шаардлагатай."
+
+msgid "Work Order must reference a row in Production Plan {0}."
+msgstr "Ажлын захиалга нь Үйлдвэрлэлийн төлөвлөгөө {0}-ийн нэг мөрийг заасан байх ёстой."
+
+msgid "Work Order must reference only one Production Plan row."
+msgstr "Ажлын захиалга нь Үйлдвэрлэлийн төлөвлөгөөний зөвхөн нэг мөрийг заасан байх ёстой."
+
+msgid "Write Off"
+msgstr "Хорогдуулах"
+
+msgid "You cannot change the rate if BOM is mentioned against any Item."
+msgstr "Хэрэв BOM нь ямар нэгэн барааны эсрэг дурдсан бол та ханшийг өөрчлөх боломжгүй."
+
+msgid "You cannot update stock for a Debit Note. A Debit Note is a financial document that should not affect inventory. Please disable 'Update Stock'."
+msgstr "Та Дебет тэмдэглэлийн бараа материалыг шинэчлэх боломжгүй. Дебет тэмдэглэл нь бараа материалд нөлөөлөх ёсгүй санхүүгийн баримт бичиг юм. 'Бараа материалыг шинэчлэх'-ийг идэвхгүй болгоно уу."
+
+msgid "You have entered a duplicate Delivery Note on row {0}. Please rectify and try again."
+msgstr "Та {0}мөрөнд давхардсан Хүргэлтийн баримт оруулсан байна. Засаад дахин оролдоно уу."
+
+msgid "Zero-Quantity Line Items"
+msgstr "Тэг тоон шугамын бараанууд"
+
+msgctxt "Financial Report Template"
+msgid "[{0}] {1}"
+msgstr "[{0}] {1}"
+
+msgid "e.g. Last 3 weeks, Q1, May 2025"
+msgstr "жишээ нь: Сүүлийн 3 долоо хоног, 1-р улирал, 2025 оны 5-р сар"
+
+msgid "{0} <b>{1}</b> has submitted Assets. Remove Item <b>{2}</b> from table to continue."
+msgstr "{0} <b>{1}</b> Хөрөнгө оруулав. Үргэлжлүүлэхийн тулд хүснэгтээс <b>{2}</b> гэсэн барааг устгана уу."
+
+msgid "{0} cannot be used as an accounting dimension as it is not a standalone document type."
+msgstr "{0} нь бие даасан баримтын төрөл биш тул нягтлан бодох бүртгэлийн хэмжээс болгон ашиглах боломжгүй."
+
+msgid "{0} converted"
+msgstr "{0} хөрвүүлэгдсэн"
+
+msgid "{0} finished goods · {1} sub assemblies"
+msgstr "{0} бэлэн бүтээгдэхүүн · {1} дэд угсралт"
+
+msgid "{0} is mandatory for Item {1}"
+msgstr "{1} бараанд {0} заавал байх ёстой"
+
+msgid "{0} is not a child table"
+msgstr "{0} нь дэд хүснэгт биш"
+
+msgid "{0} is not a child table of {1}"
+msgstr "{0} нь {1}-ийн дэд хүснэгт биш"
+
+msgid "{0} is not a valid Value for Attribute {1} of Item {2}."
+msgstr "{0} нь {2} барааны {1} шинж чанарын хувьд хүчинтэй утга биш байна."
+
+msgid "{0} is required to apply taxes. Set {0}, then select {1} again."
+msgstr "Татвар тооцоход {0} шаардлагатай. {0}-г тохируулаад {1}-г дахин сонгоно уу."
+
+msgid "{0} is required when {1} is {2}"
+msgstr "{1} нь {2} үед {0} шаардлагатай"
+
+msgid "{0} is the site's Demo Company and cannot be deleted directly. Use {1} instead."
+msgstr "{0} нь сайтын Демо компани тул шууд устгах боломжгүй. Оронд нь {1}-ийг ашиглана уу."
+
+msgid "{0} materials short"
+msgstr "{0} материал дутуу"
+
+msgid "{0} materials still to request"
+msgstr "{0} материалыг хүсэх шаардлагатай хэвээр"
+
+msgid "{0} must be greater than zero."
+msgstr "{0} тэгээс их байх ёстой."
+
+msgid "{0} requests · {1} orders"
+msgstr "{0} хүсэлт · {1} захиалга"
+
+msgid "{0} rows not started"
+msgstr "{0} мөр эхлээгүй"
+
+msgid "{0} should be in format: app.module.method"
+msgstr "{0} нь app.module.method хэлбэртэй байх ёстой"
+
+msgid "{0} workstations"
+msgstr "{0} ажлын станц"
+
+msgid "{0} {1} was submitted but could not be reconciled against Bank Transaction {2}. Match it manually from the Bank Reconciliation Tool."
+msgstr "{0} {1} батлагдсан боловч Банкны гүйлгээ {2}-той нийцүүлж чадсангүй. Банкны тооцоо нийцүүлэх хэрэгслээс гараар тааруулна уу."
+
+msgid "{0} {1}: Cost Center is mandatory for Item {2}"
+msgstr "{0} {1}: {2} барааны хувьд өртгийн төв заавал байх ёстой"
+
+msgid "{0}: expected \"{1}\", got \"{2}\""
+msgstr "{0}: \"{1}\" хүлээж байсан, \"{2}\" ирлээ"
+
+msgid "E-Barimt"
+msgstr "И-Баримт"
+
+msgid "E-Barimt Settings"
+msgstr "И-Баримтын тохиргоо"
+
+msgid "E-Barimt Type"
+msgstr "И-Баримтын төрөл"
+
+msgid "Leave empty to choose automatically from the customer and payment."
+msgstr "Хоосон үлдээвэл харилцагч болон төлбөрөөс хамаарч автоматаар сонгогдоно."
+
+msgid "Consumer E-Barimt No"
+msgstr "Хэрэглэгчийн И-Баримтын дугаар"
+
+msgid "8-digit E-Barimt number of an individual customer."
+msgstr "Хувь хүн харилцагчийн 8 оронтой И-Баримтын дугаар."
+
+msgid "Customer TIN"
+msgstr "Харилцагчийн ТТД"
+
+msgid "Filled from the customer's registration number when left empty."
+msgstr "Хоосон үлдээвэл харилцагчийн регистрийн дугаараас бөглөгдөнө."
+
+msgid "E-Barimt Status"
+msgstr "И-Баримтын төлөв"
+
+msgid "E-Barimt Receipt ID"
+msgstr "ДДТД (И-Баримтын дугаар)"
+
+msgid "E-Barimt Lottery No"
+msgstr "Сугалааны дугаар"
+
+msgid "E-Barimt Date"
+msgstr "И-Баримтын огноо"
+
+msgid "Replaced E-Barimt Receipt ID"
+msgstr "Солигдсон ДДТД"
+
+msgid "E-Barimt QR Data"
+msgstr "И-Баримтын QR өгөгдөл"
+
+msgid "E-Barimt Error"
+msgstr "И-Баримтын алдаа"
+
+msgid "Sent"
+msgstr "Илгээсэн"
+
+msgid "Return Processed"
+msgstr "Буцаалт боловсруулсан"
+
+msgid "E-Barimt Classification Code"
+msgstr "БҮНА код (И-Баримт)"
+
+msgid "Product and service classification code (БҮНА) reported on E-Barimt receipts."
+msgstr "И-Баримтад тусгах бүтээгдэхүүн, үйлчилгээний нэгдсэн ангиллын (БҮНА) код."
+
+msgid "E-Barimt Tax Type"
+msgstr "И-Баримтын татварын төрөл"
+
+msgid "Used when no VAT is charged on the item. VAT_FREE and VAT_ZERO need a Tax Product Code."
+msgstr "Бараанд НӨАТ ногдуулаагүй үед ашиглана. VAT_FREE болон VAT_ZERO-д татварын барааны код шаардлагатай."
+
+msgid "E-Barimt Tax Product Code"
+msgstr "И-Баримтын татварын барааны код"
+
+msgid "TIN"
+msgstr "ТТД"
+
+msgid "Taxpayer identification number, looked up from the Tax ID (registration number)."
+msgstr "Татвар төлөгчийн дугаар, Татварын дугаар (регистр)-аас лавлаж авна."
+
+msgid "VAT Payer"
+msgstr "НӨАТ төлөгч"
+
+msgid "Block Submission if E-Barimt Fails"
+msgstr "И-Баримт амжилтгүй бол батлахыг хориглох"
+
+msgid "If unchecked, the invoice is submitted and the receipt is retried every hour."
+msgstr "Сонгоогүй бол нэхэмжлэх батлагдаж, И-Баримтыг цаг тутам дахин илгээнэ."
+
+msgid "PosAPI Connection"
+msgstr "PosAPI холболт"
+
+msgid "PosAPI URL"
+msgstr "PosAPI хаяг"
+
+msgid "Address of the PosAPI 3.0 service installed for this branch."
+msgstr "Энэ салбарт суулгасан PosAPI 3.0 үйлчилгээний хаяг."
+
+msgid "Taxpayer Info API URL"
+msgstr "Татвар төлөгчийн мэдээллийн API хаяг"
+
+msgid "Used to look up a taxpayer's TIN and name from a registration number."
+msgstr "Регистрийн дугаараар татвар төлөгчийн ТТД болон нэрийг лавлахад ашиглана."
+
+msgid "Timeout (Seconds)"
+msgstr "Хүлээх хугацаа (секунд)"
+
+msgid "Merchant TIN"
+msgstr "Худалдагчийн ТТД"
+
+msgid "Taxpayer identification number (TIN) of the company."
+msgstr "Компанийн татвар төлөгчийн дугаар (ТТД)."
+
+msgid "Branch No"
+msgstr "Салбарын дугаар"
+
+msgid "POS No"
+msgstr "ПОС-ын дугаар"
+
+msgid "District Code"
+msgstr "Дүүрэг, сумын код"
+
+msgid "4-digit code of the district / soum where the branch is located."
+msgstr "Салбар байрлах дүүрэг, сумын 4 оронтой код."
+
+msgid "VAT Account"
+msgstr "НӨАТ-ын данс"
+
+msgid "City Tax Account"
+msgstr "НХАТ-ын данс"
+
+msgid "Default Classification Code"
+msgstr "Анхдагч БҮНА код"
+
+msgid "Product classification code used when an Item has none set."
+msgstr "Бараанд БҮНА код тохируулаагүй үед ашиглах код."
+
+msgid "Tax Type for Items without VAT"
+msgstr "НӨАТ-гүй барааны татварын төрөл"
+
+msgid "Connection to the Mongolian E-Barimt (PosAPI 3.0) receipt system."
+msgstr "И-Баримт (PosAPI 3.0) системийн холболт."
+
+msgid "Company {0} is not in Mongolia."
+msgstr "Компани {0} Монголд бүртгэлгүй байна."
+
+msgid "Test Connection"
+msgstr "Холболт шалгах"
+
+msgid "PosAPI Info"
+msgstr "PosAPI мэдээлэл"
+
+msgid "Could not connect to PosAPI at {0}: {1}"
+msgstr "{0} хаяг дээрх PosAPI-тэй холбогдож чадсангүй: {1}"
+
+msgid "PosAPI returned HTTP {0}: {1}"
+msgstr "PosAPI HTTP {0} алдаа буцаалаа: {1}"
+
+msgid "PosAPI did not return a receipt id"
+msgstr "PosAPI баримтын дугаар буцаасангүй"
+
+msgid "PosAPI could not void receipt {0}"
+msgstr "PosAPI {0} баримтыг хүчингүй болгож чадсангүй"
+
+msgid "E-Barimt receipt could not be registered and will be retried: {0}"
+msgstr "И-Баримт бүртгэгдсэнгүй, дахин илгээх болно: {0}"
+
+msgid "Item {0} needs an E-Barimt Tax Product Code for tax type {1}"
+msgstr "{1} татварын төрөлд бараа {0}-д И-Баримтын татварын барааны код шаардлагатай"
+
+msgid "Nothing to register: the invoice has no items left"
+msgstr "Бүртгэх зүйл алга: нэхэмжлэхэд бараа үлдээгүй байна"
+
+msgid "Taxpayer lookup failed: {0}"
+msgstr "Татвар төлөгч лавлаж чадсангүй: {0}"
+
+msgid "Taxpayer not found"
+msgstr "Татвар төлөгч олдсонгүй"
+
+msgid "Only submitted invoices can be sent to E-Barimt"
+msgstr "Зөвхөн батлагдсан нэхэмжлэхийг И-Баримтад илгээх боломжтой"
+
+msgid "E-Barimt is not enabled for Company {0}"
+msgstr "Компани {0}-д И-Баримт идэвхжээгүй байна"
+
+msgid "Look up Taxpayer"
+msgstr "Татвар төлөгч лавлах"
+
+msgid "Enter the registration number in Tax ID first."
+msgstr "Эхлээд Татварын дугаар талбарт регистрийн дугаараа оруулна уу."
+
+msgid "Registered name is {0}. Use it as the customer name?"
+msgstr "Бүртгэлтэй нэр нь {0}. Үүнийг харилцагчийн нэр болгох уу?"
+
+msgid "E-Barimt receipt was not registered: {0}"
+msgstr "И-Баримт бүртгэгдээгүй: {0}"
+
+msgid "Resend to E-Barimt"
+msgstr "И-Баримт руу дахин илгээх"
+
+msgid "E-Barimt receipt not registered yet"
+msgstr "И-Баримт хараахан бүртгэгдээгүй"
+
+msgid "Mongolia VAT Report"
+msgstr "НӨАТ-ын тайлан (Монгол)"
+
+msgid "Output VAT Account"
+msgstr "Борлуулалтын НӨАТ-ын данс"
+
+msgid "Input VAT Account"
+msgstr "Худалдан авалтын НӨАТ-ын данс"
+
+msgid "Defaults to the VAT Account in E-Barimt Settings"
+msgstr "Анхдагчаар И-Баримтын тохиргооны НӨАТ-ын данс"
+
+msgid "Defaults to account 1211 (VAT receivable)"
+msgstr "Анхдагчаар 1211 (НӨАТ-ын авлага) данс"
+
+msgid "Output VAT (Sales)"
+msgstr "Борлуулалтын НӨАТ"
+
+msgid "Input VAT (Purchases)"
+msgstr "Худалдан авалтын НӨАТ"
+
+msgid "VAT Payable / (Refundable)"
+msgstr "Төлөх НӨАТ / (Буцаан авах)"
+
+msgid "Set the Output VAT Account and Input VAT Account filters"
+msgstr "Борлуулалтын болон худалдан авалтын НӨАТ-ын дансны шүүлтүүрийг тохируулна уу"
+
+msgid "VAT Amount"
+msgstr "НӨАТ-ын дүн"
+
+msgid "Mongolia E-Barimt Receipt"
+msgstr "И-Баримтын баримт (Монгол)"
+
+msgid "Could not create withholding tax account {0}"
+msgstr "Суутган татварын данс {0}-г үүсгэж чадсангүй"
+
+msgid "Use Mongolian Chart of Accounts"
+msgstr "Монгол дансны төлөвлөгөө ашиглах"
+
+msgid "Replace the chart selected above with the Mongolian chart of accounts while the company has no transactions."
+msgstr "Компани гүйлгээгүй үед дээр сонгосон төлөвлөгөөг Монгол дансны төлөвлөгөөгөөр солино."
+
+msgid "Mongolian Chart of Accounts Installed"
+msgstr "Монгол дансны төлөвлөгөө суусан"
