@@ -15,7 +15,7 @@ ERPNext-ийг Монголын нөхцөлд нутагшуулах Frappe а�
 
 ```bash
 cd frappe-bench
-bench get-app <энэ аппын git хаяг>
+bench get-app https://github.com/anjaa0815/mongolia_compliance
 bench --site <site> install-app mongolia_compliance
 bench --site <site> migrate
 ```
