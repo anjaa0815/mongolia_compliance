@@ -1,0 +1,264 @@
+{
+ "actions": [],
+ "creation": "2026-10-07 14:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "gateway",
+  "company",
+  "status",
+  "column_break_ref",
+  "reference_doctype",
+  "reference_name",
+  "customer",
+  "section_amount",
+  "amount",
+  "currency",
+  "column_break_paid",
+  "paid_amount",
+  "paid_at",
+  "payment_entry",
+  "section_gateway",
+  "sender_invoice_no",
+  "gateway_invoice_id",
+  "payment_ids",
+  "short_url",
+  "column_break_qr",
+  "qr_text",
+  "qr_image",
+  "deeplinks",
+  "callback_token",
+  "error"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Цуврал",
+   "options": "MGI-.YYYY.-",
+   "default": "MGI-.YYYY.-",
+   "hidden": 1
+  },
+  {
+   "fieldname": "gateway",
+   "fieldtype": "Select",
+   "label": "Төлбөрийн гарц",
+   "options": "QPay",
+   "default": "QPay",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Компани",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Төлөв",
+   "options": "Unpaid\nPaid\nCancelled\nFailed",
+   "default": "Unpaid",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ref",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reference_doctype",
+   "fieldtype": "Link",
+   "label": "Баримтын төрөл",
+   "options": "DocType",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reference_name",
+   "fieldtype": "Dynamic Link",
+   "label": "Баримт",
+   "options": "reference_doctype",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Харилцагч",
+   "options": "Customer",
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "section_amount",
+   "fieldtype": "Section Break",
+   "label": "Дүн"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Нэхэмжилсэн дүн",
+   "options": "currency",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Link",
+   "label": "Валют",
+   "options": "Currency",
+   "default": "MNT"
+  },
+  {
+   "fieldname": "column_break_paid",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "paid_amount",
+   "fieldtype": "Currency",
+   "label": "Төлсөн дүн",
+   "options": "currency",
+   "read_only": 1
+  },
+  {
+   "fieldname": "paid_at",
+   "fieldtype": "Datetime",
+   "label": "Төлсөн огноо",
+   "read_only": 1
+  },
+  {
+   "fieldname": "payment_entry",
+   "fieldtype": "Link",
+   "label": "Төлбөрийн бичилт",
+   "options": "Payment Entry",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_gateway",
+   "fieldtype": "Section Break",
+   "label": "Гарцын мэдээлэл"
+  },
+  {
+   "fieldname": "sender_invoice_no",
+   "fieldtype": "Data",
+   "label": "Манай нэхэмжлэхийн дугаар",
+   "unique": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "gateway_invoice_id",
+   "fieldtype": "Data",
+   "label": "Гарцын нэхэмжлэхийн ID",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "payment_ids",
+   "fieldtype": "Small Text",
+   "label": "Гарцын төлбөрийн ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "short_url",
+   "fieldtype": "Data",
+   "label": "Төлөх холбоос",
+   "options": "URL",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_qr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qr_text",
+   "fieldtype": "Small Text",
+   "label": "QR текст",
+   "read_only": 1
+  },
+  {
+   "fieldname": "qr_image",
+   "fieldtype": "Long Text",
+   "label": "QR зураг (base64)",
+   "hidden": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "deeplinks",
+   "fieldtype": "JSON",
+   "label": "Банкны апп-ын холбоосууд",
+   "hidden": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "callback_token",
+   "fieldtype": "Data",
+   "label": "Callback token",
+   "hidden": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "error",
+   "fieldtype": "Small Text",
+   "label": "Алдаа",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "modified": "2026-10-07 14:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Mongolia Banking",
+ "name": "Mongolia Gateway Invoice",
+ "owner": "Administrator",
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "autoname": "naming_series:",
+ "in_create": 1,
+ "title_field": "reference_name",
+ "permissions": [
+  {
+   "create": 0,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 0
+  },
+  {
+   "create": 0,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 0
+  },
+  {
+   "create": 0,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts User",
+   "share": 1,
+   "write": 0
+  }
+ ],
+ "track_changes": 1
+}

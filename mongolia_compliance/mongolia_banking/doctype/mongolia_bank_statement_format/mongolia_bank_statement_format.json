@@ -1,0 +1,172 @@
+{
+ "actions": [],
+ "creation": "2026-10-07 14:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "format_name",
+  "bank",
+  "enabled",
+  "column_break_sep",
+  "decimal_separator",
+  "date_formats",
+  "section_columns",
+  "date_columns",
+  "description_columns",
+  "account_columns",
+  "party_name_columns",
+  "reference_columns",
+  "column_break_amt",
+  "deposit_columns",
+  "withdrawal_columns",
+  "amount_columns",
+  "direction_columns",
+  "deposit_markers",
+  "balance_columns"
+ ],
+ "fields": [
+  {
+   "fieldname": "format_name",
+   "fieldtype": "Data",
+   "label": "Загварын нэр",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "bank",
+   "fieldtype": "Link",
+   "label": "Банк",
+   "options": "Bank",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Идэвхтэй",
+   "default": "1"
+  },
+  {
+   "fieldname": "column_break_sep",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "decimal_separator",
+   "fieldtype": "Select",
+   "label": "Бутархайн тусгаарлагч",
+   "options": ".\n,",
+   "default": "."
+  },
+  {
+   "fieldname": "date_formats",
+   "fieldtype": "Small Text",
+   "label": "Огнооны формат",
+   "description": "Python strptime формат, нэг мөрөнд нэг. Жишээ: %Y-%m-%d, %Y.%m.%d %H:%M"
+  },
+  {
+   "fieldname": "section_columns",
+   "fieldtype": "Section Break",
+   "label": "Хуулгын баганууд",
+   "description": "Нэг мөрөнд нэг баганын нэр. Эхний таарсан нэр хэрэглэгдэнэ. Хуулганы дээд талын гарчгийн мөрүүдийг алгасаж толгой мөрийг автоматаар олно."
+  },
+  {
+   "fieldname": "date_columns",
+   "fieldtype": "Small Text",
+   "label": "Огноо",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description_columns",
+   "fieldtype": "Small Text",
+   "label": "Гүйлгээний утга"
+  },
+  {
+   "fieldname": "account_columns",
+   "fieldtype": "Small Text",
+   "label": "Харьцсан данс"
+  },
+  {
+   "fieldname": "party_name_columns",
+   "fieldtype": "Small Text",
+   "label": "Харьцсан дансны нэр"
+  },
+  {
+   "fieldname": "reference_columns",
+   "fieldtype": "Small Text",
+   "label": "Гүйлгээний дугаар"
+  },
+  {
+   "fieldname": "column_break_amt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "deposit_columns",
+   "fieldtype": "Small Text",
+   "label": "Орлого (кредит)"
+  },
+  {
+   "fieldname": "withdrawal_columns",
+   "fieldtype": "Small Text",
+   "label": "Зарлага (дебит)"
+  },
+  {
+   "fieldname": "amount_columns",
+   "fieldtype": "Small Text",
+   "label": "Дүн (нэг баганад +/-)",
+   "description": "Орлого/Зарлага тусдаа баганагүй хуулгад"
+  },
+  {
+   "fieldname": "direction_columns",
+   "fieldtype": "Small Text",
+   "label": "Гүйлгээний төрөл (Дт/Кт)"
+  },
+  {
+   "fieldname": "deposit_markers",
+   "fieldtype": "Small Text",
+   "label": "Орлогыг илтгэх утга",
+   "description": "Төрөл баганад эдгээр утга байвал орлого гэж үзнэ (кт, кредит, cr...)"
+  },
+  {
+   "fieldname": "balance_columns",
+   "fieldtype": "Small Text",
+   "label": "Үлдэгдэл"
+  }
+ ],
+ "links": [],
+ "modified": "2026-10-07 14:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Mongolia Banking",
+ "name": "Mongolia Bank Statement Format",
+ "owner": "Administrator",
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "autoname": "field:format_name",
+ "naming_rule": "By fieldname",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 1
+  }
+ ]
+}
