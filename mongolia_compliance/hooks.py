@@ -22,13 +22,19 @@ doctype_js = {
 doc_events = {
 	"Company": {
 		"validate": "mongolia_compliance.mongolia_accounting.stock.validate_company",
-		"on_update": "mongolia_compliance.mongolia_accounting.setup.on_company_update",
+		"on_update": [
+			"mongolia_compliance.mongolia_accounting.setup.on_company_update",
+			"mongolia_compliance.mongolia_accounting.transit.on_company_update",
+		],
 	},
 	"Stock Settings": {
 		"validate": "mongolia_compliance.mongolia_accounting.stock.validate_stock_settings",
 	},
 	"Item": {
 		"validate": "mongolia_compliance.mongolia_accounting.stock.validate_item",
+	},
+	"Stock Entry": {
+		"before_validate": "mongolia_compliance.mongolia_accounting.transit.before_validate_stock_entry",
 	},
 	"Landed Cost Voucher": {
 		"before_validate": "mongolia_compliance.mongolia_accounting.landed_cost.before_validate",
