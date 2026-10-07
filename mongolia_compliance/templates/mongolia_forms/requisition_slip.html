@@ -1,0 +1,73 @@
+{%- from "mongolia_compliance/templates/mongolia_forms/aa_macros.html" import styles, header, info, in_words, signatures, distinct with context -%}
+{#- Шаардах хуудас (Material Request, Stock Entry - Material Issue) -#}
+{%- set is_request = doc.doctype == "Material Request" -%}
+{{ styles() }}
+<div class="aa-form">
+	{{ header(doc, None, _("Requisition Slip"), doc.transaction_date if is_request else doc.posting_date) }}
+	{%- if is_request %}
+	{{ info([
+		(_("Request Type"), _(doc.material_request_type)),
+		(_("Required Date"), mn_date(doc.schedule_date)),
+		(_("Issuing Warehouse"), doc.set_from_warehouse or distinct(doc.items, "from_warehouse") or doc.set_warehouse or distinct(doc.items, "warehouse")),
+		(_("Project"), distinct(doc.items, "project")),
+		(_("Cost Center"), distinct(doc.items, "cost_center")),
+	]) }}
+	{%- else %}
+	{{ info([
+		(_("Issuing Warehouse"), doc.from_warehouse or distinct(doc.items, "s_warehouse")),
+		(_("Material Request"), distinct(doc.items, "material_request")),
+		(_("Project"), doc.project or distinct(doc.items, "project")),
+		(_("Cost Center"), distinct(doc.items, "cost_center")),
+		(_("Purpose"), doc.remarks),
+	]) }}
+	{%- endif %}
+	<table class="aa-items">
+		<thead>
+			<tr>
+				<th>&numero;</th>
+				<th>{{ _("Item Code") }}</th>
+				<th>{{ _("Item Name") }}</th>
+				<th>{{ _("Unit") }}</th>
+				<th>{{ _("Requested Qty") }}</th>
+				<th>{{ _("Issued Qty") }}</th>
+				{%- if not is_request %}
+				<th>{{ _("Unit Cost") }}</th>
+				<th>{{ _("Total Value") }}</th>
+				{%- endif %}
+			</tr>
+		</thead>
+		<tbody>
+			{%- for item in doc.items %}
+			<tr>
+				<td class="text-center">{{ loop.index }}</td>
+				<td>{{ item.item_code }}</td>
+				<td>{{ item.item_name }}</td>
+				<td class="text-center">{{ _(item.uom) }}</td>
+				<td class="text-right">{{ item.get_formatted("qty") }}</td>
+				{#- A request is issued by hand on paper; an issue entry records what left the warehouse #}
+				<td class="text-right">{{ "" if is_request else item.get_formatted("qty") }}</td>
+				{%- if not is_request %}
+				<td class="text-right">{{ item.get_formatted("valuation_rate") }}</td>
+				<td class="text-right">{{ item.get_formatted("amount") }}</td>
+				{%- endif %}
+			</tr>
+			{%- endfor %}
+			{%- if not is_request %}
+			<tr class="aa-total">
+				<td colspan="7" class="text-right">{{ _("Total") }}</td>
+				<td class="text-right">{{ doc.get_formatted("total_outgoing_value") }}</td>
+			</tr>
+			{%- endif %}
+		</tbody>
+	</table>
+	{%- if not is_request %}
+	{{ in_words(doc.total_outgoing_value) }}
+	{%- endif %}
+	{{ signatures([
+		(_("Requested by"), get_full_name(doc.owner)),
+		(_("Approved by"), ""),
+		(_("Issued by (storekeeper)"), ""),
+		(_("Received by"), ""),
+		(_("Checked by (accountant)"), ""),
+	]) }}
+</div>

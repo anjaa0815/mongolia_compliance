@@ -1,0 +1,60 @@
+{%- from "mongolia_compliance/templates/mongolia_forms/aa_macros.html" import styles, header, info, amount_summary, signatures, distinct with context -%}
+{#- АА-1 Бараа материалын орлогын баримт (Purchase Receipt) -#}
+{%- set supplier = get_party_details("Supplier", doc.supplier) -%}
+{{ styles() }}
+<div class="aa-form">
+	{{ header(doc, "АА-1", _("Stock Receipt Voucher")) }}
+	{{ info([
+		(_("Supplier"), doc.supplier_name),
+		(_("Supplier Registration No"), supplier.tax_id),
+		(_("Supplier Delivery Note No"), doc.supplier_delivery_note),
+		(_("Purchase Order"), distinct(doc.items, "purchase_order")),
+		(_("Receiving Warehouse"), doc.set_warehouse or distinct(doc.items, "warehouse")),
+	]) }}
+	<table class="aa-items">
+		<thead>
+			<tr>
+				<th rowspan="2">&numero;</th>
+				<th rowspan="2">{{ _("Item Code") }}</th>
+				<th rowspan="2">{{ _("Item Name") }}</th>
+				<th rowspan="2">{{ _("Unit") }}</th>
+				<th colspan="3">{{ _("Quantity") }}</th>
+				<th rowspan="2">{{ _("Unit Price") }}</th>
+				<th rowspan="2">{{ _("Total Amount") }}</th>
+			</tr>
+			<tr>
+				<th>{{ _("Per Document") }}</th>
+				<th>{{ _("Accepted Qty") }}</th>
+				<th>{{ _("Rejected Qty") }}</th>
+			</tr>
+		</thead>
+		<tbody>
+			{%- for item in doc.items %}
+			<tr>
+				<td class="text-center">{{ loop.index }}</td>
+				<td>{{ item.item_code }}</td>
+				<td>{{ item.item_name }}</td>
+				<td class="text-center">{{ _(item.uom) }}</td>
+				<td class="text-right">{{ item.get_formatted("received_qty") }}</td>
+				<td class="text-right">{{ item.get_formatted("qty") }}</td>
+				<td class="text-right">{{ item.get_formatted("rejected_qty") if item.rejected_qty else "" }}</td>
+				<td class="text-right">{{ item.get_formatted("rate") }}</td>
+				<td class="text-right">{{ item.get_formatted("amount") }}</td>
+			</tr>
+			{%- endfor %}
+			<tr class="aa-total">
+				<td colspan="5" class="text-right">{{ _("Total") }}</td>
+				<td class="text-right">{{ doc.get_formatted("total_qty") }}</td>
+				<td></td>
+				<td></td>
+				<td class="text-right">{{ doc.get_formatted("total") }}</td>
+			</tr>
+		</tbody>
+	</table>
+	{{ amount_summary(doc) }}
+	{{ signatures([
+		(_("Handed over by (supplier)"), doc.contact_display),
+		(_("Received by (storekeeper)"), ""),
+		(_("Checked by (accountant)"), ""),
+	]) }}
+</div>

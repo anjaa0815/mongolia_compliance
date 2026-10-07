@@ -1,0 +1,103 @@
+{#- Shared layout of the АА primary document forms (Mongolia Forms print formats) -#}
+
+{% macro styles() %}
+<style>
+	.aa-form { font-size: 11px; color: #000; }
+	.aa-form table { width: 100%; border-collapse: collapse; }
+	.aa-form .aa-head td { vertical-align: top; padding: 0; }
+	.aa-form .aa-code { text-align: right; font-size: 10px; }
+	.aa-form .aa-title { text-align: center; font-size: 14px; font-weight: bold; text-transform: uppercase; margin: 12px 0 2px; }
+	.aa-form .aa-date { text-align: center; margin-bottom: 10px; }
+	.aa-form .aa-info td { padding: 2px 4px 2px 0; vertical-align: top; }
+	.aa-form .aa-info .aa-label { width: 30%; color: #333; }
+	.aa-form .aa-items { margin-top: 8px; }
+	.aa-form .aa-items th, .aa-form .aa-items td { border: 1px solid #000; padding: 3px 4px; vertical-align: middle; }
+	.aa-form .aa-items th { text-align: center; font-weight: bold; background: #f2f2f2; }
+	.aa-form .aa-items .aa-total td { font-weight: bold; }
+	.aa-form .text-right { text-align: right; }
+	.aa-form .text-center { text-align: center; }
+	.aa-form .aa-totals { width: 45%; margin-left: auto; margin-top: 6px; }
+	.aa-form .aa-totals td { padding: 2px 4px; }
+	.aa-form .aa-words { margin-top: 6px; }
+	.aa-form .aa-note { margin-top: 10px; font-style: italic; }
+	.aa-form .aa-sign { margin-top: 18px; }
+	.aa-form .aa-sign td { padding: 9px 4px 0 0; vertical-align: bottom; white-space: nowrap; }
+	.aa-form .aa-sign .aa-sign-label { width: 32%; }
+	.aa-form .aa-sign .aa-line { border-bottom: 1px solid #000; width: 28%; }
+	.aa-form .aa-sign .aa-name { width: 40%; }
+	.aa-form .aa-stamp { margin-top: 14px; }
+	.aa-form.aa-compact { font-size: 9px; }
+	.aa-form.aa-compact .aa-items th, .aa-form.aa-compact .aa-items td { padding: 2px; }
+</style>
+{% endmacro %}
+
+{#- Company, form code, title with document number and date -#}
+{% macro header(doc, form_code, title, date=None) %}
+{%- set company_tax_id = frappe.db.get_value("Company", doc.company, "tax_id") -%}
+<table class="aa-head">
+	<tr>
+		<td>
+			{{ _("Organization Name") }}: <b>{{ doc.company }}</b><br>
+			{{ _("Registration No") }}: {{ company_tax_id or "____________" }}
+		</td>
+		<td class="aa-code">
+			{%- if form_code %}
+			{{ _("Primary Document Form") }} <b>{{ form_code }}</b><br>
+			{{ _("Approved primary document form of the Ministry of Finance") }}
+			{%- endif %}
+		</td>
+	</tr>
+</table>
+<div class="aa-title">{{ title }} &numero; {{ doc.name }}</div>
+<div class="aa-date">{{ mn_date(date or doc.posting_date) }}</div>
+{% endmacro %}
+
+{#- rows: list of (label, value); rows with an empty value are skipped -#}
+{% macro info(rows) %}
+<table class="aa-info">
+	{%- for label, value in rows if value %}
+	<tr><td class="aa-label">{{ label }}:</td><td><b>{{ value }}</b></td></tr>
+	{%- endfor %}
+</table>
+{% endmacro %}
+
+{#- Net total, taxes, discount and grand total of a buying or selling document, then the amount in words -#}
+{% macro amount_summary(doc) %}
+{%- set grand_total_field = "rounded_total" if doc.rounded_total else "grand_total" -%}
+<table class="aa-totals">
+	<tr><td>{{ _("Total (excl. VAT)") }}</td><td class="text-right">{{ doc.get_formatted("net_total") }}</td></tr>
+	{%- for tax in doc.taxes if tax.tax_amount %}
+	<tr><td>{{ tax.description }}</td><td class="text-right">{{ tax.get_formatted("tax_amount") }}</td></tr>
+	{%- endfor %}
+	{%- if doc.discount_amount %}
+	<tr><td>{{ _("Discount") }}</td><td class="text-right">- {{ doc.get_formatted("discount_amount") }}</td></tr>
+	{%- endif %}
+	<tr><td><b>{{ _("Grand Total") }}</b></td><td class="text-right"><b>{{ doc.get_formatted(grand_total_field) }}</b></td></tr>
+</table>
+{{ in_words(doc.get(grand_total_field), doc.currency) }}
+{% endmacro %}
+
+{% macro in_words(amount, currency=None) %}
+<div class="aa-words">{{ _("Amount in words") }}: <b>{{ mn_money_in_words(amount, currency) }}</b></div>
+{% endmacro %}
+
+{#- rows: list of (role, name); a blank name leaves a line to write it by hand -#}
+{% macro signatures(rows, stamp=True) %}
+<table class="aa-sign">
+	{%- for role, name in rows %}
+	<tr>
+		<td class="aa-sign-label">{{ role }}:</td>
+		<td class="aa-line"></td>
+		<td class="aa-name">/ {{ name or "______________________" }} /</td>
+	</tr>
+	{%- endfor %}
+</table>
+{%- if stamp %}
+<div class="aa-stamp">{{ _("Stamp Place") }}</div>
+{%- endif %}
+{% endmacro %}
+
+{#- Distinct non-empty values of a child table field, comma separated -#}
+{% macro distinct(rows, field) -%}
+{{ rows | map(attribute=field) | select | unique | join(", ") }}
+{%- endmacro %}

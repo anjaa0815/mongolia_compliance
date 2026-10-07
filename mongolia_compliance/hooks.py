@@ -41,5 +41,9 @@ scheduler_events = {
 jinja = {
 	"methods": [
 		"mongolia_compliance.e_barimt.ebarimt.get_qr_code_image",
+		"mongolia_compliance.mongolia_forms.utils.mn_money_in_words",
+		"mongolia_compliance.mongolia_forms.utils.mn_date",
+		"mongolia_compliance.mongolia_forms.utils.get_party_details",
+		"mongolia_compliance.mongolia_forms.utils.get_full_name",
 	],
 }

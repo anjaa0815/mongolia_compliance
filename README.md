@@ -8,6 +8,7 @@ ERPNext-ийг Монголын нөхцөлд нутагшуулах Frappe а�
 | --- | --- |
 | Mongolia Accounting | Монгол дансны төлөвлөгөө, НӨАТ 10% / 0% / чөлөөлөгдсөн татварын загвар, суутган тооцох татварын ангилал, СТ-1, СТ-2 тайлангийн загвар, НӨАТ-ын тайлан |
 | E-Barimt | И-Баримт 3.0 (PosAPI) холболт, ДДТД / QR / сугалааны дугаар, буцаалт ба цуцлалт, ТТД лавлах, QR-тай баримтын хэвлэх загвар |
+| Mongolia Forms | Анхан шатны баримтын хэвлэх загвар: АА-1 орлогын баримт, АА-2 зарлагын баримт, АА-3 шилжүүлгийн баримт, АА-4 тооллогын бүртгэл, Шаардах хуудас |
 
 Орчуулга `mongolia_compliance/locale/mn.po` дотор байна. ERPNext-ийн орчуулаагүй мөрүүдийг нөхөж, буруу орчуулсан нэр томьёог (Stock, Item, Quotation, Lead гэх мэт) дарж бичнэ.
 
@@ -25,6 +26,7 @@ bench --site <site> migrate
 1. Улс нь Mongolia шинэ компани үүсгэхэд "Use Mongolian Chart of Accounts" сонгогдсон бол сонгосон дансны төлөвлөгөө Монгол төлөвлөгөөгөөр солигдож, НӨАТ болон суутгалын загварууд үүснэ. Гүйлгээгүй хуучин компанид `mongolia_compliance.mongolia_accounting.setup.install_mongolian_chart` дуудаж суулгаж болно.
 2. **E-Barimt Settings** дээр компани тус бүрийн PosAPI хаяг, ТТД, салбар, дүүргийн код, НӨАТ ба НХАТ-ын дансыг тохируулаад "Test Connection" дарна.
 3. Барааны карт дээр БҮНА код, шаардлагатай бол И-Баримтын татварын төрлийг бөглөнө.
+4. АА маягтууд баримт бүрийн Print цонхны загварын жагсаалтад гарна (Purchase Receipt, Delivery Note, Sales Invoice, Stock Entry, Stock Reconciliation, Material Request). Байнга ашиглах бол Print Format-ыг тухайн DocType-ийн өгөгдмөл болгож тохируулна. Компанийн регистрийн дугаар Company-ийн Tax ID-аас авагдана.
 
 ## Бүтэц
 
@@ -35,7 +37,9 @@ mongolia_compliance/
 ├── locale/mn.po          # монгол орчуулга
 ├── public/js/            # Customer, Sales/POS Invoice формын нэмэлт
 ├── mongolia_accounting/  # дансны төлөвлөгөө, татвар, тайлан
-└── e_barimt/             # И-Баримт
+├── e_barimt/             # И-Баримт
+├── mongolia_forms/       # АА маягтуудын Print Format, төгрөгийг үсгээр бичих
+└── templates/mongolia_forms/  # маягтуудын Jinja загвар
 ```
 
 Шинэ модуль (жишээ нь Mongolia Payroll, Mongolia Banking) нэмэхдээ `modules.txt`-д нэрийг нь бичиж, ижил нэртэй хавтас үүсгээд, hooks-оо `hooks.py`-д нэмнэ.

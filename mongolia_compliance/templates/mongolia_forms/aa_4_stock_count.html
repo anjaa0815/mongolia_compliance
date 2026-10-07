@@ -1,0 +1,72 @@
+{%- from "mongolia_compliance/templates/mongolia_forms/aa_macros.html" import styles, header, info, signatures, distinct with context -%}
+{#- АА-4 Бараа материалын тооллогын бүртгэл (Stock Reconciliation) -#}
+{%- set ns = namespace(surplus=0, shortage=0) -%}
+{{ styles() }}
+<div class="aa-form aa-compact">
+	{{ header(doc, "АА-4", _("Stock Count Sheet")) }}
+	{{ info([
+		(_("Counted Warehouse"), doc.set_warehouse or distinct(doc.items, "warehouse")),
+		(_("Purpose"), _(doc.purpose)),
+	]) }}
+	<table class="aa-items">
+		<thead>
+			<tr>
+				<th rowspan="2">&numero;</th>
+				<th rowspan="2">{{ _("Item Name") }}</th>
+				<th rowspan="2">{{ _("Unit") }}</th>
+				<th rowspan="2">{{ _("Unit Cost") }}</th>
+				<th colspan="2">{{ _("Per Accounting Records") }}</th>
+				<th colspan="2">{{ _("Per Count") }}</th>
+				<th colspan="2">{{ _("Surplus") }}</th>
+				<th colspan="2">{{ _("Shortage") }}</th>
+			</tr>
+			<tr>
+				{%- for i in range(4) %}
+				<th>{{ _("Qty") }}</th>
+				<th>{{ _("Amount") }}</th>
+				{%- endfor %}
+			</tr>
+		</thead>
+		<tbody>
+			{%- for item in doc.items %}
+			{%- set qty_diff = item.qty - item.current_qty -%}
+			{%- set amount_diff = item.amount - item.current_amount -%}
+			{%- if amount_diff > 0 %}{% set ns.surplus = ns.surplus + amount_diff %}{% else %}{% set ns.shortage = ns.shortage - amount_diff %}{% endif -%}
+			<tr>
+				<td class="text-center">{{ loop.index }}</td>
+				<td>{{ item.item_name }}{% if item.item_name != item.item_code %}<br><small>{{ item.item_code }}</small>{% endif %}</td>
+				<td class="text-center">{{ _(item.stock_uom) }}</td>
+				<td class="text-right">{{ item.get_formatted("valuation_rate") }}</td>
+				<td class="text-right">{{ item.get_formatted("current_qty") }}</td>
+				<td class="text-right">{{ item.get_formatted("current_amount") }}</td>
+				<td class="text-right">{{ item.get_formatted("qty") }}</td>
+				<td class="text-right">{{ item.get_formatted("amount") }}</td>
+				<td class="text-right">{{ frappe.format_value(qty_diff, {"fieldtype": "Float"}) if qty_diff > 0 else "" }}</td>
+				<td class="text-right">{{ frappe.format_value(amount_diff, {"fieldtype": "Currency"}) if amount_diff > 0 else "" }}</td>
+				<td class="text-right">{{ frappe.format_value(-qty_diff, {"fieldtype": "Float"}) if qty_diff < 0 else "" }}</td>
+				<td class="text-right">{{ frappe.format_value(-amount_diff, {"fieldtype": "Currency"}) if amount_diff < 0 else "" }}</td>
+			</tr>
+			{%- endfor %}
+			<tr class="aa-total">
+				<td colspan="4" class="text-right">{{ _("Total") }}</td>
+				<td></td>
+				<td class="text-right">{{ frappe.format_value(doc.items | sum(attribute="current_amount"), {"fieldtype": "Currency"}) }}</td>
+				<td></td>
+				<td class="text-right">{{ frappe.format_value(doc.items | sum(attribute="amount"), {"fieldtype": "Currency"}) }}</td>
+				<td></td>
+				<td class="text-right">{{ frappe.format_value(ns.surplus, {"fieldtype": "Currency"}) }}</td>
+				<td></td>
+				<td class="text-right">{{ frappe.format_value(ns.shortage, {"fieldtype": "Currency"}) }}</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="aa-note">{{ _("All stock listed above was counted in the presence of the count committee and recorded in this sheet. As the person responsible for the stock, I have no claims regarding the count.") }}</div>
+	{{ signatures([
+		(_("Count committee chairperson"), ""),
+		(_("Committee member"), ""),
+		(_("Committee member"), ""),
+		(_("Committee member"), ""),
+		(_("Responsible storekeeper"), ""),
+		(_("Checked by (accountant)"), ""),
+	]) }}
+</div>

@@ -4079,3 +4079,156 @@ msgstr "Компани гүйлгээгүй үед дээр сонгосон т�
 
 msgid "Mongolian Chart of Accounts Installed"
 msgstr "Монгол дансны төлөвлөгөө суусан"
+
+msgid "All stock listed above was counted in the presence of the count committee and recorded in this sheet. As the person responsible for the stock, I have no claims regarding the count."
+msgstr "Дээрх бүх бараа материалыг тооллогын комиссын дэргэд тоолж, энэхүү бүртгэлд тусгасан болно. Эд хариуцагчийн хувьд тооллоготой холбоотой гомдол, санал байхгүй болно."
+
+msgid "Amount in words"
+msgstr "Мөнгөн дүн (үсгээр)"
+
+msgid "Approved by"
+msgstr "Зөвшөөрсөн"
+
+msgid "Approved primary document form of the Ministry of Finance"
+msgstr "Сангийн яамны баталсан анхан шатны баримтын маягт"
+
+msgid "Checked by (accountant)"
+msgstr "Шалгасан нягтлан бодогч"
+
+msgid "Committee member"
+msgstr "Комиссын гишүүн"
+
+msgid "Count committee chairperson"
+msgstr "Тооллогын комиссын дарга"
+
+msgid "Counted Warehouse"
+msgstr "Тооллого хийсэн агуулах"
+
+msgid "Delivery Address"
+msgstr "Хүргэх хаяг"
+
+msgid "Primary Document Form"
+msgstr "Маягт"
+
+msgid "Sending Warehouse"
+msgstr "Илгээх агуулах"
+
+msgid "Handed over by (storekeeper)"
+msgstr "Хүлээлгэн өгсөн нярав"
+
+msgid "Handed over by (supplier)"
+msgstr "Хүлээлгэн өгсөн (нийлүүлэгч)"
+
+msgid "Issued Qty"
+msgstr "Олгосон тоо"
+
+msgid "Issued by (storekeeper)"
+msgstr "Олгосон нярав"
+
+msgid "Issuing Warehouse"
+msgstr "Зарлагадах агуулах"
+
+msgid "Per Accounting Records"
+msgstr "Нягтлан бодох бүртгэлээр"
+
+msgid "Per Count"
+msgstr "Тооллогоор"
+
+msgid "Per Document"
+msgstr "Баримтаар"
+
+msgid "Phone"
+msgstr "Утас"
+
+msgid "Project"
+msgstr "Төсөл"
+
+msgid "Received by"
+msgstr "Хүлээн авсан"
+
+msgid "Received by (storekeeper)"
+msgstr "Хүлээн авсан нярав"
+
+msgid "Receiving Warehouse"
+msgstr "Хүлээн авах агуулах"
+
+msgid "Recipient"
+msgstr "Хүлээн авагч"
+
+msgid "Recipient Registration No"
+msgstr "Хүлээн авагчийн регистрийн дугаар"
+
+msgid "Registration No"
+msgstr "Регистрийн дугаар"
+
+msgid "Requested by"
+msgstr "Шаардсан"
+
+msgid "Requisition Slip"
+msgstr "Шаардах хуудас"
+
+msgid "Responsible storekeeper"
+msgstr "Эд хариуцагч нярав"
+
+msgid "Shortage"
+msgstr "Дутагдал"
+
+msgid "Stamp Place"
+msgstr "Т.Т."
+
+msgid "Stock Count Sheet"
+msgstr "Бараа материалын тооллогын бүртгэл"
+
+msgid "Stock Issue Voucher"
+msgstr "Бараа материалын зарлагын баримт"
+
+msgid "Stock Receipt Voucher"
+msgstr "Бараа материалын орлогын баримт"
+
+msgid "Stock Transfer Voucher"
+msgstr "Бараа материалын шилжүүлгийн баримт"
+
+msgid "Supplier Delivery Note No"
+msgstr "Нийлүүлэгчийн падааны дугаар"
+
+msgid "Supplier Registration No"
+msgstr "Нийлүүлэгчийн регистрийн дугаар"
+
+msgid "Surplus"
+msgstr "Илүүдэл"
+
+msgid "Total"
+msgstr "Нийт"
+
+msgid "Total (excl. VAT)"
+msgstr "Дүн (НӨАТ-гүй)"
+
+msgid "Transferring Warehouse"
+msgstr "Шилжүүлэх агуулах"
+
+msgid "Unit Cost"
+msgstr "Нэгжийн өртөг"
+
+msgid "Mongolia AA-1 Stock Receipt"
+msgstr "АА-1 Бараа материалын орлогын баримт"
+
+msgid "Mongolia AA-2 Stock Issue"
+msgstr "АА-2 Бараа материалын зарлагын баримт"
+
+msgid "Mongolia AA-2 Sales Invoice Issue"
+msgstr "АА-2 Зарлагын падаан"
+
+msgid "Mongolia AA-3 Stock Transfer"
+msgstr "АА-3 Бараа материалын шилжүүлгийн баримт"
+
+msgid "Mongolia AA-4 Stock Count"
+msgstr "АА-4 Бараа материалын тооллогын бүртгэл"
+
+msgid "Mongolia Requisition Slip"
+msgstr "Шаардах хуудас"
+
+msgid "Mongolia Stock Issue Requisition Slip"
+msgstr "Шаардах хуудас (зарлага)"
+
+msgid "Mongolia Forms"
+msgstr "Монгол маягтууд"

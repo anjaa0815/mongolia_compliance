@@ -1,0 +1,63 @@
+{%- from "mongolia_compliance/templates/mongolia_forms/aa_macros.html" import styles, header, info, in_words, signatures with context -%}
+{#- АА-3 Бараа материалын шилжүүлгийн баримт (Stock Entry - Material Transfer) -#}
+{#- Per row warehouse columns only when rows differ from the header warehouses -#}
+{%- set row_warehouses = doc.items | selectattr("s_warehouse", "ne", doc.from_warehouse) | list
+	or doc.items | selectattr("t_warehouse", "ne", doc.to_warehouse) | list -%}
+{{ styles() }}
+<div class="aa-form">
+	{{ header(doc, "АА-3", _("Stock Transfer Voucher")) }}
+	{{ info([
+		(_("Transferring Warehouse"), doc.from_warehouse),
+		(_("Receiving Warehouse"), doc.to_warehouse),
+		(_("Stock Entry Type"), _(doc.stock_entry_type)),
+		(_("Project"), doc.project),
+		(_("Purpose"), doc.remarks),
+	]) }}
+	<table class="aa-items">
+		<thead>
+			<tr>
+				<th>&numero;</th>
+				<th>{{ _("Item Code") }}</th>
+				<th>{{ _("Item Name") }}</th>
+				<th>{{ _("Unit") }}</th>
+				{%- if row_warehouses %}
+				<th>{{ _("Sending Warehouse") }}</th>
+				<th>{{ _("Receiving Warehouse") }}</th>
+				{%- endif %}
+				<th>{{ _("Quantity") }}</th>
+				<th>{{ _("Unit Cost") }}</th>
+				<th>{{ _("Total Value") }}</th>
+			</tr>
+		</thead>
+		<tbody>
+			{%- for item in doc.items %}
+			<tr>
+				<td class="text-center">{{ loop.index }}</td>
+				<td>{{ item.item_code }}</td>
+				<td>{{ item.item_name }}</td>
+				<td class="text-center">{{ _(item.uom) }}</td>
+				{%- if row_warehouses %}
+				<td>{{ item.s_warehouse or "" }}</td>
+				<td>{{ item.t_warehouse or "" }}</td>
+				{%- endif %}
+				<td class="text-right">{{ item.get_formatted("qty") }}</td>
+				<td class="text-right">{{ item.get_formatted("valuation_rate") }}</td>
+				<td class="text-right">{{ item.get_formatted("amount") }}</td>
+			</tr>
+			{%- endfor %}
+			<tr class="aa-total">
+				<td colspan="{{ 6 if row_warehouses else 4 }}" class="text-right">{{ _("Total") }}</td>
+				<td class="text-right">{{ frappe.format_value(doc.items | sum(attribute="qty"), {"fieldtype": "Float"}) }}</td>
+				<td></td>
+				<td class="text-right">{{ doc.get_formatted("total_incoming_value") }}</td>
+			</tr>
+		</tbody>
+	</table>
+	{{ in_words(doc.total_incoming_value) }}
+	{{ signatures([
+		(_("Handed over by (storekeeper)"), ""),
+		(_("Received by (storekeeper)"), ""),
+		(_("Approved by"), ""),
+		(_("Checked by (accountant)"), ""),
+	]) }}
+</div>
