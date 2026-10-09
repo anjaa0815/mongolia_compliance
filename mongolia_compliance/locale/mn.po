@@ -4079,3 +4079,93 @@ msgstr "Компани гүйлгээгүй үед дээр сонгосон т�
 
 msgid "Mongolian Chart of Accounts Installed"
 msgstr "Монгол дансны төлөвлөгөө суусан"
+
+msgid "Perpetual inventory is required for companies in Mongolia."
+msgstr "Монголд бүртгэлтэй компани бараа материалыг тасралтгүй бүртгэлийн системээр хөтлөх ёстой."
+
+msgid "LIFO valuation is not allowed under IAS 2. Use FIFO or Moving Average."
+msgstr "НББОУС 2-оор LIFO аргыг хэрэглэхийг хориглоно. FIFO эсвэл жигнэсэн дундаж өртгийн аргыг сонгоно уу."
+
+msgid "Import Charge"
+msgstr "Импортын зардал"
+
+msgid "Customs Duty"
+msgstr "Гаалийн албан татвар"
+
+msgid "Customs Fee"
+msgstr "Гаалийн хураамж"
+
+msgid "International Freight"
+msgstr "Олон улсын тээвэр"
+
+msgid "Local Freight"
+msgstr "Дотоод тээвэр"
+
+msgid "Insurance"
+msgstr "Даатгал"
+
+msgid "Handling"
+msgstr "Ачиж буулгах зардал"
+
+msgid "Sets the expense account from the Mongolian chart. VAT paid at customs is not an import charge."
+msgstr "Монгол дансны төлөвлөгөөнөөс зардлын дансыг сонгоно. Гаалид төлсөн НӨАТ импортын зардалд орохгүй."
+
+msgid "Customs VAT"
+msgstr "Гаалийн НӨАТ"
+
+msgid "Row {0}: VAT paid at customs is recoverable and cannot be added to item cost. Book it to the VAT receivable account {1} with a Purchase Invoice or Journal Entry instead."
+msgstr "Мөр {0}: Гаалид төлсөн НӨАТ буцаан тооцогддог тул барааны өртөгт шингээж болохгүй. Үүнийг Худалдан авалтын нэхэмжлэх эсвэл Журналын бичилтээр НӨАТ-ын авлагын {1} дансанд бүртгэнэ үү."
+
+msgid "Goods In Transit"
+msgstr "Замд яваа бараа"
+
+msgid "In Transit"
+msgstr "Замд яваа"
+
+msgid "Partially Received"
+msgstr "Дутуу хүлээн авсан"
+
+msgid "Received"
+msgstr "Хүлээн авсан"
+
+msgid "Destination Warehouse"
+msgstr "Хүлээн авах агуулах"
+
+msgid "Transit Warehouse"
+msgstr "Дамжин өнгөрөх агуулах"
+
+msgid "Final Destination Warehouse"
+msgstr "Эцсийн хүлээн авах агуулах"
+
+msgid "Sent Qty"
+msgstr "Илгээсэн тоо"
+
+msgid "Received Qty"
+msgstr "Хүлээн авсан тоо"
+
+msgid "Qty In Transit"
+msgstr "Замд яваа тоо"
+
+msgid "Value In Transit"
+msgstr "Замд яваа барааны дүн"
+
+msgid "Days"
+msgstr "Хоног"
+
+msgid "Transit Warehouse Missing"
+msgstr "Замд яваа барааны агуулах тохируулаагүй"
+
+msgid "Branch warehouse that receives the goods when the transit ends."
+msgstr "Тээвэрлэлт дуусахад барааг хүлээн авах салбарын агуулах."
+
+msgid "Transfers between warehouses of different branches go through the in-transit warehouse."
+msgstr "Өөр салбарын агуулах хоорондын шилжүүлэг замд яваа барааны агуулахаар дамжина."
+
+msgid "Set a Default In-Transit Warehouse on Company {0} to transfer goods between branches."
+msgstr "Салбар хооронд бараа шилжүүлэхийн тулд {0} компанид замд яваа барааны үндсэн агуулахыг тохируулна уу."
+
+msgid "Goods are moving between branches, so they are sent to the transit warehouse {0}. Use End Transit when the branch receives them."
+msgstr "Бараа салбар хооронд шилжиж байгаа тул эхлээд {0} замд яваа барааны агуулахад орно. Салбар хүлээн авахдаа \"Замаас хүлээн авах\" товчийг дарна уу."
+
+msgid "End Transit"
+msgstr "Замаас хүлээн авах"

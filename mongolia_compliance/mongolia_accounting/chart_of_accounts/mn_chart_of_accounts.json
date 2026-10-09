@@ -512,6 +512,36 @@
                     "account_number": "6104",
                     "account_type": "Stock Adjustment",
                     "account_category": "Other Direct Costs"
+                },
+                "Гаалийн албан татвар": {
+                    "account_number": "6105",
+                    "account_type": "Expenses Included In Valuation",
+                    "account_category": "Other Direct Costs"
+                },
+                "Гаалийн хураамж": {
+                    "account_number": "6106",
+                    "account_type": "Expenses Included In Valuation",
+                    "account_category": "Other Direct Costs"
+                },
+                "Олон улсын тээврийн зардал": {
+                    "account_number": "6107",
+                    "account_type": "Expenses Included In Valuation",
+                    "account_category": "Other Direct Costs"
+                },
+                "Дотоод тээврийн зардал": {
+                    "account_number": "6108",
+                    "account_type": "Expenses Included In Valuation",
+                    "account_category": "Other Direct Costs"
+                },
+                "Импортын даатгал": {
+                    "account_number": "6109",
+                    "account_type": "Expenses Included In Valuation",
+                    "account_category": "Other Direct Costs"
+                },
+                "Ачиж буулгах зардал": {
+                    "account_number": "6110",
+                    "account_type": "Expenses Included In Valuation",
+                    "account_category": "Other Direct Costs"
                 }
             },
             "Үйл ажиллагааны зардал": {
